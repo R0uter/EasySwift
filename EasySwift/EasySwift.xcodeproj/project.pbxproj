@@ -15,6 +15,13 @@
 		DE0C650E1C92CE0F00120055 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DE0C650C1C92CE0F00120055 /* LaunchScreen.storyboard */; };
 		DE0C65191C92CE0F00120055 /* EasySwiftTests.m in Sources */ = {isa = PBXBuildFile; fileRef = DE0C65181C92CE0F00120055 /* EasySwiftTests.m */; };
 		DE0C65241C92CE0F00120055 /* EasySwiftUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = DE0C65231C92CE0F00120055 /* EasySwiftUITests.m */; };
+		DEFC29431C93EC330009F2B3 /* UIScrollView+EmptyDataSet.m in Sources */ = {isa = PBXBuildFile; fileRef = DEFC29421C93EC330009F2B3 /* UIScrollView+EmptyDataSet.m */; };
+		DEFC29451C93F4CF0009F2B3 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DEFC29441C93F4CF0009F2B3 /* Foundation.framework */; };
+		DEFC29471C93F4D50009F2B3 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DEFC29461C93F4D50009F2B3 /* UIKit.framework */; };
+		DEFC29491C93F4E30009F2B3 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DEFC29481C93F4E30009F2B3 /* CoreGraphics.framework */; };
+		DEFC29511C93FD070009F2B3 /* EmptyViewFactory.m in Sources */ = {isa = PBXBuildFile; fileRef = DEFC294C1C93FD070009F2B3 /* EmptyViewFactory.m */; };
+		DEFC29521C93FD070009F2B3 /* FOREmptyAssistantConfiger.m in Sources */ = {isa = PBXBuildFile; fileRef = DEFC294E1C93FD070009F2B3 /* FOREmptyAssistantConfiger.m */; };
+		DEFC29531C93FD070009F2B3 /* FORScrollViewEmptyAssistant.m in Sources */ = {isa = PBXBuildFile; fileRef = DEFC29501C93FD070009F2B3 /* FORScrollViewEmptyAssistant.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +58,17 @@
 		DE0C651F1C92CE0F00120055 /* EasySwiftUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = EasySwiftUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		DE0C65231C92CE0F00120055 /* EasySwiftUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = EasySwiftUITests.m; sourceTree = "<group>"; };
 		DE0C65251C92CE0F00120055 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DEFC29411C93EC330009F2B3 /* UIScrollView+EmptyDataSet.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIScrollView+EmptyDataSet.h"; sourceTree = "<group>"; };
+		DEFC29421C93EC330009F2B3 /* UIScrollView+EmptyDataSet.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIScrollView+EmptyDataSet.m"; sourceTree = "<group>"; };
+		DEFC29441C93F4CF0009F2B3 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		DEFC29461C93F4D50009F2B3 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		DEFC29481C93F4E30009F2B3 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		DEFC294B1C93FD070009F2B3 /* EmptyViewFactory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EmptyViewFactory.h; sourceTree = "<group>"; };
+		DEFC294C1C93FD070009F2B3 /* EmptyViewFactory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EmptyViewFactory.m; sourceTree = "<group>"; };
+		DEFC294D1C93FD070009F2B3 /* FOREmptyAssistantConfiger.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FOREmptyAssistantConfiger.h; sourceTree = "<group>"; };
+		DEFC294E1C93FD070009F2B3 /* FOREmptyAssistantConfiger.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FOREmptyAssistantConfiger.m; sourceTree = "<group>"; };
+		DEFC294F1C93FD070009F2B3 /* FORScrollViewEmptyAssistant.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FORScrollViewEmptyAssistant.h; sourceTree = "<group>"; };
+		DEFC29501C93FD070009F2B3 /* FORScrollViewEmptyAssistant.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FORScrollViewEmptyAssistant.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +76,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DEFC29491C93F4E30009F2B3 /* CoreGraphics.framework in Frameworks */,
+				DEFC29471C93F4D50009F2B3 /* UIKit.framework in Frameworks */,
+				DEFC29451C93F4CF0009F2B3 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -81,6 +102,9 @@
 		DE0C64F21C92CE0F00120055 = {
 			isa = PBXGroup;
 			children = (
+				DEFC29481C93F4E30009F2B3 /* CoreGraphics.framework */,
+				DEFC29461C93F4D50009F2B3 /* UIKit.framework */,
+				DEFC29441C93F4CF0009F2B3 /* Foundation.framework */,
 				DE0C64FD1C92CE0F00120055 /* EasySwift */,
 				DE0C65171C92CE0F00120055 /* EasySwiftTests */,
 				DE0C65221C92CE0F00120055 /* EasySwiftUITests */,
@@ -101,6 +125,9 @@
 		DE0C64FD1C92CE0F00120055 /* EasySwift */ = {
 			isa = PBXGroup;
 			children = (
+				DEFC29411C93EC330009F2B3 /* UIScrollView+EmptyDataSet.h */,
+				DEFC29421C93EC330009F2B3 /* UIScrollView+EmptyDataSet.m */,
+				DEFC294A1C93FD070009F2B3 /* EmptyAssistant */,
 				DE0C65011C92CE0F00120055 /* AppDelegate.h */,
 				DE0C65021C92CE0F00120055 /* AppDelegate.m */,
 				DE0C65041C92CE0F00120055 /* ViewController.h */,
@@ -138,6 +165,19 @@
 				DE0C65251C92CE0F00120055 /* Info.plist */,
 			);
 			path = EasySwiftUITests;
+			sourceTree = "<group>";
+		};
+		DEFC294A1C93FD070009F2B3 /* EmptyAssistant */ = {
+			isa = PBXGroup;
+			children = (
+				DEFC294B1C93FD070009F2B3 /* EmptyViewFactory.h */,
+				DEFC294C1C93FD070009F2B3 /* EmptyViewFactory.m */,
+				DEFC294D1C93FD070009F2B3 /* FOREmptyAssistantConfiger.h */,
+				DEFC294E1C93FD070009F2B3 /* FOREmptyAssistantConfiger.m */,
+				DEFC294F1C93FD070009F2B3 /* FORScrollViewEmptyAssistant.h */,
+				DEFC29501C93FD070009F2B3 /* FORScrollViewEmptyAssistant.m */,
+			);
+			path = EmptyAssistant;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -271,7 +311,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				DE0C65061C92CE0F00120055 /* ViewController.m in Sources */,
+				DEFC29521C93FD070009F2B3 /* FOREmptyAssistantConfiger.m in Sources */,
 				DE0C65031C92CE0F00120055 /* AppDelegate.m in Sources */,
+				DEFC29531C93FD070009F2B3 /* FORScrollViewEmptyAssistant.m in Sources */,
+				DEFC29511C93FD070009F2B3 /* EmptyViewFactory.m in Sources */,
+				DEFC29431C93EC330009F2B3 /* UIScrollView+EmptyDataSet.m in Sources */,
 				DE0C65001C92CE0F00120055 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -412,6 +456,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = EasySwift/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.YXJ.EasySwift;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -423,6 +468,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = EasySwift/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.YXJ.EasySwift;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -496,6 +542,7 @@
 				DE0C652A1C92CE0F00120055 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		DE0C652B1C92CE0F00120055 /* Build configuration list for PBXNativeTarget "EasySwiftTests" */ = {
 			isa = XCConfigurationList;
@@ -504,6 +551,7 @@
 				DE0C652D1C92CE0F00120055 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		DE0C652E1C92CE0F00120055 /* Build configuration list for PBXNativeTarget "EasySwiftUITests" */ = {
 			isa = XCConfigurationList;
@@ -512,6 +560,7 @@
 				DE0C65301C92CE0F00120055 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
