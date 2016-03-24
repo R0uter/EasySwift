@@ -8,21 +8,20 @@
 
 import Foundation
 import JavaScriptCore
-import TTTAttributedLabel
 
-class LabelProperty:ViewProperty{
-    var linkStyle = Dictionary<NSObject,AnyObject>()
-    var activeLinkStyle = Dictionary<NSObject,AnyObject>()
-    var textAlignment:NSTextAlignment = .Left
-    
-    override func view() -> UIView{
+class LabelProperty: ViewProperty {
+    var linkStyle = Dictionary<NSObject, AnyObject>()
+    var activeLinkStyle = Dictionary<NSObject, AnyObject>()
+    var textAlignment: NSTextAlignment = .Left
+
+    override func view() -> UIView {
         if self.style.characters.isEmpty {
             let view = UILabel()
             view.tagProperty = self
             view.text = self.contentText
             self.renderViewStyle(view)
             return view
-        }else{
+        } else {
             let view = TTTAttributedLabel(frame: CGRectZero)
             view.tagProperty = self
             if self.linkStyle.count > 0 {
@@ -31,29 +30,29 @@ class LabelProperty:ViewProperty{
             if self.activeLinkStyle.count > 0 {
                 view.activeLinkAttributes = self.activeLinkStyle
             }
-            view.setText(NSAttributedString(fromHTMLData: self.contentText?.toData(), attributes: ["dict":self.style]))
+            view.setText(NSAttributedString(fromHTMLData: self.contentText?.toData(), attributes: ["dict": self.style]))
             self.renderViewStyle(view)
             return view
         }
     }
-    
+
     override func renderTag(pelement: OGElement) {
-        
-        self.tagOut += ["link-style","active-link-style","text-alignment"]
+
+        self.tagOut += ["link-style", "active-link-style", "text-alignment"]
         super.renderTag(pelement)
-        
-        if let textAlignment = EUIParse.string(pelement,key:"text-alignment") {
+
+        if let textAlignment = EUIParse.string(pelement, key: "text-alignment") {
             self.textAlignment = textAlignment.textAlignment
         }
-        
-        if let linkStyle = EUIParse.string(pelement,key:"link-style") {
+
+        if let linkStyle = EUIParse.string(pelement, key: "link-style") {
             self.linkStyle = linkStyle.linkStyleDict
         }
-        
-        if let linkStyle = EUIParse.string(pelement,key:"active-link-style") {
+
+        if let linkStyle = EUIParse.string(pelement, key: "active-link-style") {
             self.activeLinkStyle = linkStyle.linkStyleDict
         }
-        
+
         var html = ""
         for child in pelement.children
         {
@@ -68,15 +67,13 @@ class LabelProperty:ViewProperty{
         }
         self.contentText = html
     }
-    
+
     override func childLoop(pelement: OGElement) {
-        
     }
-    
-    override func renderViewStyle(view:UIView){
+
+    override func renderViewStyle(view: UIView) {
         super.renderViewStyle(view)
         let sview = view as! UILabel
         sview.textAlignment = self.textAlignment
     }
-
 }
