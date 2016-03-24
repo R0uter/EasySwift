@@ -9,7 +9,7 @@
 
 Pod::Spec.new do |s|
   s.name             = "EasySwift"
-  s.version          = "0.0.3"
+  s.version          = "0.0.4"
   s.summary          = "a little descript for EasySwift"
   s.description      = <<-DESC
                       This is the most simple way to use swift, which is a complete throughout the entire iOS development of the most convenient, the most simple, the most perfect framework to build the heart.
@@ -26,7 +26,7 @@ Pod::Spec.new do |s|
   s.ios.deployment_target = '8.0'
   s.requires_arc = true
   s.module_name = "EasySwift"
-  s.source_files = 'Pod/Classes/**/*'
+  s.source_files = 'Pod/Classes/*'
   s.resource_bundles = {'EasySwift' => ['Pod/Assets/*.png']}
   # s.dependency 'HanekeSwift'
   # s.dependency 'Bond'
@@ -37,7 +37,7 @@ Pod::Spec.new do |s|
   # s.dependency 'ReachabilitySwift'
   # s.dependency 'TTTAttributedLabel'
   # s.dependency 'EasyIOS-Swift'
-  s.public_header_files = 'Pod/Classes/**/*.h'
+  s.public_header_files = 'Pod/Classes/*.h'
   s.frameworks = 'UIKit','JavaScriptCore'
 end
 
