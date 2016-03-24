@@ -1,0 +1,6 @@
+framework module EasyIOS {
+  umbrella header "EasyIOS-Swift-umbrella.h"
+
+  export *
+  module * { export * }
+}

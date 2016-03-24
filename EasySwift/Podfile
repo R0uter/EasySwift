@@ -1,0 +1,13 @@
+xcodeproj 'EasySwift.xcodeproj'
+
+platform :ios, '8.0'
+
+target 'EasySwift' do
+    
+    xcodeproj 'EasySwift.xcodeproj'
+    
+    use_frameworks!
+    
+    pod "EasyIOS-Swift"
+    
+end

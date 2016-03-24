@@ -1,0 +1,36 @@
+PODS:
+  - Alamofire (3.3.0)
+  - Bond (4.3.0)
+  - EasyIOS-Swift (2.0.1):
+    - Alamofire
+    - Bond
+    - HanekeSwift
+    - Kingfisher
+    - ObjectMapper
+    - ReachabilitySwift
+    - SnapKit
+    - TTTAttributedLabel
+  - HanekeSwift (0.10.1)
+  - Kingfisher (2.2.0)
+  - ObjectMapper (1.1.5)
+  - ReachabilitySwift (2.3.3)
+  - SnapKit (0.19.1)
+  - TTTAttributedLabel (1.13.4)
+
+DEPENDENCIES:
+  - EasyIOS-Swift
+
+SPEC CHECKSUMS:
+  Alamofire: 9054db4a1b1ca9e363223183e01cea380159a27c
+  Bond: ebe2364b18130690083cbceff036420b21494ae4
+  EasyIOS-Swift: 1d02eec724ae75ed371638062844e84edc73e112
+  HanekeSwift: 08e47d3d0f2899ec58e5d257beba0de619aca9e8
+  Kingfisher: 350869ed88d6451803b390475d977abdd9f0a357
+  ObjectMapper: 528b1a6677a6acac7747edd508576983e76a9148
+  ReachabilitySwift: e0f6b6f280effb47731acfaaa2d5ffe223703793
+  SnapKit: eff58d6e3451bf2f482db2eccf86aecf371dc62d
+  TTTAttributedLabel: 0a2ac7b2dd726d32a070dafb01446026b11e624f
+
+PODFILE CHECKSUM: c2d9c5d873826de75fac424d4a6134b66788dfc1
+
+COCOAPODS: 1.0.0.beta.4
