@@ -1,6 +1,6 @@
 PODS:
-  - Alamofire (3.3.0)
-  - Bond (4.3.0)
+  - Alamofire (3.3.1)
+  - Bond (4.3.1)
   - EasyIOS-Swift (2.0.1):
     - Alamofire
     - Bond
@@ -10,27 +10,33 @@ PODS:
     - ReachabilitySwift
     - SnapKit
     - TTTAttributedLabel
+  - EasySwift (0.0.5)
   - HanekeSwift (0.10.1)
-  - Kingfisher (2.2.0)
-  - ObjectMapper (1.1.5)
+  - Kingfisher (2.2.2)
+  - ObjectMapper (1.2.0)
   - ReachabilitySwift (2.3.3)
-  - SnapKit (0.19.1)
+  - SnapKit (0.20.0)
   - TTTAttributedLabel (1.13.4)
+  - UITableView+FDTemplateLayoutCell (1.4)
 
 DEPENDENCIES:
   - EasyIOS-Swift
+  - EasySwift
+  - UITableView+FDTemplateLayoutCell
 
 SPEC CHECKSUMS:
-  Alamofire: 9054db4a1b1ca9e363223183e01cea380159a27c
-  Bond: ebe2364b18130690083cbceff036420b21494ae4
+  Alamofire: 369bc67b6f5ac33ded3648d7bd21c5bfb91c2ecc
+  Bond: 55903fc67f09e8e49791a657163cabba1d6fb29d
   EasyIOS-Swift: 1d02eec724ae75ed371638062844e84edc73e112
+  EasySwift: 290107e7bb4910476955a25ce0a80f6a7d7acd0c
   HanekeSwift: 08e47d3d0f2899ec58e5d257beba0de619aca9e8
-  Kingfisher: 350869ed88d6451803b390475d977abdd9f0a357
-  ObjectMapper: 528b1a6677a6acac7747edd508576983e76a9148
+  Kingfisher: 7e8de5b0cf7b5dc8ec559d193029a0859df93ef1
+  ObjectMapper: b1e9c7c8a9f6400b72690c80072c131504caa66f
   ReachabilitySwift: e0f6b6f280effb47731acfaaa2d5ffe223703793
-  SnapKit: eff58d6e3451bf2f482db2eccf86aecf371dc62d
+  SnapKit: 5fce3c1bbbf1fbd31de9aa92f33eb9fa03f15650
   TTTAttributedLabel: 0a2ac7b2dd726d32a070dafb01446026b11e624f
+  UITableView+FDTemplateLayoutCell: 234e1582bcc4e18461af91155123bb96538ed030
 
-PODFILE CHECKSUM: c2d9c5d873826de75fac424d4a6134b66788dfc1
+PODFILE CHECKSUM: 79510a956e444c4c5789945246282d4248a941ab
 
 COCOAPODS: 1.0.0.beta.4
