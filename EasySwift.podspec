@@ -27,9 +27,17 @@ Pod::Spec.new do |s|
   s.requires_arc = true
   s.module_name = "EasySwift"
   s.source_files = 'Pod/**/*'
-  s.resource_bundles = {'EasySwift' => ['Pod/**/*.png']}
-  s.dependency 'EasyIOS-Swift'
-  s.public_header_files = 'Pod/Classes/Easy/**/*.h','Pod/Classes/Extend/**/*.h'
+  s.resource_bundles = {'EasySwift' => ['Pod/**/*.png']} 
+  s.dependency 'HanekeSwift'
+  s.dependency 'Bond'
+  s.dependency 'Alamofire'
+  s.dependency 'SnapKit'
+  s.dependency 'Kingfisher'
+  s.dependency 'ObjectMapper'
+  s.dependency 'ReachabilitySwift'
+  s.dependency 'TTTAttributedLabel'
+  s.dependency 'UITableView+FDTemplateLayoutCell'
+  s.public_header_files = 'Pod/Classes/Easy/**/*.h','Pod/Classes/Extend/**/*.h','Pod/Classes/Private/**/*.h'
   s.frameworks = 'UIKit','JavaScriptCore'
 end
 

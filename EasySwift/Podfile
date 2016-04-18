@@ -7,6 +7,7 @@ target 'EasySwift' do
     
     use_frameworks!
     
-    pod 'EasySwift'
-    
+    pod "EasySwift", :path => "../"
+#    pod 'EasySwift'
+
 end

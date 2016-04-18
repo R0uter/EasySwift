@@ -1,7 +1,7 @@
 PODS:
   - Alamofire (3.3.1)
   - Bond (4.3.1)
-  - EasyIOS-Swift (2.0.1):
+  - EasySwift (0.0.6):
     - Alamofire
     - Bond
     - HanekeSwift
@@ -10,7 +10,7 @@ PODS:
     - ReachabilitySwift
     - SnapKit
     - TTTAttributedLabel
-  - EasySwift (0.0.5)
+    - UITableView+FDTemplateLayoutCell
   - HanekeSwift (0.10.1)
   - Kingfisher (2.2.2)
   - ObjectMapper (1.2.0)
@@ -20,15 +20,16 @@ PODS:
   - UITableView+FDTemplateLayoutCell (1.4)
 
 DEPENDENCIES:
-  - EasyIOS-Swift
-  - EasySwift
-  - UITableView+FDTemplateLayoutCell
+  - EasySwift (from `../`)
+
+EXTERNAL SOURCES:
+  EasySwift:
+    :path: ../
 
 SPEC CHECKSUMS:
   Alamofire: 369bc67b6f5ac33ded3648d7bd21c5bfb91c2ecc
   Bond: 55903fc67f09e8e49791a657163cabba1d6fb29d
-  EasyIOS-Swift: 1d02eec724ae75ed371638062844e84edc73e112
-  EasySwift: 290107e7bb4910476955a25ce0a80f6a7d7acd0c
+  EasySwift: 5aa64718569331039a0d52a9c1ee9ec8e5746741
   HanekeSwift: 08e47d3d0f2899ec58e5d257beba0de619aca9e8
   Kingfisher: 7e8de5b0cf7b5dc8ec559d193029a0859df93ef1
   ObjectMapper: b1e9c7c8a9f6400b72690c80072c131504caa66f
@@ -37,6 +38,6 @@ SPEC CHECKSUMS:
   TTTAttributedLabel: 0a2ac7b2dd726d32a070dafb01446026b11e624f
   UITableView+FDTemplateLayoutCell: 234e1582bcc4e18461af91155123bb96538ed030
 
-PODFILE CHECKSUM: 79510a956e444c4c5789945246282d4248a941ab
+PODFILE CHECKSUM: 3b10a76461a67b8d09e2e39b65c6d420e842e3ed
 
 COCOAPODS: 1.0.0.beta.4
