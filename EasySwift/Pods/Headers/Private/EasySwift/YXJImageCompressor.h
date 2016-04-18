@@ -1,0 +1,1 @@
+../../../../../Pod/Classes/Easy/Lib/YXJImageCompressor/YXJImageCompressor.h

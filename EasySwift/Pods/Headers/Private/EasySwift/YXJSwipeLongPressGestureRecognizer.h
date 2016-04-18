@@ -1,0 +1,1 @@
+../../../../../Pod/Classes/Easy/Lib/YXJSwipeTableViewCell/YXJSwipeLongPressGestureRecognizer.h
