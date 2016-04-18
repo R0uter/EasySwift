@@ -9,7 +9,7 @@
 
 Pod::Spec.new do |s|
   s.name             = "EasySwift"
-  s.version          = "0.0.6"
+  s.version          = "0.0.8"
   s.summary          = "a little descript for EasySwift"
   s.description      = <<-DESC
                       This is the most simple way to use swift, which is a complete throughout the entire iOS development of the most convenient, the most simple, the most perfect framework to build the heart.
@@ -36,7 +36,19 @@ Pod::Spec.new do |s|
   s.dependency 'ObjectMapper'
   s.dependency 'ReachabilitySwift'
   s.dependency 'TTTAttributedLabel'
+
   s.dependency 'UITableView+FDTemplateLayoutCell'
+  s.dependency 'CYLTabBarController'
+  s.dependency 'IQKeyboardManager'
+  s.dependency 'MWPhotoBrowser'
+  s.dependency 'UIButton-SSEdgeInsets'
+  s.dependency 'GCDSwift'
+  s.dependency 'APAddressBook'
+  s.dependency 'Loggerithm'
+  s.dependency 'Colours'
+  s.dependency 'RainbowNavigation'
+  s.dependency 'SystemServices'
+
   s.public_header_files = 'Pod/Classes/Easy/**/*.h','Pod/Classes/Extend/**/*.h','Pod/Classes/Private/**/*.h'
   s.frameworks = 'UIKit','JavaScriptCore'
 end
