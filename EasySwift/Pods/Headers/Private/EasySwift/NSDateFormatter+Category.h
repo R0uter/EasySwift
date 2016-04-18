@@ -1,1 +1,1 @@
-../../../../../Pod/Classes/Easy/Lib/NSDateFormatter+Category.h
+../../../../../Pod/Classes/Easy/Lib/YXJExtension/NSDateFormatter+Category.h

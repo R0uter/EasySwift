@@ -9,7 +9,7 @@ PODS:
   - Colours/ObjC (5.13.0)
   - CYLTabBarController (1.2.7)
   - DACircularProgress (2.3.1)
-  - EasySwift (0.0.8):
+  - EasySwift (0.0.9):
     - Alamofire
     - APAddressBook
     - Bond
@@ -21,12 +21,15 @@ PODS:
     - Kingfisher
     - Loggerithm
     - MWPhotoBrowser
+    - NBLoadableFromXibView
     - ObjectMapper
     - RainbowNavigation
     - ReachabilitySwift
     - SnapKit
+    - swiftScan
     - SystemServices
     - TTTAttributedLabel
+    - TYAlertController
     - UIButton-SSEdgeInsets
     - UITableView+FDTemplateLayoutCell
   - GCDSwift (0.2.0)
@@ -39,6 +42,7 @@ PODS:
     - DACircularProgress (~> 2.3)
     - MBProgressHUD (~> 0.9)
     - SDWebImage (!= 3.7.2, ~> 3.7)
+  - NBLoadableFromXibView (0.1.0)
   - ObjectMapper (1.2.0)
   - RainbowNavigation (1.0.0)
   - ReachabilitySwift (2.3.3)
@@ -46,8 +50,10 @@ PODS:
     - SDWebImage/Core (= 3.7.5)
   - SDWebImage/Core (3.7.5)
   - SnapKit (0.20.0)
+  - swiftScan (1.0.7)
   - SystemServices (1.1.1)
   - TTTAttributedLabel (1.13.4)
+  - TYAlertController (1.1.3)
   - UIButton-SSEdgeInsets (0.1.2)
   - UITableView+FDTemplateLayoutCell (1.4)
 
@@ -65,7 +71,7 @@ SPEC CHECKSUMS:
   Colours: f24220c38f13deac88612667e9b4a7fb96b871d4
   CYLTabBarController: 639c5eca91cc564671bfd876e5fcc1a39cc49bf7
   DACircularProgress: 4dd437c0fc3da5161cb289e07ac449493d41db71
-  EasySwift: dc2c5311662d0fc897d72c9759f520c26e5cf6d2
+  EasySwift: 8766e90fb4be9a2724afed16dd3231b15e817677
   GCDSwift: 4382f69c53deaf730adfc5d7d16901cc95e31ca5
   HanekeSwift: 08e47d3d0f2899ec58e5d257beba0de619aca9e8
   IQKeyboardManager: 0c11a0cb402a621f7aa1aff506f60ab6d2388969
@@ -73,13 +79,16 @@ SPEC CHECKSUMS:
   Loggerithm: 7166cfb29ed73c595f9e1f2ec7dba65ed5a5b0d0
   MBProgressHUD: 1569cf7ace17a8bac47aabfbb8580a49690386d1
   MWPhotoBrowser: ba0d0c09ffda3a7ea10093518738c502c1c7141c
+  NBLoadableFromXibView: b66c1bb2bc1f401548b21ac068e19d5917340aa8
   ObjectMapper: b1e9c7c8a9f6400b72690c80072c131504caa66f
   RainbowNavigation: f22e8fa746a5c9cee7bc8ef4a02352e2f06d34e7
   ReachabilitySwift: e0f6b6f280effb47731acfaaa2d5ffe223703793
   SDWebImage: 69c6303e3348fba97e03f65d65d4fbc26740f461
   SnapKit: 5fce3c1bbbf1fbd31de9aa92f33eb9fa03f15650
+  swiftScan: 45ecba9a337706f253e0d5a80b7510a7fd03223b
   SystemServices: cc55971fb9b1a5b01ad11e6ae0f46483ca5affa5
   TTTAttributedLabel: 0a2ac7b2dd726d32a070dafb01446026b11e624f
+  TYAlertController: 849283e546e297d4c33708d81d12605901adbba7
   UIButton-SSEdgeInsets: a183cd4125538ff1eac844c2a23ea1395e7d5514
   UITableView+FDTemplateLayoutCell: 234e1582bcc4e18461af91155123bb96538ed030
 

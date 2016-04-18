@@ -48,6 +48,9 @@ Pod::Spec.new do |s|
   s.dependency 'Colours'
   s.dependency 'RainbowNavigation'
   s.dependency 'SystemServices'
+  s.dependency 'swiftScan'
+  s.dependency 'TYAlertController'
+  s.dependency 'NBLoadableFromXibView'
 
   s.public_header_files = 'Pod/Classes/Easy/**/*.h','Pod/Classes/Extend/**/*.h','Pod/Classes/Private/**/*.h'
   s.frameworks = 'UIKit','JavaScriptCore'

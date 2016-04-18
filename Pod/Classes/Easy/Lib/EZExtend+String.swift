@@ -35,6 +35,7 @@ extension String {
         return self.stringByRemovingPercentEncoding;
     }
 
+    // MARK: 取消首位空格和换行
     public var trim: String {
         return self.stringByTrimmingCharactersInSet(NSCharacterSet.whitespaceAndNewlineCharacterSet())
     }

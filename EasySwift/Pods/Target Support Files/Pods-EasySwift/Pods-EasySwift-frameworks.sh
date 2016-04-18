@@ -98,6 +98,7 @@ if [[ "$CONFIGURATION" == "Debug" ]]; then
   install_framework "Pods-EasySwift/Loggerithm.framework"
   install_framework "Pods-EasySwift/MBProgressHUD.framework"
   install_framework "Pods-EasySwift/MWPhotoBrowser.framework"
+  install_framework "Pods-EasySwift/NBLoadableFromXibView.framework"
   install_framework "Pods-EasySwift/ObjectMapper.framework"
   install_framework "Pods-EasySwift/RainbowNavigation.framework"
   install_framework "Pods-EasySwift/ReachabilitySwift.framework"
@@ -105,8 +106,10 @@ if [[ "$CONFIGURATION" == "Debug" ]]; then
   install_framework "Pods-EasySwift/SnapKit.framework"
   install_framework "Pods-EasySwift/SystemServices.framework"
   install_framework "Pods-EasySwift/TTTAttributedLabel.framework"
+  install_framework "Pods-EasySwift/TYAlertController.framework"
   install_framework "Pods-EasySwift/UIButton_SSEdgeInsets.framework"
   install_framework "Pods-EasySwift/UITableView_FDTemplateLayoutCell.framework"
+  install_framework "Pods-EasySwift/swiftScan.framework"
 fi
 if [[ "$CONFIGURATION" == "Release" ]]; then
   install_framework "Pods-EasySwift/APAddressBook.framework"
@@ -123,6 +126,7 @@ if [[ "$CONFIGURATION" == "Release" ]]; then
   install_framework "Pods-EasySwift/Loggerithm.framework"
   install_framework "Pods-EasySwift/MBProgressHUD.framework"
   install_framework "Pods-EasySwift/MWPhotoBrowser.framework"
+  install_framework "Pods-EasySwift/NBLoadableFromXibView.framework"
   install_framework "Pods-EasySwift/ObjectMapper.framework"
   install_framework "Pods-EasySwift/RainbowNavigation.framework"
   install_framework "Pods-EasySwift/ReachabilitySwift.framework"
@@ -130,6 +134,8 @@ if [[ "$CONFIGURATION" == "Release" ]]; then
   install_framework "Pods-EasySwift/SnapKit.framework"
   install_framework "Pods-EasySwift/SystemServices.framework"
   install_framework "Pods-EasySwift/TTTAttributedLabel.framework"
+  install_framework "Pods-EasySwift/TYAlertController.framework"
   install_framework "Pods-EasySwift/UIButton_SSEdgeInsets.framework"
   install_framework "Pods-EasySwift/UITableView_FDTemplateLayoutCell.framework"
+  install_framework "Pods-EasySwift/swiftScan.framework"
 fi
