@@ -1,4 +1,3 @@
-#xcodeproj 'EasySwift.xcodeproj'
 
 platform :ios, '8.0'
 
@@ -8,8 +7,6 @@ target 'EasySwift' do
     
     use_frameworks!
     
-    pod 'EasyIOS-Swift'
-    pod 'UITableView+FDTemplateLayoutCell'
     pod 'EasySwift'
     
 end
