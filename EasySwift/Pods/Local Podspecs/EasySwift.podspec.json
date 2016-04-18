@@ -1,6 +1,6 @@
 {
   "name": "EasySwift",
-  "version": "0.0.6",
+  "version": "0.0.8",
   "summary": "a little descript for EasySwift",
   "description": "This is the most simple way to use swift, which is a complete throughout the entire iOS development of the most convenient, the most simple, the most perfect framework to build the heart.",
   "homepage": "https://github.com/stubbornnessness",
@@ -10,7 +10,7 @@
   },
   "source": {
     "git": "https://github.com/stubbornnessness/EasySwift.git",
-    "tag": "0.0.6"
+    "tag": "0.0.8"
   },
   "platforms": {
     "ios": "8.0"
@@ -49,6 +49,36 @@
 
     ],
     "UITableView+FDTemplateLayoutCell": [
+
+    ],
+    "CYLTabBarController": [
+
+    ],
+    "IQKeyboardManager": [
+
+    ],
+    "MWPhotoBrowser": [
+
+    ],
+    "UIButton-SSEdgeInsets": [
+
+    ],
+    "GCDSwift": [
+
+    ],
+    "APAddressBook": [
+
+    ],
+    "Loggerithm": [
+
+    ],
+    "Colours": [
+
+    ],
+    "RainbowNavigation": [
+
+    ],
+    "SystemServices": [
 
     ]
   },
