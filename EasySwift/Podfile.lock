@@ -81,7 +81,7 @@ SPEC CHECKSUMS:
   Colours: f24220c38f13deac88612667e9b4a7fb96b871d4
   CYLTabBarController: 5314a5c03d2601b88ff3f055eb8f0dde0c5e78bb
   DACircularProgress: 4dd437c0fc3da5161cb289e07ac449493d41db71
-  EasySwift: 5cd4e85d5f882f812559fc8eefa044d924b856bd
+  EasySwift: caae11b7dceaa759d6e8d81e556c38e0e003b69f
   GCDSwift: 4382f69c53deaf730adfc5d7d16901cc95e31ca5
   HanekeSwift: 08e47d3d0f2899ec58e5d257beba0de619aca9e8
   IQKeyboardManager: 2341089c4ae25fa2fa82ce356a259fcd267dc6b6

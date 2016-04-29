@@ -9,7 +9,7 @@
 
 Pod::Spec.new do |s|
   s.name             = "EasySwift"
-  s.version          = "1.0.3"
+  s.version          = "1.0.4"
   s.summary          = "a little descript for EasySwift"
   s.description      = <<-DESC
                       This is the most simple way to use swift, which is a complete throughout the entire iOS development of the most convenient, the most simple, the most perfect framework to build the heart.
@@ -82,9 +82,35 @@ Pod::Spec.new do |s|
   s.dependency 'LCCoolHUD'
   s.dependency 'TOWebViewController'
 
-  s.public_header_files = 'Pod/Classes/Easy/**/*.h',
-  							'Pod/Classes/Extend/**/*.h',
-  							'Pod/Classes/Private/**/*.h'
+  s.public_header_files = 'Pod/Classes/Easy/Core/*.h',
+            'Pod/Classes/Easy/Lib/*.h',
+            'Pod/Classes/Easy/Lib/PullRefresh/*.h',
+            'Pod/Classes/Easy/Lib/EmptyAssistant/*.h',
+            'Pod/Classes/Easy/Lib/YXJSlideBar/*.h',
+            'Pod/Classes/Easy/Lib/JKCountDownButton/*.h',
+            'Pod/Classes/Easy/Lib/YXJCycleView/*.h',
+            'Pod/Classes/Easy/Lib/YXJPageControl/*.h',
+            'Pod/Classes/Easy/Lib/YXJImageCompressor/*.h',
+            'Pod/Classes/Easy/Lib/YXJKxMenu/*.h',
+            'Pod/Classes/Easy/Lib/YXJSwipeTableViewCell/*.h',
+            'Pod/Classes/Easy/Lib/DOPDropDownMenu/*.h',
+            'Pod/Classes/Easy/Lib/CorePhotoPickerVCManager/*.h',
+            'Pod/Classes/Easy/Lib/CorePhotoPickerVCManager/Library/*.h',
+            'Pod/Classes/Easy/Lib/YXJTagLabelView/*.h',
+            'Pod/Classes/Easy/Lib/YXJOnePixelLine/*.h',
+            'Pod/Classes/Easy/Lib/YXJExtension/*.h',
+            'Pod/Classes/Easy/Lib/YXJExtension/YXJImageHelper/*.h',
+            'Pod/Classes/Easy/Lib/FLSideSlipViewController/*.h',
+
+            'Pod/Classes/Extend/Pinyin/*.h',
+            'Pod/Classes/Extend/SwiftRegex/*.h',
+            'Pod/Classes/Extend/EUI/*.h',
+            'Pod/Classes/Extend/FlexboxKit/*.h',
+            'Pod/Classes/Extend/URLManager/*.h',
+
+            'Pod/Classes/Private/Gumbo/*.h',
+            'Pod/Classes/Private/ObjectiveGumbo/*.h'
+
   s.frameworks = 'UIKit','JavaScriptCore'
 end
 
