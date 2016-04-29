@@ -28,6 +28,10 @@ Add the following to your Podfile:
 	pod 'TOWebViewController'
 	
 ## Version
+**V1.0.4** ---- 2016-4-29 
+
+更新pod 项目结构
+
 **V1.0.3** ---- 2016-4-29 
 
 * 增加一些扩展方法
