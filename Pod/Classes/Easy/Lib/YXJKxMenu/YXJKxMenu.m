@@ -70,9 +70,9 @@
                    action:(SEL) action
 {
     return [[YXJKxMenuItem alloc] init:title
-                              image:image
-                             target:target
-                             action:action];
+                                 image:image
+                                target:target
+                                action:action];
 }
 
 - (id) init:(NSString *) title
@@ -298,7 +298,7 @@ typedef enum {
 - (void)showMenuInView:(UIView *)view
               fromRect:(CGRect)rect
              menuItems:(NSArray *)menuItems
-            withOptions:(OptionalConfiguration) options
+           withOptions:(OptionalConfiguration) options
 {
     
     self.YXJkxMenuViewOptions = options;
@@ -311,7 +311,7 @@ typedef enum {
     [self setupFrameInView:view fromRect:rect];
     
     YXJKxMenuOverlay *overlay = [[YXJKxMenuOverlay alloc] initWithFrame:view.bounds maskSetting:self.YXJkxMenuViewOptions.maskToBackground];
-
+    
     [overlay addSubview:self];
     [view addSubview:overlay];
     
@@ -414,7 +414,7 @@ typedef enum {
         const CGSize titleSize = [menuItem.title sizeWithAttributes:@{NSFontAttributeName: titleFont}];
 #else
         const CGSize titleSize = [menuItem.title sizeWithFont:titleFont];
-#endif       
+#endif
         const CGSize imageSize = menuItem.image.size;
         
         //这个地方为header和Footer预留了高度
@@ -430,12 +430,22 @@ typedef enum {
             maxItemWidth = itemWidth;
     }
     
-    maxItemWidth  = MAX(maxItemWidth, kMinMenuItemWidth);
+    float oldMaxItemWidth = maxItemWidth;
+    if (self.YXJkxMenuViewOptions.setWidth > 0) {
+        maxItemWidth  = self.YXJkxMenuViewOptions.setWidth;
+    }else{
+        maxItemWidth  = MAX(maxItemWidth, kMinMenuItemWidth);
+    }
+    
     maxItemHeight = MAX(maxItemHeight, kMinMenuItemHeight);
     
     //这个地方设置字图间距
     //const CGFloat titleX = kMarginX * 2 + maxImageWidth;
-    const CGFloat titleX = maxImageWidth + self.YXJkxMenuViewOptions.intervalSpacing;
+    CGFloat titleX = maxImageWidth + self.YXJkxMenuViewOptions.intervalSpacing;
+    if (self.YXJkxMenuViewOptions.setWidth > 0) {
+        titleX = maxImageWidth + self.YXJkxMenuViewOptions.intervalSpacing +
+        (self.YXJkxMenuViewOptions.setWidth - oldMaxItemWidth) / 2;
+    }
     
     const CGFloat titleWidth = maxItemWidth - titleX - kMarginX *2;
     
@@ -604,7 +614,7 @@ typedef enum {
 
 + (UIImage *) selectedImage: (CGSize) size
 {
-
+    
     const CGFloat locations[] = {0,1};
     //配置：选中时阴影的颜色  -- 隐藏属性
     const CGFloat components[] = {
@@ -849,7 +859,7 @@ static UIFont *gTitleFont;
 - (void) showMenuInView:(UIView *)view
                fromRect:(CGRect)rect
               menuItems:(NSArray *)menuItems
-                withOptions:(OptionalConfiguration) options
+            withOptions:(OptionalConfiguration) options
 {
     NSParameterAssert(view);
     NSParameterAssert(menuItems.count);
@@ -898,7 +908,7 @@ static UIFont *gTitleFont;
 + (void) showMenuInView:(UIView *)view
                fromRect:(CGRect)rect
               menuItems:(NSArray *)menuItems
-                withOptions:(OptionalConfiguration) options
+            withOptions:(OptionalConfiguration) options
 {
     [[self sharedMenu] showMenuInView:view fromRect:rect menuItems:menuItems withOptions:options];
 }

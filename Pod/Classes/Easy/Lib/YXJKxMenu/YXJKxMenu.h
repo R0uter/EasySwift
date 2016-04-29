@@ -29,7 +29,7 @@ typedef struct{
     CGFloat R;
     CGFloat G;
     CGFloat B;
-
+    
 }Color;
 
 typedef struct {
@@ -44,6 +44,7 @@ typedef struct {
     Boolean seperatorLineHasInsets; //是否在分割线两侧留下Insets
     Color textColor;                //menuItem字体颜色
     Color menuBackgroundColor;      //菜单的底色
+    CGFloat setWidth;               //为0的话宽度自适应，大于0则为指定的宽度
 }OptionalConfiguration;
 
 
@@ -58,7 +59,7 @@ typedef struct {
 + (void) showMenuInView:(UIView *)view
                fromRect:(CGRect)rect
               menuItems:(NSArray *)menuItems
-                withOptions:(OptionalConfiguration) options;
+            withOptions:(OptionalConfiguration) options;
 
 + (void) dismissMenu;
 

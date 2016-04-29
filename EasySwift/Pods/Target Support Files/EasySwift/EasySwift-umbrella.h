@@ -16,6 +16,7 @@
 #import "FOREmptyAssistantConfiger.h"
 #import "FORScrollViewEmptyAssistant.h"
 #import "UIScrollView+EmptyDataSet.h"
+#import "FLSideSlipViewController.h"
 #import "JKCountDownButton.h"
 #import "NSData+EasyExtend.h"
 #import "NSDate+Category.h"

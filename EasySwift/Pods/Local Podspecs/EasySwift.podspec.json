@@ -1,6 +1,6 @@
 {
   "name": "EasySwift",
-  "version": "1.0.0",
+  "version": "1.0.2",
   "summary": "a little descript for EasySwift",
   "description": "This is the most simple way to use swift, which is a complete throughout the entire iOS development of the most convenient, the most simple, the most perfect framework to build the heart.",
   "homepage": "https://github.com/stubbornnessness",
@@ -10,14 +10,33 @@
   },
   "source": {
     "git": "https://github.com/stubbornnessness/EasySwift.git",
-    "tag": "1.0.0"
+    "tag": "1.0.2"
   },
   "platforms": {
     "ios": "8.0"
   },
   "requires_arc": true,
   "module_name": "EasySwift",
-  "source_files": "Pod/**/*",
+  "source_files": [
+    "Pod/Classes/Easy/Lib/*",
+    "Pod/Classes/Easy/Lib/PullRefresh/*",
+    "Pod/Classes/Easy/Lib/EmptyAssistant/*",
+    "Pod/Classes/Easy/Lib/YXJSlideBar/*",
+    "Pod/Classes/Easy/Lib/JKCountDownButton/*",
+    "Pod/Classes/Easy/Lib/YXJCycleView/*",
+    "Pod/Classes/Easy/Lib/YXJPageControl/*",
+    "Pod/Classes/Easy/Lib/YXJImageCompressor/*",
+    "Pod/Classes/Easy/Lib/YXJKxMenu/*",
+    "Pod/Classes/Easy/Lib/YXJSwipeTableViewCell/*",
+    "Pod/Classes/Easy/Lib/DOPDropDownMenu/*",
+    "Pod/Classes/Easy/Lib/CorePhotoPickerVCManager/*",
+    "Pod/Classes/Easy/Lib/CorePhotoPickerVCManager/Library/*",
+    "Pod/Classes/Easy/Lib/YXJTagLabelView/*",
+    "Pod/Classes/Easy/Lib/YXJOnePixelLine/*",
+    "Pod/Classes/Easy/Lib/YXJExtension/*",
+    "Pod/Classes/Easy/Lib/YXJExtension/YXJImageHelper/*",
+    "Pod/Classes/Easy/Lib/FLSideSlipViewController/*"
+  ],
   "resource_bundles": {
     "EasySwift": [
       "Pod/**/*.png"
@@ -91,6 +110,9 @@
 
     ],
     "LCCoolHUD": [
+
+    ],
+    "TOWebViewController": [
 
     ]
   },

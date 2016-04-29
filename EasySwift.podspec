@@ -9,7 +9,7 @@
 
 Pod::Spec.new do |s|
   s.name             = "EasySwift"
-  s.version          = "1.0.1"
+  s.version          = "1.0.2"
   s.summary          = "a little descript for EasySwift"
   s.description      = <<-DESC
                       This is the most simple way to use swift, which is a complete throughout the entire iOS development of the most convenient, the most simple, the most perfect framework to build the heart.
@@ -26,7 +26,25 @@ Pod::Spec.new do |s|
   s.ios.deployment_target = '8.0'
   s.requires_arc = true
   s.module_name = "EasySwift"
-  s.source_files = 'Pod/**/*'
+  s.source_files = 'Pod/Classes/Easy/Lib/*',
+  					'Pod/Classes/Easy/Lib/PullRefresh/*',
+  					'Pod/Classes/Easy/Lib/EmptyAssistant/*',
+  					'Pod/Classes/Easy/Lib/YXJSlideBar/*',
+  					'Pod/Classes/Easy/Lib/JKCountDownButton/*',
+  					'Pod/Classes/Easy/Lib/YXJCycleView/*',
+  					'Pod/Classes/Easy/Lib/YXJPageControl/*',
+  					'Pod/Classes/Easy/Lib/YXJImageCompressor/*',
+  					'Pod/Classes/Easy/Lib/YXJKxMenu/*',
+  					'Pod/Classes/Easy/Lib/YXJSwipeTableViewCell/*',
+  					'Pod/Classes/Easy/Lib/DOPDropDownMenu/*',
+  					'Pod/Classes/Easy/Lib/CorePhotoPickerVCManager/*',
+  					'Pod/Classes/Easy/Lib/CorePhotoPickerVCManager/Library/*',
+  					'Pod/Classes/Easy/Lib/YXJTagLabelView/*',
+  					'Pod/Classes/Easy/Lib/YXJOnePixelLine/*',
+  					'Pod/Classes/Easy/Lib/YXJExtension/*',
+  					'Pod/Classes/Easy/Lib/YXJExtension/YXJImageHelper/*',
+  					'Pod/Classes/Easy/Lib/FLSideSlipViewController/*'
+
   s.resource_bundles = {'EasySwift' => ['Pod/**/*.png']} 
   s.dependency 'HanekeSwift'
   s.dependency 'Bond'
@@ -50,10 +68,13 @@ Pod::Spec.new do |s|
   s.dependency 'SystemServices'
   s.dependency 'swiftScan' 
   s.dependency 'TYAlertController' 
-  s.dependency 'NBLoadableFromXibView'
+  s.dependency 'NBLoadableFromXibView' 
   s.dependency 'LCCoolHUD'
+  s.dependency 'TOWebViewController'
 
-  s.public_header_files = 'Pod/Classes/Easy/**/*.h','Pod/Classes/Extend/**/*.h','Pod/Classes/Private/**/*.h'
+  s.public_header_files = 'Pod/Classes/Easy/**/*.h',
+  							'Pod/Classes/Extend/**/*.h',
+  							'Pod/Classes/Private/**/*.h'
   s.frameworks = 'UIKit','JavaScriptCore'
 end
 
