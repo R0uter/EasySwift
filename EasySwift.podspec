@@ -9,7 +9,7 @@
 
 Pod::Spec.new do |s|
   s.name             = "EasySwift"
-  s.version          = "1.0.2"
+  s.version          = "1.0.3"
   s.summary          = "a little descript for EasySwift"
   s.description      = <<-DESC
                       This is the most simple way to use swift, which is a complete throughout the entire iOS development of the most convenient, the most simple, the most perfect framework to build the heart.
@@ -26,7 +26,8 @@ Pod::Spec.new do |s|
   s.ios.deployment_target = '8.0'
   s.requires_arc = true
   s.module_name = "EasySwift"
-  s.source_files = 'Pod/Classes/Easy/Lib/*',
+  s.source_files = 'Pod/Classes/Easy/Core/*',
+            'Pod/Classes/Easy/Lib/*',
   					'Pod/Classes/Easy/Lib/PullRefresh/*',
   					'Pod/Classes/Easy/Lib/EmptyAssistant/*',
   					'Pod/Classes/Easy/Lib/YXJSlideBar/*',
@@ -43,7 +44,16 @@ Pod::Spec.new do |s|
   					'Pod/Classes/Easy/Lib/YXJOnePixelLine/*',
   					'Pod/Classes/Easy/Lib/YXJExtension/*',
   					'Pod/Classes/Easy/Lib/YXJExtension/YXJImageHelper/*',
-  					'Pod/Classes/Easy/Lib/FLSideSlipViewController/*'
+  					'Pod/Classes/Easy/Lib/FLSideSlipViewController/*',
+
+            'Pod/Classes/Extend/Pinyin/*',
+            'Pod/Classes/Extend/SwiftRegex/*',
+            'Pod/Classes/Extend/EUI/*',
+            'Pod/Classes/Extend/FlexboxKit/*',
+            'Pod/Classes/Extend/URLManager/*',
+
+            'Pod/Classes/Private/Gumbo/*',
+            'Pod/Classes/Private/ObjectiveGumbo/*'
 
   s.resource_bundles = {'EasySwift' => ['Pod/**/*.png']} 
   s.dependency 'HanekeSwift'
