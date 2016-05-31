@@ -28,6 +28,12 @@ Add the following to your Podfile:
 	pod 'EasySwift'
 	
 ## Version
+**V1.0.6** ---- 2016-5-31
+
+* 增加依赖库SwiftyJSON
+* 增加依赖库MJRefresh
+* 增加依赖库DKChainableAnimationKit
+  
 **V1.0.5** ---- 2016-5-30
 
 * 替换照片库框架为ZLPhotoBrowser
