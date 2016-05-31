@@ -9,7 +9,7 @@
 
 Pod::Spec.new do |s|
   s.name             = "EasySwift"
-  s.version          = "1.0.4"
+  s.version          = "1.0.5"
   s.summary          = "a little descript for EasySwift"
   s.description      = <<-DESC
                       This is the most simple way to use swift, which is a complete throughout the entire iOS development of the most convenient, the most simple, the most perfect framework to build the heart.
@@ -21,41 +21,119 @@ Pod::Spec.new do |s|
   s.source           = { :git => "https://github.com/stubbornnessness/EasySwift.git", :tag => s.version.to_s }
   # s.source           = { :git => "/Users/yxj/Documents/EasySwift"}
   # s.social_media_url = 'https://twitter.com/yxj'
-
   s.platform     = :ios
   s.ios.deployment_target = '8.0'
   s.requires_arc = true
   s.module_name = "EasySwift"
-  s.source_files = 'Pod/Classes/Easy/Core/*',
-            'Pod/Classes/Easy/Lib/*',
-  					'Pod/Classes/Easy/Lib/PullRefresh/*',
-  					'Pod/Classes/Easy/Lib/EmptyAssistant/*',
-  					'Pod/Classes/Easy/Lib/YXJSlideBar/*',
-  					'Pod/Classes/Easy/Lib/JKCountDownButton/*',
-  					'Pod/Classes/Easy/Lib/YXJCycleView/*',
-  					'Pod/Classes/Easy/Lib/YXJPageControl/*',
-  					'Pod/Classes/Easy/Lib/YXJImageCompressor/*',
-  					'Pod/Classes/Easy/Lib/YXJKxMenu/*',
-  					'Pod/Classes/Easy/Lib/YXJSwipeTableViewCell/*',
-  					'Pod/Classes/Easy/Lib/DOPDropDownMenu/*',
-  					'Pod/Classes/Easy/Lib/CorePhotoPickerVCManager/*',
-  					'Pod/Classes/Easy/Lib/CorePhotoPickerVCManager/Library/*',
-  					'Pod/Classes/Easy/Lib/YXJTagLabelView/*',
-  					'Pod/Classes/Easy/Lib/YXJOnePixelLine/*',
-  					'Pod/Classes/Easy/Lib/YXJExtension/*',
-  					'Pod/Classes/Easy/Lib/YXJExtension/YXJImageHelper/*',
-  					'Pod/Classes/Easy/Lib/FLSideSlipViewController/*',
 
-            'Pod/Classes/Extend/Pinyin/*',
-            'Pod/Classes/Extend/SwiftRegex/*',
-            'Pod/Classes/Extend/EUI/*',
-            'Pod/Classes/Extend/FlexboxKit/*',
-            'Pod/Classes/Extend/URLManager/*',
+  s.default_subspec = 'Core' , 'Extension' , 'EUI', 'FlexboxKit', 'CoreData', 'PhotoBrowser', 'Pinyin', 'DOPDropDownMenu', 'Gumbo', 'ObjectiveGumbo', 'FLSideSlipViewController', 'SwiftRegex', 'URLManager', 'YXJLinksButton', 'YXJImageCompressor', 'JKCountDownButton', 'PullRefresh', 'YXJCycleView', 'YXJPageControl', 'YXJKxMenu', 'YXJTagLabelView', 'YXJOnePixelLine', 'YXJSlideBar', 'YXJSwipeTableViewCell', 'Watch' , 'YXJRatingView'
 
-            'Pod/Classes/Private/Gumbo/*',
-            'Pod/Classes/Private/ObjectiveGumbo/*'
+  s.subspec 'Core' do |core|
+    #core.public_header_files = 'Pod/Core/*.swift' , 'Pod/Core/*.h'
+    core.source_files = 'Pod/Core/*.swift' , 'Pod/Core/*.h'
+  end
 
-  s.resource_bundles = {'EasySwift' => ['Pod/**/*.png']} 
+  s.subspec 'Extension' do |extension|
+    extension.source_files = 'Pod/Extension/*.swift' , 'Pod/Extension/*.h'
+  end
+
+  s.subspec 'EUI' do |ss|
+    ss.source_files = 'Pod/Lib/EUI/*'
+    ss.frameworks = 'JavaScriptCore'
+  end
+
+  s.subspec 'FlexboxKit' do |ss|
+    ss.source_files = 'Pod/Lib/FlexboxKit/*'
+  end
+
+  s.subspec 'CoreData' do |ss|
+    ss.source_files = 'Pod/Lib/CoreData/*'
+  end
+
+  s.subspec 'PhotoBrowser' do |ss|
+    ss.source_files = 'Pod/Lib/PhotoBrowser/*'
+  end
+
+  s.subspec 'Pinyin' do |ss|
+    ss.source_files = 'Pod/Lib/Pinyin/*'
+  end
+
+  s.subspec 'DOPDropDownMenu' do |ss|
+    ss.source_files = 'Pod/Lib/DOPDropDownMenu/*'
+  end
+
+  s.subspec 'Gumbo' do |ss|
+    ss.source_files = 'Pod/Lib/Gumbo/*'
+  end
+
+  s.subspec 'ObjectiveGumbo' do |ss|
+    ss.source_files = 'Pod/Lib/ObjectiveGumbo/*'
+  end
+
+  s.subspec 'FLSideSlipViewController' do |ss|
+    ss.source_files = 'Pod/Lib/FLSideSlipViewController/*'
+  end
+
+  s.subspec 'SwiftRegex' do |ss|
+    ss.source_files = 'Pod/Lib/SwiftRegex/*'
+  end
+
+  s.subspec 'URLManager' do |ss|
+    ss.source_files = 'Pod/Lib/URLManager/*'
+  end
+
+  s.subspec 'YXJLinksButton' do |ss|
+    ss.source_files = 'Pod/Lib/YXJLinksButton/*'
+  end
+
+   s.subspec 'YXJImageCompressor' do |ss|
+    ss.source_files = 'Pod/Lib/YXJImageCompressor/*'
+  end
+
+  s.subspec 'JKCountDownButton' do |ss|
+    ss.source_files = 'Pod/Lib/JKCountDownButton/*'
+  end
+
+  s.subspec 'PullRefresh' do |ss|
+    ss.source_files = 'Pod/Lib/PullRefresh/*'
+  end
+
+  s.subspec 'YXJCycleView' do |ss|
+    ss.source_files = 'Pod/Lib/YXJCycleView/*'
+  end
+
+  s.subspec 'YXJPageControl' do |ss|
+    ss.source_files = 'Pod/Lib/YXJPageControl/*'
+  end
+
+  s.subspec 'YXJKxMenu' do |ss|
+    ss.source_files = 'Pod/Lib/YXJKxMenu/*'
+  end
+
+  s.subspec 'YXJTagLabelView' do |ss|
+    ss.source_files = 'Pod/Lib/YXJTagLabelView/*'
+  end
+
+  s.subspec 'YXJSlideBar' do |ss|
+    ss.source_files = 'Pod/Lib/YXJSlideBar/*'
+  end
+
+   s.subspec 'YXJOnePixelLine' do |ss|
+    ss.source_files = 'Pod/Lib/YXJOnePixelLine/*'
+  end
+
+  s.subspec 'YXJSwipeTableViewCell' do |ss|
+    ss.source_files = 'Pod/Lib/YXJSwipeTableViewCell/*'
+  end  
+
+  s.subspec 'Watch' do |ss|
+    ss.source_files = 'Pod/Lib/Watch/*'
+  end
+
+  s.subspec 'YXJRatingView' do |ss|
+    ss.source_files = 'Pod/Lib/YXJRatingView/*'
+  end
+
   s.dependency 'HanekeSwift'
   s.dependency 'Bond'
   s.dependency 'Alamofire'
@@ -79,38 +157,11 @@ Pod::Spec.new do |s|
   s.dependency 'swiftScan' 
   s.dependency 'TYAlertController' 
   s.dependency 'NBLoadableFromXibView' 
-  s.dependency 'LCCoolHUD'
+  s.dependency 'LCCoolHUD'  
   s.dependency 'TOWebViewController'
+  s.dependency 'TLCityPicker'
+  s.dependency 'FORScrollViewEmptyAssistant'
 
-  s.public_header_files = 'Pod/Classes/Easy/Core/*.h',
-            'Pod/Classes/Easy/Lib/*.h',
-            'Pod/Classes/Easy/Lib/PullRefresh/*.h',
-            'Pod/Classes/Easy/Lib/EmptyAssistant/*.h',
-            'Pod/Classes/Easy/Lib/YXJSlideBar/*.h',
-            'Pod/Classes/Easy/Lib/JKCountDownButton/*.h',
-            'Pod/Classes/Easy/Lib/YXJCycleView/*.h',
-            'Pod/Classes/Easy/Lib/YXJPageControl/*.h',
-            'Pod/Classes/Easy/Lib/YXJImageCompressor/*.h',
-            'Pod/Classes/Easy/Lib/YXJKxMenu/*.h',
-            'Pod/Classes/Easy/Lib/YXJSwipeTableViewCell/*.h',
-            'Pod/Classes/Easy/Lib/DOPDropDownMenu/*.h',
-            'Pod/Classes/Easy/Lib/CorePhotoPickerVCManager/*.h',
-            'Pod/Classes/Easy/Lib/CorePhotoPickerVCManager/Library/*.h',
-            'Pod/Classes/Easy/Lib/YXJTagLabelView/*.h',
-            'Pod/Classes/Easy/Lib/YXJOnePixelLine/*.h',
-            'Pod/Classes/Easy/Lib/YXJExtension/*.h',
-            'Pod/Classes/Easy/Lib/YXJExtension/YXJImageHelper/*.h',
-            'Pod/Classes/Easy/Lib/FLSideSlipViewController/*.h',
-
-            'Pod/Classes/Extend/Pinyin/*.h',
-            'Pod/Classes/Extend/SwiftRegex/*.h',
-            'Pod/Classes/Extend/EUI/*.h',
-            'Pod/Classes/Extend/FlexboxKit/*.h',
-            'Pod/Classes/Extend/URLManager/*.h',
-
-            'Pod/Classes/Private/Gumbo/*.h',
-            'Pod/Classes/Private/ObjectiveGumbo/*.h'
-
-  s.frameworks = 'UIKit','JavaScriptCore'
+  s.frameworks = 'UIKit'
 end
 

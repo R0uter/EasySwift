@@ -1,6 +1,6 @@
 {
   "name": "EasySwift",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "summary": "a little descript for EasySwift",
   "description": "This is the most simple way to use swift, which is a complete throughout the entire iOS development of the most convenient, the most simple, the most perfect framework to build the heart.",
   "homepage": "https://github.com/stubbornnessness",
@@ -10,46 +10,41 @@
   },
   "source": {
     "git": "https://github.com/stubbornnessness/EasySwift.git",
-    "tag": "1.0.3"
+    "tag": "1.0.4"
   },
   "platforms": {
     "ios": "8.0"
   },
   "requires_arc": true,
   "module_name": "EasySwift",
-  "source_files": [
-    "Pod/Classes/Easy/Core/*",
-    "Pod/Classes/Easy/Lib/*",
-    "Pod/Classes/Easy/Lib/PullRefresh/*",
-    "Pod/Classes/Easy/Lib/EmptyAssistant/*",
-    "Pod/Classes/Easy/Lib/YXJSlideBar/*",
-    "Pod/Classes/Easy/Lib/JKCountDownButton/*",
-    "Pod/Classes/Easy/Lib/YXJCycleView/*",
-    "Pod/Classes/Easy/Lib/YXJPageControl/*",
-    "Pod/Classes/Easy/Lib/YXJImageCompressor/*",
-    "Pod/Classes/Easy/Lib/YXJKxMenu/*",
-    "Pod/Classes/Easy/Lib/YXJSwipeTableViewCell/*",
-    "Pod/Classes/Easy/Lib/DOPDropDownMenu/*",
-    "Pod/Classes/Easy/Lib/CorePhotoPickerVCManager/*",
-    "Pod/Classes/Easy/Lib/CorePhotoPickerVCManager/Library/*",
-    "Pod/Classes/Easy/Lib/YXJTagLabelView/*",
-    "Pod/Classes/Easy/Lib/YXJOnePixelLine/*",
-    "Pod/Classes/Easy/Lib/YXJExtension/*",
-    "Pod/Classes/Easy/Lib/YXJExtension/YXJImageHelper/*",
-    "Pod/Classes/Easy/Lib/FLSideSlipViewController/*",
-    "Pod/Classes/Extend/Pinyin/*",
-    "Pod/Classes/Extend/SwiftRegex/*",
-    "Pod/Classes/Extend/EUI/*",
-    "Pod/Classes/Extend/FlexboxKit/*",
-    "Pod/Classes/Extend/URLManager/*",
-    "Pod/Classes/Private/Gumbo/*",
-    "Pod/Classes/Private/ObjectiveGumbo/*"
+  "default_subspecs": [
+    "Core",
+    "Extension",
+    "EUI",
+    "FlexboxKit",
+    "CoreData",
+    "PhotoBrowser",
+    "Pinyin",
+    "DOPDropDownMenu",
+    "Gumbo",
+    "ObjectiveGumbo",
+    "FLSideSlipViewController",
+    "SwiftRegex",
+    "URLManager",
+    "YXJLinksButton",
+    "YXJImageCompressor",
+    "JKCountDownButton",
+    "PullRefresh",
+    "YXJCycleView",
+    "YXJPageControl",
+    "YXJKxMenu",
+    "YXJTagLabelView",
+    "YXJOnePixelLine",
+    "YXJSlideBar",
+    "YXJSwipeTableViewCell",
+    "Watch",
+    "YXJRatingView"
   ],
-  "resource_bundles": {
-    "EasySwift": [
-      "Pod/**/*.png"
-    ]
-  },
   "dependencies": {
     "HanekeSwift": [
 
@@ -122,38 +117,126 @@
     ],
     "TOWebViewController": [
 
+    ],
+    "TLCityPicker": [
+
+    ],
+    "FORScrollViewEmptyAssistant": [
+
     ]
   },
-  "public_header_files": [
-    "Pod/Classes/Easy/Core/*.h",
-    "Pod/Classes/Easy/Lib/*.h",
-    "Pod/Classes/Easy/Lib/PullRefresh/*.h",
-    "Pod/Classes/Easy/Lib/EmptyAssistant/*.h",
-    "Pod/Classes/Easy/Lib/YXJSlideBar/*.h",
-    "Pod/Classes/Easy/Lib/JKCountDownButton/*.h",
-    "Pod/Classes/Easy/Lib/YXJCycleView/*.h",
-    "Pod/Classes/Easy/Lib/YXJPageControl/*.h",
-    "Pod/Classes/Easy/Lib/YXJImageCompressor/*.h",
-    "Pod/Classes/Easy/Lib/YXJKxMenu/*.h",
-    "Pod/Classes/Easy/Lib/YXJSwipeTableViewCell/*.h",
-    "Pod/Classes/Easy/Lib/DOPDropDownMenu/*.h",
-    "Pod/Classes/Easy/Lib/CorePhotoPickerVCManager/*.h",
-    "Pod/Classes/Easy/Lib/CorePhotoPickerVCManager/Library/*.h",
-    "Pod/Classes/Easy/Lib/YXJTagLabelView/*.h",
-    "Pod/Classes/Easy/Lib/YXJOnePixelLine/*.h",
-    "Pod/Classes/Easy/Lib/YXJExtension/*.h",
-    "Pod/Classes/Easy/Lib/YXJExtension/YXJImageHelper/*.h",
-    "Pod/Classes/Easy/Lib/FLSideSlipViewController/*.h",
-    "Pod/Classes/Extend/Pinyin/*.h",
-    "Pod/Classes/Extend/SwiftRegex/*.h",
-    "Pod/Classes/Extend/EUI/*.h",
-    "Pod/Classes/Extend/FlexboxKit/*.h",
-    "Pod/Classes/Extend/URLManager/*.h",
-    "Pod/Classes/Private/Gumbo/*.h",
-    "Pod/Classes/Private/ObjectiveGumbo/*.h"
-  ],
-  "frameworks": [
-    "UIKit",
-    "JavaScriptCore"
+  "frameworks": "UIKit",
+  "subspecs": [
+    {
+      "name": "Core",
+      "source_files": [
+        "Pod/Core/*.swift",
+        "Pod/Core/*.h"
+      ]
+    },
+    {
+      "name": "Extension",
+      "source_files": [
+        "Pod/Extension/*.swift",
+        "Pod/Extension/*.h"
+      ]
+    },
+    {
+      "name": "EUI",
+      "source_files": "Pod/Lib/EUI/*",
+      "frameworks": "JavaScriptCore"
+    },
+    {
+      "name": "FlexboxKit",
+      "source_files": "Pod/Lib/FlexboxKit/*"
+    },
+    {
+      "name": "CoreData",
+      "source_files": "Pod/Lib/CoreData/*"
+    },
+    {
+      "name": "PhotoBrowser",
+      "source_files": "Pod/Lib/PhotoBrowser/*"
+    },
+    {
+      "name": "Pinyin",
+      "source_files": "Pod/Lib/Pinyin/*"
+    },
+    {
+      "name": "DOPDropDownMenu",
+      "source_files": "Pod/Lib/DOPDropDownMenu/*"
+    },
+    {
+      "name": "Gumbo",
+      "source_files": "Pod/Lib/Gumbo/*"
+    },
+    {
+      "name": "ObjectiveGumbo",
+      "source_files": "Pod/Lib/ObjectiveGumbo/*"
+    },
+    {
+      "name": "FLSideSlipViewController",
+      "source_files": "Pod/Lib/FLSideSlipViewController/*"
+    },
+    {
+      "name": "SwiftRegex",
+      "source_files": "Pod/Lib/SwiftRegex/*"
+    },
+    {
+      "name": "URLManager",
+      "source_files": "Pod/Lib/URLManager/*"
+    },
+    {
+      "name": "YXJLinksButton",
+      "source_files": "Pod/Lib/YXJLinksButton/*"
+    },
+    {
+      "name": "YXJImageCompressor",
+      "source_files": "Pod/Lib/YXJImageCompressor/*"
+    },
+    {
+      "name": "JKCountDownButton",
+      "source_files": "Pod/Lib/JKCountDownButton/*"
+    },
+    {
+      "name": "PullRefresh",
+      "source_files": "Pod/Lib/PullRefresh/*"
+    },
+    {
+      "name": "YXJCycleView",
+      "source_files": "Pod/Lib/YXJCycleView/*"
+    },
+    {
+      "name": "YXJPageControl",
+      "source_files": "Pod/Lib/YXJPageControl/*"
+    },
+    {
+      "name": "YXJKxMenu",
+      "source_files": "Pod/Lib/YXJKxMenu/*"
+    },
+    {
+      "name": "YXJTagLabelView",
+      "source_files": "Pod/Lib/YXJTagLabelView/*"
+    },
+    {
+      "name": "YXJSlideBar",
+      "source_files": "Pod/Lib/YXJSlideBar/*"
+    },
+    {
+      "name": "YXJOnePixelLine",
+      "source_files": "Pod/Lib/YXJOnePixelLine/*"
+    },
+    {
+      "name": "YXJSwipeTableViewCell",
+      "source_files": "Pod/Lib/YXJSwipeTableViewCell/*"
+    },
+    {
+      "name": "Watch",
+      "source_files": "Pod/Lib/Watch/*"
+    },
+    {
+      "name": "YXJRatingView",
+      "source_files": "Pod/Lib/YXJRatingView/*"
+    }
   ]
 }

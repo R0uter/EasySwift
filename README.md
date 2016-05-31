@@ -25,9 +25,16 @@ iOS 8.0 or above
 ### As a CocoaPods Dependency
 Add the following to your Podfile:
 
-	pod 'TOWebViewController'
+	pod 'EasySwift'
 	
 ## Version
+**V1.0.5** ---- 2016-5-30
+
+* 替换照片库框架为ZLPhotoBrowser
+* 更新一些公共方法
+* 优化工程目录结构
+
+
 **V1.0.4** ---- 2016-4-29 
 
 更新pod 项目结构
