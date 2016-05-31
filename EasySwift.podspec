@@ -9,7 +9,7 @@
 
 Pod::Spec.new do |s|
   s.name             = "EasySwift"
-  s.version          = "1.0.8"
+  s.version          = "1.0.9"
   s.summary          = "a little descript for EasySwift"
   s.description      = <<-DESC
                       This is the most simple way to use swift, which is a complete throughout the entire iOS development of the most convenient, the most simple, the most perfect framework to build the heart.
@@ -29,134 +29,134 @@ Pod::Spec.new do |s|
   s.default_subspec = 'Core' , 'Extension' , 'EUI', 'FlexboxKit', 'CoreData', 'PhotoBrowser', 'Pinyin', 'DOPDropDownMenu', 'Gumbo', 'ObjectiveGumbo', 'FLSideSlipViewController', 'SwiftRegex', 'URLManager', 'YXJLinksButton', 'YXJImageCompressor', 'JKCountDownButton', 'PullRefresh', 'YXJCycleView', 'YXJPageControl', 'YXJKxMenu', 'YXJTagLabelView', 'YXJOnePixelLine', 'YXJSlideBar', 'YXJSwipeTableViewCell', 'Watch' , 'YXJRatingView'
 
   s.subspec 'Core' do |core|
-    core.public_header_files = 'Pod/Core/*.swift' , 'Pod/Core/*.h'
-    core.source_files = 'Pod/Core/*.swift' , 'Pod/Core/*.h'
+    core.public_header_files = 'Pod/Core/*.h'
+    core.source_files = 'Pod/Core/*.h'
   end
 
   s.subspec 'Extension' do |extension|
-    extension.public_header_files = 'Pod/Extension/*.swift' , 'Pod/Extension/*.h'
-    extension.source_files = 'Pod/Extension/*.swift' , 'Pod/Extension/*.h'
+    extension.public_header_files = 'Pod/Extension/*.h'
+    extension.source_files = 'Pod/Extension/*.h'
   end
 
   s.subspec 'EUI' do |ss|
-    ss.public_header_files = 'Pod/Lib/EUI/*'
-    ss.source_files = 'Pod/Lib/EUI/*'
+    ss.public_header_files = 'Pod/Lib/EUI/*.h'
+    ss.source_files = 'Pod/Lib/EUI/*.h'
     ss.frameworks = 'JavaScriptCore'
   end
 
   s.subspec 'FlexboxKit' do |ss|
-    ss.public_header_files = 'Pod/Lib/FlexboxKit/*'
-    ss.source_files = 'Pod/Lib/FlexboxKit/*'
+    ss.public_header_files = 'Pod/Lib/FlexboxKit/*.h'
+    ss.source_files = 'Pod/Lib/FlexboxKit/*.h'
   end
 
   s.subspec 'CoreData' do |ss|
-    ss.public_header_files = 'Pod/Lib/CoreData/*'
-    ss.source_files = 'Pod/Lib/CoreData/*'
+    ss.public_header_files = 'Pod/Lib/CoreData/*.h'
+    ss.source_files = 'Pod/Lib/CoreData/*.h'
   end
 
   s.subspec 'PhotoBrowser' do |ss|
-    ss.public_header_files = 'Pod/Lib/PhotoBrowser/*'
-    ss.source_files = 'Pod/Lib/PhotoBrowser/*'
+    ss.public_header_files = 'Pod/Lib/PhotoBrowser/*.h'
+    ss.source_files = 'Pod/Lib/PhotoBrowser/*.h'
   end
 
   s.subspec 'Pinyin' do |ss|
-    ss.public_header_files = 'Pod/Lib/Pinyin/*'
-    ss.source_files = 'Pod/Lib/Pinyin/*'
+    ss.public_header_files = 'Pod/Lib/Pinyin/*.h'
+    ss.source_files = 'Pod/Lib/Pinyin/*.h'
   end
 
   s.subspec 'DOPDropDownMenu' do |ss|
-    ss.public_header_files = 'Pod/Lib/DOPDropDownMenu/*'
-    ss.source_files = 'Pod/Lib/DOPDropDownMenu/*'
+    ss.public_header_files = 'Pod/Lib/DOPDropDownMenu/*.h'
+    ss.source_files = 'Pod/Lib/DOPDropDownMenu/*.h'
   end
 
   s.subspec 'Gumbo' do |ss|
-    ss.public_header_files = 'Pod/Lib/Gumbo/*'
-    ss.source_files = 'Pod/Lib/Gumbo/*'
+    ss.public_header_files = 'Pod/Lib/Gumbo/*.h'
+    ss.source_files = 'Pod/Lib/Gumbo/*.h'
   end
 
   s.subspec 'ObjectiveGumbo' do |ss|
-    ss.public_header_files = 'Pod/Lib/ObjectiveGumbo/*'
-    ss.source_files = 'Pod/Lib/ObjectiveGumbo/*'
+    ss.public_header_files = 'Pod/Lib/ObjectiveGumbo/*.h'
+    ss.source_files = 'Pod/Lib/ObjectiveGumbo/*.h'
   end
 
   s.subspec 'FLSideSlipViewController' do |ss|
-    ss.public_header_files = 'Pod/Lib/FLSideSlipViewController/*'
-    ss.source_files = 'Pod/Lib/FLSideSlipViewController/*'
+    ss.public_header_files = 'Pod/Lib/FLSideSlipViewController/*.h'
+    ss.source_files = 'Pod/Lib/FLSideSlipViewController/*.h'
   end
 
   s.subspec 'SwiftRegex' do |ss|
-    ss.public_header_files = 'Pod/Lib/SwiftRegex/*'
-    ss.source_files = 'Pod/Lib/SwiftRegex/*'
+    ss.public_header_files = 'Pod/Lib/SwiftRegex/*.h'
+    ss.source_files = 'Pod/Lib/SwiftRegex/*.h'
   end
 
   s.subspec 'URLManager' do |ss|
-    ss.public_header_files = 'Pod/Lib/URLManager/*'
-    ss.source_files = 'Pod/Lib/URLManager/*'
+    ss.public_header_files = 'Pod/Lib/URLManager/*.h'
+    ss.source_files = 'Pod/Lib/URLManager/*.h'
   end
 
   s.subspec 'YXJLinksButton' do |ss|
-    ss.public_header_files = 'Pod/Lib/YXJLinksButton/*'
-    ss.source_files = 'Pod/Lib/YXJLinksButton/*'
+    ss.public_header_files = 'Pod/Lib/YXJLinksButton/*.h'
+    ss.source_files = 'Pod/Lib/YXJLinksButton/*.h'
   end
 
   s.subspec 'YXJImageCompressor' do |ss|
-    ss.public_header_files = 'Pod/Lib/YXJImageCompressor/*'
-    ss.source_files = 'Pod/Lib/YXJImageCompressor/*'
+    ss.public_header_files = 'Pod/Lib/YXJImageCompressor/*.h'
+    ss.source_files = 'Pod/Lib/YXJImageCompressor/*.h'
   end
 
   s.subspec 'JKCountDownButton' do |ss|
-    ss.public_header_files = 'Pod/Lib/JKCountDownButton/*'
-    ss.source_files = 'Pod/Lib/JKCountDownButton/*'
+    ss.public_header_files = 'Pod/Lib/JKCountDownButton/*.h'
+    ss.source_files = 'Pod/Lib/JKCountDownButton/*.h'
   end
 
   s.subspec 'PullRefresh' do |ss|
-    ss.public_header_files = 'Pod/Lib/PullRefresh/*'
-    ss.source_files = 'Pod/Lib/PullRefresh/*'
+    ss.public_header_files = 'Pod/Lib/PullRefresh/*.h'
+    ss.source_files = 'Pod/Lib/PullRefresh/*.h'
   end
 
   s.subspec 'YXJCycleView' do |ss|
-    ss.public_header_files = 'Pod/Lib/YXJCycleView/*'
-    ss.source_files = 'Pod/Lib/YXJCycleView/*'
+    ss.public_header_files = 'Pod/Lib/YXJCycleView/*.h'
+    ss.source_files = 'Pod/Lib/YXJCycleView/*.h'
   end
 
   s.subspec 'YXJPageControl' do |ss|
-    ss.public_header_files = 'Pod/Lib/YXJPageControl/*'
-    ss.source_files = 'Pod/Lib/YXJPageControl/*'
+    ss.public_header_files = 'Pod/Lib/YXJPageControl/*.h'
+    ss.source_files = 'Pod/Lib/YXJPageControl/*.h'
   end
 
   s.subspec 'YXJKxMenu' do |ss|
-    ss.public_header_files = 'Pod/Lib/YXJKxMenu/*'
-    ss.source_files = 'Pod/Lib/YXJKxMenu/*'
+    ss.public_header_files = 'Pod/Lib/YXJKxMenu/*.h'
+    ss.source_files = 'Pod/Lib/YXJKxMenu/*.h'
   end
 
   s.subspec 'YXJTagLabelView' do |ss|
-    ss.public_header_files = 'Pod/Lib/YXJTagLabelView/*'
-    ss.source_files = 'Pod/Lib/YXJTagLabelView/*'
+    ss.public_header_files = 'Pod/Lib/YXJTagLabelView/*.h'
+    ss.source_files = 'Pod/Lib/YXJTagLabelView/*.h'
   end
 
   s.subspec 'YXJSlideBar' do |ss|
-    ss.public_header_files = 'Pod/Lib/YXJSlideBar/*'
-    ss.source_files = 'Pod/Lib/YXJSlideBar/*'
+    ss.public_header_files = 'Pod/Lib/YXJSlideBar/*.h'
+    ss.source_files = 'Pod/Lib/YXJSlideBar/*.h'
   end
 
   s.subspec 'YXJOnePixelLine' do |ss|
-    ss.public_header_files = 'Pod/Lib/YXJOnePixelLine/*'
-    ss.source_files = 'Pod/Lib/YXJOnePixelLine/*'
+    ss.public_header_files = 'Pod/Lib/YXJOnePixelLine/*.h'
+    ss.source_files = 'Pod/Lib/YXJOnePixelLine/*.h'
   end
 
   s.subspec 'YXJSwipeTableViewCell' do |ss|
-    ss.public_header_files = 'Pod/Lib/YXJSwipeTableViewCell/*'
-    ss.source_files = 'Pod/Lib/YXJSwipeTableViewCell/*'
+    ss.public_header_files = 'Pod/Lib/YXJSwipeTableViewCell/*.h'
+    ss.source_files = 'Pod/Lib/YXJSwipeTableViewCell/*.h'
   end  
 
   s.subspec 'Watch' do |ss|
-    ss.public_header_files = 'Pod/Lib/Watch/*'
-    ss.source_files = 'Pod/Lib/Watch/*'
+    ss.public_header_files = 'Pod/Lib/Watch/*.h'
+    ss.source_files = 'Pod/Lib/Watch/*.h'
   end
 
   s.subspec 'YXJRatingView' do |ss|
-    ss.public_header_files = 'Pod/Lib/YXJRatingView/*'
-    ss.source_files = 'Pod/Lib/YXJRatingView/*'
+    ss.public_header_files = 'Pod/Lib/YXJRatingView/*.h'
+    ss.source_files = 'Pod/Lib/YXJRatingView/*.h'
   end
 
   s.dependency 'HanekeSwift'

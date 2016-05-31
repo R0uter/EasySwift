@@ -1,6 +1,6 @@
 {
   "name": "EasySwift",
-  "version": "1.0.4",
+  "version": "1.0.8",
   "summary": "a little descript for EasySwift",
   "description": "This is the most simple way to use swift, which is a complete throughout the entire iOS development of the most convenient, the most simple, the most perfect framework to build the heart.",
   "homepage": "https://github.com/stubbornnessness",
@@ -10,7 +10,7 @@
   },
   "source": {
     "git": "https://github.com/stubbornnessness/EasySwift.git",
-    "tag": "1.0.4"
+    "tag": "1.0.8"
   },
   "platforms": {
     "ios": "8.0"
@@ -88,7 +88,7 @@
     "GCDSwift": [
 
     ],
-    "APAddressBook": [
+    "APAddressBook/Swift": [
 
     ],
     "Loggerithm": [
@@ -123,120 +123,149 @@
     ],
     "FORScrollViewEmptyAssistant": [
 
+    ],
+    "SwiftyJSON": [
+
+    ],
+    "MJRefresh": [
+
+    ],
+    "DKChainableAnimationKit": [
+
     ]
   },
   "frameworks": "UIKit",
   "subspecs": [
     {
       "name": "Core",
-      "source_files": [
-        "Pod/Core/*.swift",
-        "Pod/Core/*.h"
-      ]
+      "public_header_files": "Pod/Core/*.h",
+      "source_files": "Pod/Core/*.h"
     },
     {
       "name": "Extension",
-      "source_files": [
-        "Pod/Extension/*.swift",
-        "Pod/Extension/*.h"
-      ]
+      "public_header_files": "Pod/Extension/*.h",
+      "source_files": "Pod/Extension/*.h"
     },
     {
       "name": "EUI",
-      "source_files": "Pod/Lib/EUI/*",
+      "public_header_files": "Pod/Lib/EUI/*.h",
+      "source_files": "Pod/Lib/EUI/*.h",
       "frameworks": "JavaScriptCore"
     },
     {
       "name": "FlexboxKit",
-      "source_files": "Pod/Lib/FlexboxKit/*"
+      "public_header_files": "Pod/Lib/FlexboxKit/*.h",
+      "source_files": "Pod/Lib/FlexboxKit/*.h"
     },
     {
       "name": "CoreData",
-      "source_files": "Pod/Lib/CoreData/*"
+      "public_header_files": "Pod/Lib/CoreData/*.h",
+      "source_files": "Pod/Lib/CoreData/*.h"
     },
     {
       "name": "PhotoBrowser",
-      "source_files": "Pod/Lib/PhotoBrowser/*"
+      "public_header_files": "Pod/Lib/PhotoBrowser/*.h",
+      "source_files": "Pod/Lib/PhotoBrowser/*.h"
     },
     {
       "name": "Pinyin",
-      "source_files": "Pod/Lib/Pinyin/*"
+      "public_header_files": "Pod/Lib/Pinyin/*.h",
+      "source_files": "Pod/Lib/Pinyin/*.h"
     },
     {
       "name": "DOPDropDownMenu",
-      "source_files": "Pod/Lib/DOPDropDownMenu/*"
+      "public_header_files": "Pod/Lib/DOPDropDownMenu/*.h",
+      "source_files": "Pod/Lib/DOPDropDownMenu/*.h"
     },
     {
       "name": "Gumbo",
-      "source_files": "Pod/Lib/Gumbo/*"
+      "public_header_files": "Pod/Lib/Gumbo/*.h",
+      "source_files": "Pod/Lib/Gumbo/*.h"
     },
     {
       "name": "ObjectiveGumbo",
-      "source_files": "Pod/Lib/ObjectiveGumbo/*"
+      "public_header_files": "Pod/Lib/ObjectiveGumbo/*.h",
+      "source_files": "Pod/Lib/ObjectiveGumbo/*.h"
     },
     {
       "name": "FLSideSlipViewController",
-      "source_files": "Pod/Lib/FLSideSlipViewController/*"
+      "public_header_files": "Pod/Lib/FLSideSlipViewController/*.h",
+      "source_files": "Pod/Lib/FLSideSlipViewController/*.h"
     },
     {
       "name": "SwiftRegex",
-      "source_files": "Pod/Lib/SwiftRegex/*"
+      "public_header_files": "Pod/Lib/SwiftRegex/*.h",
+      "source_files": "Pod/Lib/SwiftRegex/*.h"
     },
     {
       "name": "URLManager",
-      "source_files": "Pod/Lib/URLManager/*"
+      "public_header_files": "Pod/Lib/URLManager/*.h",
+      "source_files": "Pod/Lib/URLManager/*.h"
     },
     {
       "name": "YXJLinksButton",
-      "source_files": "Pod/Lib/YXJLinksButton/*"
+      "public_header_files": "Pod/Lib/YXJLinksButton/*.h",
+      "source_files": "Pod/Lib/YXJLinksButton/*.h"
     },
     {
       "name": "YXJImageCompressor",
-      "source_files": "Pod/Lib/YXJImageCompressor/*"
+      "public_header_files": "Pod/Lib/YXJImageCompressor/*.h",
+      "source_files": "Pod/Lib/YXJImageCompressor/*.h"
     },
     {
       "name": "JKCountDownButton",
-      "source_files": "Pod/Lib/JKCountDownButton/*"
+      "public_header_files": "Pod/Lib/JKCountDownButton/*.h",
+      "source_files": "Pod/Lib/JKCountDownButton/*.h"
     },
     {
       "name": "PullRefresh",
-      "source_files": "Pod/Lib/PullRefresh/*"
+      "public_header_files": "Pod/Lib/PullRefresh/*.h",
+      "source_files": "Pod/Lib/PullRefresh/*.h"
     },
     {
       "name": "YXJCycleView",
-      "source_files": "Pod/Lib/YXJCycleView/*"
+      "public_header_files": "Pod/Lib/YXJCycleView/*.h",
+      "source_files": "Pod/Lib/YXJCycleView/*.h"
     },
     {
       "name": "YXJPageControl",
-      "source_files": "Pod/Lib/YXJPageControl/*"
+      "public_header_files": "Pod/Lib/YXJPageControl/*.h",
+      "source_files": "Pod/Lib/YXJPageControl/*.h"
     },
     {
       "name": "YXJKxMenu",
-      "source_files": "Pod/Lib/YXJKxMenu/*"
+      "public_header_files": "Pod/Lib/YXJKxMenu/*.h",
+      "source_files": "Pod/Lib/YXJKxMenu/*.h"
     },
     {
       "name": "YXJTagLabelView",
-      "source_files": "Pod/Lib/YXJTagLabelView/*"
+      "public_header_files": "Pod/Lib/YXJTagLabelView/*.h",
+      "source_files": "Pod/Lib/YXJTagLabelView/*.h"
     },
     {
       "name": "YXJSlideBar",
-      "source_files": "Pod/Lib/YXJSlideBar/*"
+      "public_header_files": "Pod/Lib/YXJSlideBar/*.h",
+      "source_files": "Pod/Lib/YXJSlideBar/*.h"
     },
     {
       "name": "YXJOnePixelLine",
-      "source_files": "Pod/Lib/YXJOnePixelLine/*"
+      "public_header_files": "Pod/Lib/YXJOnePixelLine/*.h",
+      "source_files": "Pod/Lib/YXJOnePixelLine/*.h"
     },
     {
       "name": "YXJSwipeTableViewCell",
-      "source_files": "Pod/Lib/YXJSwipeTableViewCell/*"
+      "public_header_files": "Pod/Lib/YXJSwipeTableViewCell/*.h",
+      "source_files": "Pod/Lib/YXJSwipeTableViewCell/*.h"
     },
     {
       "name": "Watch",
-      "source_files": "Pod/Lib/Watch/*"
+      "public_header_files": "Pod/Lib/Watch/*.h",
+      "source_files": "Pod/Lib/Watch/*.h"
     },
     {
       "name": "YXJRatingView",
-      "source_files": "Pod/Lib/YXJRatingView/*"
+      "public_header_files": "Pod/Lib/YXJRatingView/*.h",
+      "source_files": "Pod/Lib/YXJRatingView/*.h"
     }
   ]
 }
