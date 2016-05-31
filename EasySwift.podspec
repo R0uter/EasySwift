@@ -9,7 +9,7 @@
 
 Pod::Spec.new do |s|
   s.name             = "EasySwift"
-  s.version          = "1.0.9"
+  s.version          = "1.1.0"
   s.summary          = "a little descript for EasySwift"
   s.description      = <<-DESC
                       This is the most simple way to use swift, which is a complete throughout the entire iOS development of the most convenient, the most simple, the most perfect framework to build the heart.
@@ -31,6 +31,38 @@ Pod::Spec.new do |s|
   s.subspec 'Core' do |core|
     core.public_header_files = 'Pod/Core/*.h'
     core.source_files = 'Pod/Core/*.h'
+
+    core.dependency 'HanekeSwift'
+    core.dependency 'Bond'
+    core.dependency 'Alamofire'
+    core.dependency 'SnapKit'
+    core.dependency 'Kingfisher'
+    core.dependency 'ObjectMapper'
+    core.dependency 'ReachabilitySwift'
+    core.dependency 'TTTAttributedLabel'
+
+    core.dependency 'UITableView+FDTemplateLayoutCell'
+    core.dependency 'CYLTabBarController'
+    core.dependency 'IQKeyboardManager'
+    core.dependency 'MWPhotoBrowser'
+    core.dependency 'UIButton-SSEdgeInsets'
+    core.dependency 'GCDSwift'
+    core.dependency 'APAddressBook/Swift'
+    core.dependency 'Loggerithm'
+    core.dependency 'Colours'
+    core.dependency 'RainbowNavigation'
+    core.dependency 'SystemServices'
+    core.dependency 'swiftScan' 
+    core.dependency 'TYAlertController' 
+    core.dependency 'NBLoadableFromXibView' 
+    core.dependency 'LCCoolHUD'  
+    core.dependency 'TOWebViewController'
+    core.dependency 'TLCityPicker'
+    core.dependency 'FORScrollViewEmptyAssistant' 
+    core.dependency 'SwiftyJSON'
+    core.dependency 'MJRefresh'
+    core.dependency 'DKChainableAnimationKit'
+  
   end
 
   s.subspec 'Extension' do |extension|
@@ -158,37 +190,6 @@ Pod::Spec.new do |s|
     ss.public_header_files = 'Pod/Lib/YXJRatingView/*.h'
     ss.source_files = 'Pod/Lib/YXJRatingView/*.h'
   end
-
-  s.dependency 'HanekeSwift'
-  s.dependency 'Bond'
-  s.dependency 'Alamofire'
-  s.dependency 'SnapKit'
-  s.dependency 'Kingfisher'
-  s.dependency 'ObjectMapper'
-  s.dependency 'ReachabilitySwift'
-  s.dependency 'TTTAttributedLabel'
-
-  s.dependency 'UITableView+FDTemplateLayoutCell'
-  s.dependency 'CYLTabBarController'
-  s.dependency 'IQKeyboardManager'
-  s.dependency 'MWPhotoBrowser'
-  s.dependency 'UIButton-SSEdgeInsets'
-  s.dependency 'GCDSwift'
-  s.dependency 'APAddressBook/Swift'
-  s.dependency 'Loggerithm'
-  s.dependency 'Colours'
-  s.dependency 'RainbowNavigation'
-  s.dependency 'SystemServices'
-  s.dependency 'swiftScan' 
-  s.dependency 'TYAlertController' 
-  s.dependency 'NBLoadableFromXibView' 
-  s.dependency 'LCCoolHUD'  
-  s.dependency 'TOWebViewController'
-  s.dependency 'TLCityPicker'
-  s.dependency 'FORScrollViewEmptyAssistant' 
-  s.dependency 'SwiftyJSON'
-  s.dependency 'MJRefresh'
-  s.dependency 'DKChainableAnimationKit'
 
   s.frameworks = 'UIKit'
 end

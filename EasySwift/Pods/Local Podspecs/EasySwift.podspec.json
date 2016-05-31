@@ -1,6 +1,6 @@
 {
   "name": "EasySwift",
-  "version": "1.0.8",
+  "version": "1.0.9",
   "summary": "a little descript for EasySwift",
   "description": "This is the most simple way to use swift, which is a complete throughout the entire iOS development of the most convenient, the most simple, the most perfect framework to build the heart.",
   "homepage": "https://github.com/stubbornnessness",
@@ -10,7 +10,7 @@
   },
   "source": {
     "git": "https://github.com/stubbornnessness/EasySwift.git",
-    "tag": "1.0.8"
+    "tag": "1.0.9"
   },
   "platforms": {
     "ios": "8.0"
@@ -45,101 +45,101 @@
     "Watch",
     "YXJRatingView"
   ],
-  "dependencies": {
-    "HanekeSwift": [
-
-    ],
-    "Bond": [
-
-    ],
-    "Alamofire": [
-
-    ],
-    "SnapKit": [
-
-    ],
-    "Kingfisher": [
-
-    ],
-    "ObjectMapper": [
-
-    ],
-    "ReachabilitySwift": [
-
-    ],
-    "TTTAttributedLabel": [
-
-    ],
-    "UITableView+FDTemplateLayoutCell": [
-
-    ],
-    "CYLTabBarController": [
-
-    ],
-    "IQKeyboardManager": [
-
-    ],
-    "MWPhotoBrowser": [
-
-    ],
-    "UIButton-SSEdgeInsets": [
-
-    ],
-    "GCDSwift": [
-
-    ],
-    "APAddressBook/Swift": [
-
-    ],
-    "Loggerithm": [
-
-    ],
-    "Colours": [
-
-    ],
-    "RainbowNavigation": [
-
-    ],
-    "SystemServices": [
-
-    ],
-    "swiftScan": [
-
-    ],
-    "TYAlertController": [
-
-    ],
-    "NBLoadableFromXibView": [
-
-    ],
-    "LCCoolHUD": [
-
-    ],
-    "TOWebViewController": [
-
-    ],
-    "TLCityPicker": [
-
-    ],
-    "FORScrollViewEmptyAssistant": [
-
-    ],
-    "SwiftyJSON": [
-
-    ],
-    "MJRefresh": [
-
-    ],
-    "DKChainableAnimationKit": [
-
-    ]
-  },
   "frameworks": "UIKit",
   "subspecs": [
     {
       "name": "Core",
       "public_header_files": "Pod/Core/*.h",
-      "source_files": "Pod/Core/*.h"
+      "source_files": "Pod/Core/*.h",
+      "dependencies": {
+        "HanekeSwift": [
+
+        ],
+        "Bond": [
+
+        ],
+        "Alamofire": [
+
+        ],
+        "SnapKit": [
+
+        ],
+        "Kingfisher": [
+
+        ],
+        "ObjectMapper": [
+
+        ],
+        "ReachabilitySwift": [
+
+        ],
+        "TTTAttributedLabel": [
+
+        ],
+        "UITableView+FDTemplateLayoutCell": [
+
+        ],
+        "CYLTabBarController": [
+
+        ],
+        "IQKeyboardManager": [
+
+        ],
+        "MWPhotoBrowser": [
+
+        ],
+        "UIButton-SSEdgeInsets": [
+
+        ],
+        "GCDSwift": [
+
+        ],
+        "APAddressBook/Swift": [
+
+        ],
+        "Loggerithm": [
+
+        ],
+        "Colours": [
+
+        ],
+        "RainbowNavigation": [
+
+        ],
+        "SystemServices": [
+
+        ],
+        "swiftScan": [
+
+        ],
+        "TYAlertController": [
+
+        ],
+        "NBLoadableFromXibView": [
+
+        ],
+        "LCCoolHUD": [
+
+        ],
+        "TOWebViewController": [
+
+        ],
+        "TLCityPicker": [
+
+        ],
+        "FORScrollViewEmptyAssistant": [
+
+        ],
+        "SwiftyJSON": [
+
+        ],
+        "MJRefresh": [
+
+        ],
+        "DKChainableAnimationKit": [
+
+        ]
+      }
     },
     {
       "name": "Extension",
