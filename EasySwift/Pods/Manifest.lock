@@ -11,35 +11,63 @@ PODS:
   - DACircularProgress (2.3.1)
   - DKChainableAnimationKit (1.6.1)
   - DZNEmptyDataSet (1.5.2)
-  - EasySwift (1.1.0):
-    - EasySwift/Core (= 1.1.0)
-    - EasySwift/CoreData (= 1.1.0)
-    - EasySwift/DOPDropDownMenu (= 1.1.0)
-    - EasySwift/EUI (= 1.1.0)
-    - EasySwift/Extension (= 1.1.0)
-    - EasySwift/FlexboxKit (= 1.1.0)
-    - EasySwift/FLSideSlipViewController (= 1.1.0)
-    - EasySwift/Gumbo (= 1.1.0)
-    - EasySwift/JKCountDownButton (= 1.1.0)
-    - EasySwift/ObjectiveGumbo (= 1.1.0)
-    - EasySwift/PhotoBrowser (= 1.1.0)
-    - EasySwift/Pinyin (= 1.1.0)
-    - EasySwift/PullRefresh (= 1.1.0)
-    - EasySwift/SwiftRegex (= 1.1.0)
-    - EasySwift/TLCityPicker (= 1.1.0)
-    - EasySwift/URLManager (= 1.1.0)
-    - EasySwift/Watch (= 1.1.0)
-    - EasySwift/YXJCycleView (= 1.1.0)
-    - EasySwift/YXJImageCompressor (= 1.1.0)
-    - EasySwift/YXJKxMenu (= 1.1.0)
-    - EasySwift/YXJLinksButton (= 1.1.0)
-    - EasySwift/YXJOnePixelLine (= 1.1.0)
-    - EasySwift/YXJPageControl (= 1.1.0)
-    - EasySwift/YXJRatingView (= 1.1.0)
-    - EasySwift/YXJSlideBar (= 1.1.0)
-    - EasySwift/YXJSwipeTableViewCell (= 1.1.0)
-    - EasySwift/YXJTagLabelView (= 1.1.0)
-  - EasySwift/Core (1.1.0):
+  - EasySwift (1.1.1):
+    - Alamofire
+    - APAddressBook/Swift
+    - Bond
+    - Colours
+    - CYLTabBarController
+    - DKChainableAnimationKit
+    - EasySwift/Core (= 1.1.1)
+    - EasySwift/CoreData (= 1.1.1)
+    - EasySwift/DOPDropDownMenu (= 1.1.1)
+    - EasySwift/EUI (= 1.1.1)
+    - EasySwift/Extension (= 1.1.1)
+    - EasySwift/FlexboxKit (= 1.1.1)
+    - EasySwift/FLSideSlipViewController (= 1.1.1)
+    - EasySwift/Gumbo (= 1.1.1)
+    - EasySwift/JKCountDownButton (= 1.1.1)
+    - EasySwift/ObjectiveGumbo (= 1.1.1)
+    - EasySwift/PhotoBrowser (= 1.1.1)
+    - EasySwift/Pinyin (= 1.1.1)
+    - EasySwift/PullRefresh (= 1.1.1)
+    - EasySwift/SwiftRegex (= 1.1.1)
+    - EasySwift/TLCityPicker (= 1.1.1)
+    - EasySwift/URLManager (= 1.1.1)
+    - EasySwift/Watch (= 1.1.1)
+    - EasySwift/YXJCycleView (= 1.1.1)
+    - EasySwift/YXJImageCompressor (= 1.1.1)
+    - EasySwift/YXJKxMenu (= 1.1.1)
+    - EasySwift/YXJLinksButton (= 1.1.1)
+    - EasySwift/YXJOnePixelLine (= 1.1.1)
+    - EasySwift/YXJPageControl (= 1.1.1)
+    - EasySwift/YXJRatingView (= 1.1.1)
+    - EasySwift/YXJSlideBar (= 1.1.1)
+    - EasySwift/YXJSwipeTableViewCell (= 1.1.1)
+    - EasySwift/YXJTagLabelView (= 1.1.1)
+    - FORScrollViewEmptyAssistant
+    - GCDSwift
+    - HanekeSwift
+    - IQKeyboardManager
+    - Kingfisher
+    - LCCoolHUD
+    - Loggerithm
+    - MJRefresh
+    - MWPhotoBrowser
+    - NBLoadableFromXibView
+    - ObjectMapper
+    - RainbowNavigation
+    - ReachabilitySwift
+    - SnapKit
+    - swiftScan
+    - SwiftyJSON
+    - SystemServices
+    - TOWebViewController
+    - TTTAttributedLabel
+    - TYAlertController
+    - UIButton-SSEdgeInsets
+    - UITableView+FDTemplateLayoutCell
+  - EasySwift/Core (1.1.1):
     - Alamofire
     - APAddressBook/Swift
     - Bond
@@ -68,32 +96,760 @@ PODS:
     - TYAlertController
     - UIButton-SSEdgeInsets
     - UITableView+FDTemplateLayoutCell
-  - EasySwift/CoreData (1.1.0)
-  - EasySwift/DOPDropDownMenu (1.1.0)
-  - EasySwift/EUI (1.1.0)
-  - EasySwift/Extension (1.1.0)
-  - EasySwift/FlexboxKit (1.1.0)
-  - EasySwift/FLSideSlipViewController (1.1.0)
-  - EasySwift/Gumbo (1.1.0)
-  - EasySwift/JKCountDownButton (1.1.0)
-  - EasySwift/ObjectiveGumbo (1.1.0)
-  - EasySwift/PhotoBrowser (1.1.0)
-  - EasySwift/Pinyin (1.1.0)
-  - EasySwift/PullRefresh (1.1.0)
-  - EasySwift/SwiftRegex (1.1.0)
-  - EasySwift/TLCityPicker (1.1.0)
-  - EasySwift/URLManager (1.1.0)
-  - EasySwift/Watch (1.1.0)
-  - EasySwift/YXJCycleView (1.1.0)
-  - EasySwift/YXJImageCompressor (1.1.0)
-  - EasySwift/YXJKxMenu (1.1.0)
-  - EasySwift/YXJLinksButton (1.1.0)
-  - EasySwift/YXJOnePixelLine (1.1.0)
-  - EasySwift/YXJPageControl (1.1.0)
-  - EasySwift/YXJRatingView (1.1.0)
-  - EasySwift/YXJSlideBar (1.1.0)
-  - EasySwift/YXJSwipeTableViewCell (1.1.0)
-  - EasySwift/YXJTagLabelView (1.1.0)
+  - EasySwift/CoreData (1.1.1):
+    - Alamofire
+    - APAddressBook/Swift
+    - Bond
+    - Colours
+    - CYLTabBarController
+    - DKChainableAnimationKit
+    - FORScrollViewEmptyAssistant
+    - GCDSwift
+    - HanekeSwift
+    - IQKeyboardManager
+    - Kingfisher
+    - LCCoolHUD
+    - Loggerithm
+    - MJRefresh
+    - MWPhotoBrowser
+    - NBLoadableFromXibView
+    - ObjectMapper
+    - RainbowNavigation
+    - ReachabilitySwift
+    - SnapKit
+    - swiftScan
+    - SwiftyJSON
+    - SystemServices
+    - TOWebViewController
+    - TTTAttributedLabel
+    - TYAlertController
+    - UIButton-SSEdgeInsets
+    - UITableView+FDTemplateLayoutCell
+  - EasySwift/DOPDropDownMenu (1.1.1):
+    - Alamofire
+    - APAddressBook/Swift
+    - Bond
+    - Colours
+    - CYLTabBarController
+    - DKChainableAnimationKit
+    - FORScrollViewEmptyAssistant
+    - GCDSwift
+    - HanekeSwift
+    - IQKeyboardManager
+    - Kingfisher
+    - LCCoolHUD
+    - Loggerithm
+    - MJRefresh
+    - MWPhotoBrowser
+    - NBLoadableFromXibView
+    - ObjectMapper
+    - RainbowNavigation
+    - ReachabilitySwift
+    - SnapKit
+    - swiftScan
+    - SwiftyJSON
+    - SystemServices
+    - TOWebViewController
+    - TTTAttributedLabel
+    - TYAlertController
+    - UIButton-SSEdgeInsets
+    - UITableView+FDTemplateLayoutCell
+  - EasySwift/EUI (1.1.1):
+    - Alamofire
+    - APAddressBook/Swift
+    - Bond
+    - Colours
+    - CYLTabBarController
+    - DKChainableAnimationKit
+    - FORScrollViewEmptyAssistant
+    - GCDSwift
+    - HanekeSwift
+    - IQKeyboardManager
+    - Kingfisher
+    - LCCoolHUD
+    - Loggerithm
+    - MJRefresh
+    - MWPhotoBrowser
+    - NBLoadableFromXibView
+    - ObjectMapper
+    - RainbowNavigation
+    - ReachabilitySwift
+    - SnapKit
+    - swiftScan
+    - SwiftyJSON
+    - SystemServices
+    - TOWebViewController
+    - TTTAttributedLabel
+    - TYAlertController
+    - UIButton-SSEdgeInsets
+    - UITableView+FDTemplateLayoutCell
+  - EasySwift/Extension (1.1.1):
+    - Alamofire
+    - APAddressBook/Swift
+    - Bond
+    - Colours
+    - CYLTabBarController
+    - DKChainableAnimationKit
+    - FORScrollViewEmptyAssistant
+    - GCDSwift
+    - HanekeSwift
+    - IQKeyboardManager
+    - Kingfisher
+    - LCCoolHUD
+    - Loggerithm
+    - MJRefresh
+    - MWPhotoBrowser
+    - NBLoadableFromXibView
+    - ObjectMapper
+    - RainbowNavigation
+    - ReachabilitySwift
+    - SnapKit
+    - swiftScan
+    - SwiftyJSON
+    - SystemServices
+    - TOWebViewController
+    - TTTAttributedLabel
+    - TYAlertController
+    - UIButton-SSEdgeInsets
+    - UITableView+FDTemplateLayoutCell
+  - EasySwift/FlexboxKit (1.1.1):
+    - Alamofire
+    - APAddressBook/Swift
+    - Bond
+    - Colours
+    - CYLTabBarController
+    - DKChainableAnimationKit
+    - FORScrollViewEmptyAssistant
+    - GCDSwift
+    - HanekeSwift
+    - IQKeyboardManager
+    - Kingfisher
+    - LCCoolHUD
+    - Loggerithm
+    - MJRefresh
+    - MWPhotoBrowser
+    - NBLoadableFromXibView
+    - ObjectMapper
+    - RainbowNavigation
+    - ReachabilitySwift
+    - SnapKit
+    - swiftScan
+    - SwiftyJSON
+    - SystemServices
+    - TOWebViewController
+    - TTTAttributedLabel
+    - TYAlertController
+    - UIButton-SSEdgeInsets
+    - UITableView+FDTemplateLayoutCell
+  - EasySwift/FLSideSlipViewController (1.1.1):
+    - Alamofire
+    - APAddressBook/Swift
+    - Bond
+    - Colours
+    - CYLTabBarController
+    - DKChainableAnimationKit
+    - FORScrollViewEmptyAssistant
+    - GCDSwift
+    - HanekeSwift
+    - IQKeyboardManager
+    - Kingfisher
+    - LCCoolHUD
+    - Loggerithm
+    - MJRefresh
+    - MWPhotoBrowser
+    - NBLoadableFromXibView
+    - ObjectMapper
+    - RainbowNavigation
+    - ReachabilitySwift
+    - SnapKit
+    - swiftScan
+    - SwiftyJSON
+    - SystemServices
+    - TOWebViewController
+    - TTTAttributedLabel
+    - TYAlertController
+    - UIButton-SSEdgeInsets
+    - UITableView+FDTemplateLayoutCell
+  - EasySwift/Gumbo (1.1.1):
+    - Alamofire
+    - APAddressBook/Swift
+    - Bond
+    - Colours
+    - CYLTabBarController
+    - DKChainableAnimationKit
+    - FORScrollViewEmptyAssistant
+    - GCDSwift
+    - HanekeSwift
+    - IQKeyboardManager
+    - Kingfisher
+    - LCCoolHUD
+    - Loggerithm
+    - MJRefresh
+    - MWPhotoBrowser
+    - NBLoadableFromXibView
+    - ObjectMapper
+    - RainbowNavigation
+    - ReachabilitySwift
+    - SnapKit
+    - swiftScan
+    - SwiftyJSON
+    - SystemServices
+    - TOWebViewController
+    - TTTAttributedLabel
+    - TYAlertController
+    - UIButton-SSEdgeInsets
+    - UITableView+FDTemplateLayoutCell
+  - EasySwift/JKCountDownButton (1.1.1):
+    - Alamofire
+    - APAddressBook/Swift
+    - Bond
+    - Colours
+    - CYLTabBarController
+    - DKChainableAnimationKit
+    - FORScrollViewEmptyAssistant
+    - GCDSwift
+    - HanekeSwift
+    - IQKeyboardManager
+    - Kingfisher
+    - LCCoolHUD
+    - Loggerithm
+    - MJRefresh
+    - MWPhotoBrowser
+    - NBLoadableFromXibView
+    - ObjectMapper
+    - RainbowNavigation
+    - ReachabilitySwift
+    - SnapKit
+    - swiftScan
+    - SwiftyJSON
+    - SystemServices
+    - TOWebViewController
+    - TTTAttributedLabel
+    - TYAlertController
+    - UIButton-SSEdgeInsets
+    - UITableView+FDTemplateLayoutCell
+  - EasySwift/ObjectiveGumbo (1.1.1):
+    - Alamofire
+    - APAddressBook/Swift
+    - Bond
+    - Colours
+    - CYLTabBarController
+    - DKChainableAnimationKit
+    - FORScrollViewEmptyAssistant
+    - GCDSwift
+    - HanekeSwift
+    - IQKeyboardManager
+    - Kingfisher
+    - LCCoolHUD
+    - Loggerithm
+    - MJRefresh
+    - MWPhotoBrowser
+    - NBLoadableFromXibView
+    - ObjectMapper
+    - RainbowNavigation
+    - ReachabilitySwift
+    - SnapKit
+    - swiftScan
+    - SwiftyJSON
+    - SystemServices
+    - TOWebViewController
+    - TTTAttributedLabel
+    - TYAlertController
+    - UIButton-SSEdgeInsets
+    - UITableView+FDTemplateLayoutCell
+  - EasySwift/PhotoBrowser (1.1.1):
+    - Alamofire
+    - APAddressBook/Swift
+    - Bond
+    - Colours
+    - CYLTabBarController
+    - DKChainableAnimationKit
+    - FORScrollViewEmptyAssistant
+    - GCDSwift
+    - HanekeSwift
+    - IQKeyboardManager
+    - Kingfisher
+    - LCCoolHUD
+    - Loggerithm
+    - MJRefresh
+    - MWPhotoBrowser
+    - NBLoadableFromXibView
+    - ObjectMapper
+    - RainbowNavigation
+    - ReachabilitySwift
+    - SnapKit
+    - swiftScan
+    - SwiftyJSON
+    - SystemServices
+    - TOWebViewController
+    - TTTAttributedLabel
+    - TYAlertController
+    - UIButton-SSEdgeInsets
+    - UITableView+FDTemplateLayoutCell
+  - EasySwift/Pinyin (1.1.1):
+    - Alamofire
+    - APAddressBook/Swift
+    - Bond
+    - Colours
+    - CYLTabBarController
+    - DKChainableAnimationKit
+    - FORScrollViewEmptyAssistant
+    - GCDSwift
+    - HanekeSwift
+    - IQKeyboardManager
+    - Kingfisher
+    - LCCoolHUD
+    - Loggerithm
+    - MJRefresh
+    - MWPhotoBrowser
+    - NBLoadableFromXibView
+    - ObjectMapper
+    - RainbowNavigation
+    - ReachabilitySwift
+    - SnapKit
+    - swiftScan
+    - SwiftyJSON
+    - SystemServices
+    - TOWebViewController
+    - TTTAttributedLabel
+    - TYAlertController
+    - UIButton-SSEdgeInsets
+    - UITableView+FDTemplateLayoutCell
+  - EasySwift/PullRefresh (1.1.1):
+    - Alamofire
+    - APAddressBook/Swift
+    - Bond
+    - Colours
+    - CYLTabBarController
+    - DKChainableAnimationKit
+    - FORScrollViewEmptyAssistant
+    - GCDSwift
+    - HanekeSwift
+    - IQKeyboardManager
+    - Kingfisher
+    - LCCoolHUD
+    - Loggerithm
+    - MJRefresh
+    - MWPhotoBrowser
+    - NBLoadableFromXibView
+    - ObjectMapper
+    - RainbowNavigation
+    - ReachabilitySwift
+    - SnapKit
+    - swiftScan
+    - SwiftyJSON
+    - SystemServices
+    - TOWebViewController
+    - TTTAttributedLabel
+    - TYAlertController
+    - UIButton-SSEdgeInsets
+    - UITableView+FDTemplateLayoutCell
+  - EasySwift/SwiftRegex (1.1.1):
+    - Alamofire
+    - APAddressBook/Swift
+    - Bond
+    - Colours
+    - CYLTabBarController
+    - DKChainableAnimationKit
+    - FORScrollViewEmptyAssistant
+    - GCDSwift
+    - HanekeSwift
+    - IQKeyboardManager
+    - Kingfisher
+    - LCCoolHUD
+    - Loggerithm
+    - MJRefresh
+    - MWPhotoBrowser
+    - NBLoadableFromXibView
+    - ObjectMapper
+    - RainbowNavigation
+    - ReachabilitySwift
+    - SnapKit
+    - swiftScan
+    - SwiftyJSON
+    - SystemServices
+    - TOWebViewController
+    - TTTAttributedLabel
+    - TYAlertController
+    - UIButton-SSEdgeInsets
+    - UITableView+FDTemplateLayoutCell
+  - EasySwift/TLCityPicker (1.1.1):
+    - Alamofire
+    - APAddressBook/Swift
+    - Bond
+    - Colours
+    - CYLTabBarController
+    - DKChainableAnimationKit
+    - FORScrollViewEmptyAssistant
+    - GCDSwift
+    - HanekeSwift
+    - IQKeyboardManager
+    - Kingfisher
+    - LCCoolHUD
+    - Loggerithm
+    - MJRefresh
+    - MWPhotoBrowser
+    - NBLoadableFromXibView
+    - ObjectMapper
+    - RainbowNavigation
+    - ReachabilitySwift
+    - SnapKit
+    - swiftScan
+    - SwiftyJSON
+    - SystemServices
+    - TOWebViewController
+    - TTTAttributedLabel
+    - TYAlertController
+    - UIButton-SSEdgeInsets
+    - UITableView+FDTemplateLayoutCell
+  - EasySwift/URLManager (1.1.1):
+    - Alamofire
+    - APAddressBook/Swift
+    - Bond
+    - Colours
+    - CYLTabBarController
+    - DKChainableAnimationKit
+    - FORScrollViewEmptyAssistant
+    - GCDSwift
+    - HanekeSwift
+    - IQKeyboardManager
+    - Kingfisher
+    - LCCoolHUD
+    - Loggerithm
+    - MJRefresh
+    - MWPhotoBrowser
+    - NBLoadableFromXibView
+    - ObjectMapper
+    - RainbowNavigation
+    - ReachabilitySwift
+    - SnapKit
+    - swiftScan
+    - SwiftyJSON
+    - SystemServices
+    - TOWebViewController
+    - TTTAttributedLabel
+    - TYAlertController
+    - UIButton-SSEdgeInsets
+    - UITableView+FDTemplateLayoutCell
+  - EasySwift/Watch (1.1.1):
+    - Alamofire
+    - APAddressBook/Swift
+    - Bond
+    - Colours
+    - CYLTabBarController
+    - DKChainableAnimationKit
+    - FORScrollViewEmptyAssistant
+    - GCDSwift
+    - HanekeSwift
+    - IQKeyboardManager
+    - Kingfisher
+    - LCCoolHUD
+    - Loggerithm
+    - MJRefresh
+    - MWPhotoBrowser
+    - NBLoadableFromXibView
+    - ObjectMapper
+    - RainbowNavigation
+    - ReachabilitySwift
+    - SnapKit
+    - swiftScan
+    - SwiftyJSON
+    - SystemServices
+    - TOWebViewController
+    - TTTAttributedLabel
+    - TYAlertController
+    - UIButton-SSEdgeInsets
+    - UITableView+FDTemplateLayoutCell
+  - EasySwift/YXJCycleView (1.1.1):
+    - Alamofire
+    - APAddressBook/Swift
+    - Bond
+    - Colours
+    - CYLTabBarController
+    - DKChainableAnimationKit
+    - FORScrollViewEmptyAssistant
+    - GCDSwift
+    - HanekeSwift
+    - IQKeyboardManager
+    - Kingfisher
+    - LCCoolHUD
+    - Loggerithm
+    - MJRefresh
+    - MWPhotoBrowser
+    - NBLoadableFromXibView
+    - ObjectMapper
+    - RainbowNavigation
+    - ReachabilitySwift
+    - SnapKit
+    - swiftScan
+    - SwiftyJSON
+    - SystemServices
+    - TOWebViewController
+    - TTTAttributedLabel
+    - TYAlertController
+    - UIButton-SSEdgeInsets
+    - UITableView+FDTemplateLayoutCell
+  - EasySwift/YXJImageCompressor (1.1.1):
+    - Alamofire
+    - APAddressBook/Swift
+    - Bond
+    - Colours
+    - CYLTabBarController
+    - DKChainableAnimationKit
+    - FORScrollViewEmptyAssistant
+    - GCDSwift
+    - HanekeSwift
+    - IQKeyboardManager
+    - Kingfisher
+    - LCCoolHUD
+    - Loggerithm
+    - MJRefresh
+    - MWPhotoBrowser
+    - NBLoadableFromXibView
+    - ObjectMapper
+    - RainbowNavigation
+    - ReachabilitySwift
+    - SnapKit
+    - swiftScan
+    - SwiftyJSON
+    - SystemServices
+    - TOWebViewController
+    - TTTAttributedLabel
+    - TYAlertController
+    - UIButton-SSEdgeInsets
+    - UITableView+FDTemplateLayoutCell
+  - EasySwift/YXJKxMenu (1.1.1):
+    - Alamofire
+    - APAddressBook/Swift
+    - Bond
+    - Colours
+    - CYLTabBarController
+    - DKChainableAnimationKit
+    - FORScrollViewEmptyAssistant
+    - GCDSwift
+    - HanekeSwift
+    - IQKeyboardManager
+    - Kingfisher
+    - LCCoolHUD
+    - Loggerithm
+    - MJRefresh
+    - MWPhotoBrowser
+    - NBLoadableFromXibView
+    - ObjectMapper
+    - RainbowNavigation
+    - ReachabilitySwift
+    - SnapKit
+    - swiftScan
+    - SwiftyJSON
+    - SystemServices
+    - TOWebViewController
+    - TTTAttributedLabel
+    - TYAlertController
+    - UIButton-SSEdgeInsets
+    - UITableView+FDTemplateLayoutCell
+  - EasySwift/YXJLinksButton (1.1.1):
+    - Alamofire
+    - APAddressBook/Swift
+    - Bond
+    - Colours
+    - CYLTabBarController
+    - DKChainableAnimationKit
+    - FORScrollViewEmptyAssistant
+    - GCDSwift
+    - HanekeSwift
+    - IQKeyboardManager
+    - Kingfisher
+    - LCCoolHUD
+    - Loggerithm
+    - MJRefresh
+    - MWPhotoBrowser
+    - NBLoadableFromXibView
+    - ObjectMapper
+    - RainbowNavigation
+    - ReachabilitySwift
+    - SnapKit
+    - swiftScan
+    - SwiftyJSON
+    - SystemServices
+    - TOWebViewController
+    - TTTAttributedLabel
+    - TYAlertController
+    - UIButton-SSEdgeInsets
+    - UITableView+FDTemplateLayoutCell
+  - EasySwift/YXJOnePixelLine (1.1.1):
+    - Alamofire
+    - APAddressBook/Swift
+    - Bond
+    - Colours
+    - CYLTabBarController
+    - DKChainableAnimationKit
+    - FORScrollViewEmptyAssistant
+    - GCDSwift
+    - HanekeSwift
+    - IQKeyboardManager
+    - Kingfisher
+    - LCCoolHUD
+    - Loggerithm
+    - MJRefresh
+    - MWPhotoBrowser
+    - NBLoadableFromXibView
+    - ObjectMapper
+    - RainbowNavigation
+    - ReachabilitySwift
+    - SnapKit
+    - swiftScan
+    - SwiftyJSON
+    - SystemServices
+    - TOWebViewController
+    - TTTAttributedLabel
+    - TYAlertController
+    - UIButton-SSEdgeInsets
+    - UITableView+FDTemplateLayoutCell
+  - EasySwift/YXJPageControl (1.1.1):
+    - Alamofire
+    - APAddressBook/Swift
+    - Bond
+    - Colours
+    - CYLTabBarController
+    - DKChainableAnimationKit
+    - FORScrollViewEmptyAssistant
+    - GCDSwift
+    - HanekeSwift
+    - IQKeyboardManager
+    - Kingfisher
+    - LCCoolHUD
+    - Loggerithm
+    - MJRefresh
+    - MWPhotoBrowser
+    - NBLoadableFromXibView
+    - ObjectMapper
+    - RainbowNavigation
+    - ReachabilitySwift
+    - SnapKit
+    - swiftScan
+    - SwiftyJSON
+    - SystemServices
+    - TOWebViewController
+    - TTTAttributedLabel
+    - TYAlertController
+    - UIButton-SSEdgeInsets
+    - UITableView+FDTemplateLayoutCell
+  - EasySwift/YXJRatingView (1.1.1):
+    - Alamofire
+    - APAddressBook/Swift
+    - Bond
+    - Colours
+    - CYLTabBarController
+    - DKChainableAnimationKit
+    - FORScrollViewEmptyAssistant
+    - GCDSwift
+    - HanekeSwift
+    - IQKeyboardManager
+    - Kingfisher
+    - LCCoolHUD
+    - Loggerithm
+    - MJRefresh
+    - MWPhotoBrowser
+    - NBLoadableFromXibView
+    - ObjectMapper
+    - RainbowNavigation
+    - ReachabilitySwift
+    - SnapKit
+    - swiftScan
+    - SwiftyJSON
+    - SystemServices
+    - TOWebViewController
+    - TTTAttributedLabel
+    - TYAlertController
+    - UIButton-SSEdgeInsets
+    - UITableView+FDTemplateLayoutCell
+  - EasySwift/YXJSlideBar (1.1.1):
+    - Alamofire
+    - APAddressBook/Swift
+    - Bond
+    - Colours
+    - CYLTabBarController
+    - DKChainableAnimationKit
+    - FORScrollViewEmptyAssistant
+    - GCDSwift
+    - HanekeSwift
+    - IQKeyboardManager
+    - Kingfisher
+    - LCCoolHUD
+    - Loggerithm
+    - MJRefresh
+    - MWPhotoBrowser
+    - NBLoadableFromXibView
+    - ObjectMapper
+    - RainbowNavigation
+    - ReachabilitySwift
+    - SnapKit
+    - swiftScan
+    - SwiftyJSON
+    - SystemServices
+    - TOWebViewController
+    - TTTAttributedLabel
+    - TYAlertController
+    - UIButton-SSEdgeInsets
+    - UITableView+FDTemplateLayoutCell
+  - EasySwift/YXJSwipeTableViewCell (1.1.1):
+    - Alamofire
+    - APAddressBook/Swift
+    - Bond
+    - Colours
+    - CYLTabBarController
+    - DKChainableAnimationKit
+    - FORScrollViewEmptyAssistant
+    - GCDSwift
+    - HanekeSwift
+    - IQKeyboardManager
+    - Kingfisher
+    - LCCoolHUD
+    - Loggerithm
+    - MJRefresh
+    - MWPhotoBrowser
+    - NBLoadableFromXibView
+    - ObjectMapper
+    - RainbowNavigation
+    - ReachabilitySwift
+    - SnapKit
+    - swiftScan
+    - SwiftyJSON
+    - SystemServices
+    - TOWebViewController
+    - TTTAttributedLabel
+    - TYAlertController
+    - UIButton-SSEdgeInsets
+    - UITableView+FDTemplateLayoutCell
+  - EasySwift/YXJTagLabelView (1.1.1):
+    - Alamofire
+    - APAddressBook/Swift
+    - Bond
+    - Colours
+    - CYLTabBarController
+    - DKChainableAnimationKit
+    - FORScrollViewEmptyAssistant
+    - GCDSwift
+    - HanekeSwift
+    - IQKeyboardManager
+    - Kingfisher
+    - LCCoolHUD
+    - Loggerithm
+    - MJRefresh
+    - MWPhotoBrowser
+    - NBLoadableFromXibView
+    - ObjectMapper
+    - RainbowNavigation
+    - ReachabilitySwift
+    - SnapKit
+    - swiftScan
+    - SwiftyJSON
+    - SystemServices
+    - TOWebViewController
+    - TTTAttributedLabel
+    - TYAlertController
+    - UIButton-SSEdgeInsets
+    - UITableView+FDTemplateLayoutCell
   - FORScrollViewEmptyAssistant (0.1.2):
     - DZNEmptyDataSet (~> 1.5.2)
   - GCDSwift (0.2.0)
@@ -147,7 +903,7 @@ SPEC CHECKSUMS:
   DACircularProgress: 4dd437c0fc3da5161cb289e07ac449493d41db71
   DKChainableAnimationKit: e4e605d253ee153cb600efa68f8c97ed118122a7
   DZNEmptyDataSet: 741da409081a4bf707c949c964623a6ad1799772
-  EasySwift: 1a45387800ea57341fc5dbf43f2e59d8fe691005
+  EasySwift: 4ef5f04ec7eddb0bd1ac0378c7ef0d3325137900
   FORScrollViewEmptyAssistant: 8434fcb61e4dc1c19bb4670ec99d48a3d5fea4d7
   GCDSwift: 4382f69c53deaf730adfc5d7d16901cc95e31ca5
   HanekeSwift: 08e47d3d0f2899ec58e5d257beba0de619aca9e8

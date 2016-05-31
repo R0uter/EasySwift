@@ -9,7 +9,7 @@
 
 Pod::Spec.new do |s|
   s.name             = "EasySwift"
-  s.version          = "1.1.1"
+  s.version          = "1.1.2"
   s.summary          = "a little descript for EasySwift"
   s.description      = <<-DESC
                       This is the most simple way to use swift, which is a complete throughout the entire iOS development of the most convenient, the most simple, the most perfect framework to build the heart.
@@ -29,171 +29,163 @@ Pod::Spec.new do |s|
   s.default_subspec = 'Core' , 'Extension' , 'EUI', 'FlexboxKit', 'CoreData', 'PhotoBrowser', 'Pinyin', 'DOPDropDownMenu', 'Gumbo', 'ObjectiveGumbo', 'FLSideSlipViewController', 'SwiftRegex', 'URLManager', 'YXJLinksButton', 'YXJImageCompressor', 'JKCountDownButton', 'PullRefresh', 'YXJCycleView', 'YXJPageControl', 'YXJKxMenu', 'YXJTagLabelView', 'YXJOnePixelLine', 'YXJSlideBar', 'YXJSwipeTableViewCell', 'Watch' , 'YXJRatingView', 'TLCityPicker'
 
   s.subspec 'Core' do |core|
-    core.public_header_files = 'Pod/Core/*.h'
-    core.source_files = 'Pod/Core/*.h'
-
-    core.dependency 'HanekeSwift'
-    core.dependency 'Bond'
-    core.dependency 'Alamofire'
-    core.dependency 'SnapKit'
-    core.dependency 'Kingfisher'
-    core.dependency 'ObjectMapper'
-    core.dependency 'ReachabilitySwift'
-    core.dependency 'TTTAttributedLabel'
-
-    core.dependency 'UITableView+FDTemplateLayoutCell'
-    core.dependency 'CYLTabBarController'
-    core.dependency 'IQKeyboardManager'
-    core.dependency 'MWPhotoBrowser'
-    core.dependency 'UIButton-SSEdgeInsets'
-    core.dependency 'GCDSwift'
-    core.dependency 'APAddressBook/Swift'
-    core.dependency 'Loggerithm'
-    core.dependency 'Colours'
-    core.dependency 'RainbowNavigation'
-    core.dependency 'SystemServices'
-    core.dependency 'swiftScan' 
-    core.dependency 'TYAlertController' 
-    core.dependency 'NBLoadableFromXibView' 
-    core.dependency 'LCCoolHUD'  
-    core.dependency 'TOWebViewController'
-    core.dependency 'FORScrollViewEmptyAssistant' 
-    core.dependency 'SwiftyJSON'
-    core.dependency 'MJRefresh'
-    core.dependency 'DKChainableAnimationKit'
-  
+    core.source_files = 'Pod/Core/*'
   end
 
   s.subspec 'Extension' do |extension|
     extension.public_header_files = 'Pod/Extension/*.h'
-    extension.source_files = 'Pod/Extension/*.h'
+    extension.source_files = 'Pod/Extension/*'
   end
 
   s.subspec 'EUI' do |ss|
     ss.public_header_files = 'Pod/Lib/EUI/*.h'
-    ss.source_files = 'Pod/Lib/EUI/*.h'
+    ss.source_files = 'Pod/Lib/EUI/*'
     ss.frameworks = 'JavaScriptCore'
   end
 
   s.subspec 'FlexboxKit' do |ss|
     ss.public_header_files = 'Pod/Lib/FlexboxKit/*.h'
-    ss.source_files = 'Pod/Lib/FlexboxKit/*.h'
+    ss.source_files = 'Pod/Lib/FlexboxKit/*'
   end
 
   s.subspec 'CoreData' do |ss|
-    ss.public_header_files = 'Pod/Lib/CoreData/*.h'
     ss.source_files = 'Pod/Lib/CoreData/*.h'
   end
 
   s.subspec 'PhotoBrowser' do |ss|
     ss.public_header_files = 'Pod/Lib/PhotoBrowser/*.h'
-    ss.source_files = 'Pod/Lib/PhotoBrowser/*.h'
+    ss.source_files = 'Pod/Lib/PhotoBrowser/*'
   end
 
   s.subspec 'Pinyin' do |ss|
     ss.public_header_files = 'Pod/Lib/Pinyin/*.h'
-    ss.source_files = 'Pod/Lib/Pinyin/*.h'
+    ss.source_files = 'Pod/Lib/Pinyin/*'
   end
 
   s.subspec 'DOPDropDownMenu' do |ss|
     ss.public_header_files = 'Pod/Lib/DOPDropDownMenu/*.h'
-    ss.source_files = 'Pod/Lib/DOPDropDownMenu/*.h'
+    ss.source_files = 'Pod/Lib/DOPDropDownMenu/*'
   end
 
   s.subspec 'Gumbo' do |ss|
     ss.public_header_files = 'Pod/Lib/Gumbo/*.h'
-    ss.source_files = 'Pod/Lib/Gumbo/*.h'
+    ss.source_files = 'Pod/Lib/Gumbo/*'
   end
 
   s.subspec 'ObjectiveGumbo' do |ss|
     ss.public_header_files = 'Pod/Lib/ObjectiveGumbo/*.h'
-    ss.source_files = 'Pod/Lib/ObjectiveGumbo/*.h'
+    ss.source_files = 'Pod/Lib/ObjectiveGumbo/*'
   end
 
   s.subspec 'FLSideSlipViewController' do |ss|
     ss.public_header_files = 'Pod/Lib/FLSideSlipViewController/*.h'
-    ss.source_files = 'Pod/Lib/FLSideSlipViewController/*.h'
+    ss.source_files = 'Pod/Lib/FLSideSlipViewController/*'
   end
 
   s.subspec 'SwiftRegex' do |ss|
-    ss.public_header_files = 'Pod/Lib/SwiftRegex/*.h'
-    ss.source_files = 'Pod/Lib/SwiftRegex/*.h'
+    ss.source_files = 'Pod/Lib/SwiftRegex/*'
   end
 
   s.subspec 'URLManager' do |ss|
     ss.public_header_files = 'Pod/Lib/URLManager/*.h'
-    ss.source_files = 'Pod/Lib/URLManager/*.h'
+    ss.source_files = 'Pod/Lib/URLManager/*'
   end
 
   s.subspec 'YXJLinksButton' do |ss|
-    ss.public_header_files = 'Pod/Lib/YXJLinksButton/*.h'
-    ss.source_files = 'Pod/Lib/YXJLinksButton/*.h'
+    ss.source_files = 'Pod/Lib/YXJLinksButton/*'
   end
 
   s.subspec 'YXJImageCompressor' do |ss|
     ss.public_header_files = 'Pod/Lib/YXJImageCompressor/*.h'
-    ss.source_files = 'Pod/Lib/YXJImageCompressor/*.h'
+    ss.source_files = 'Pod/Lib/YXJImageCompressor/*'
   end
 
   s.subspec 'JKCountDownButton' do |ss|
     ss.public_header_files = 'Pod/Lib/JKCountDownButton/*.h'
-    ss.source_files = 'Pod/Lib/JKCountDownButton/*.h'
+    ss.source_files = 'Pod/Lib/JKCountDownButton/*'
   end
 
   s.subspec 'PullRefresh' do |ss|
-    ss.public_header_files = 'Pod/Lib/PullRefresh/*.h'
-    ss.source_files = 'Pod/Lib/PullRefresh/*.h'
+    ss.source_files = 'Pod/Lib/PullRefresh/*'
   end
 
   s.subspec 'YXJCycleView' do |ss|
     ss.public_header_files = 'Pod/Lib/YXJCycleView/*.h'
-    ss.source_files = 'Pod/Lib/YXJCycleView/*.h'
+    ss.source_files = 'Pod/Lib/YXJCycleView/*'
   end
 
   s.subspec 'YXJPageControl' do |ss|
     ss.public_header_files = 'Pod/Lib/YXJPageControl/*.h'
-    ss.source_files = 'Pod/Lib/YXJPageControl/*.h'
+    ss.source_files = 'Pod/Lib/YXJPageControl/*'
   end
 
   s.subspec 'YXJKxMenu' do |ss|
     ss.public_header_files = 'Pod/Lib/YXJKxMenu/*.h'
-    ss.source_files = 'Pod/Lib/YXJKxMenu/*.h'
+    ss.source_files = 'Pod/Lib/YXJKxMenu/*'
   end
 
   s.subspec 'YXJTagLabelView' do |ss|
-    ss.public_header_files = 'Pod/Lib/YXJTagLabelView/*.h'
-    ss.source_files = 'Pod/Lib/YXJTagLabelView/*.h'
+    ss.source_files = 'Pod/Lib/YXJTagLabelView/*'
   end
 
   s.subspec 'YXJSlideBar' do |ss|
     ss.public_header_files = 'Pod/Lib/YXJSlideBar/*.h'
-    ss.source_files = 'Pod/Lib/YXJSlideBar/*.h'
+    ss.source_files = 'Pod/Lib/YXJSlideBar/*'
   end
 
   s.subspec 'YXJOnePixelLine' do |ss|
     ss.public_header_files = 'Pod/Lib/YXJOnePixelLine/*.h'
-    ss.source_files = 'Pod/Lib/YXJOnePixelLine/*.h'
+    ss.source_files = 'Pod/Lib/YXJOnePixelLine/*'
   end
 
   s.subspec 'YXJSwipeTableViewCell' do |ss|
     ss.public_header_files = 'Pod/Lib/YXJSwipeTableViewCell/*.h'
-    ss.source_files = 'Pod/Lib/YXJSwipeTableViewCell/*.h'
+    ss.source_files = 'Pod/Lib/YXJSwipeTableViewCell/*'
   end  
 
   s.subspec 'Watch' do |ss|
-    ss.public_header_files = 'Pod/Lib/Watch/*.h'
-    ss.source_files = 'Pod/Lib/Watch/*.h'
+    ss.source_files = 'Pod/Lib/Watch/*'
   end  
 
   s.subspec 'YXJRatingView' do |ss|
     ss.public_header_files = 'Pod/Lib/YXJRatingView/*.h'
-    ss.source_files = 'Pod/Lib/YXJRatingView/*.h'
+    ss.source_files = 'Pod/Lib/YXJRatingView/*'
   end
 
   s.subspec 'TLCityPicker' do |ss|
     ss.public_header_files = 'Pod/Lib/TLCityPicker/*.h'
-    ss.source_files = 'Pod/Lib/TLCityPicker/*.h'
+    ss.source_files = 'Pod/Lib/TLCityPicker/*'
   end
+
+  s.dependency 'HanekeSwift'
+  s.dependency 'Bond'
+  s.dependency 'Alamofire'
+  s.dependency 'SnapKit'
+  s.dependency 'Kingfisher'
+  s.dependency 'ObjectMapper'
+  s.dependency 'ReachabilitySwift'
+  s.dependency 'TTTAttributedLabel'
+
+  s.dependency 'UITableView+FDTemplateLayoutCell'
+  s.dependency 'CYLTabBarController'
+  s.dependency 'IQKeyboardManager'
+  s.dependency 'MWPhotoBrowser'
+  s.dependency 'UIButton-SSEdgeInsets'
+  s.dependency 'GCDSwift'
+  s.dependency 'APAddressBook/Swift'
+  s.dependency 'Loggerithm'
+  s.dependency 'Colours'
+  s.dependency 'RainbowNavigation'
+  s.dependency 'SystemServices'
+  s.dependency 'swiftScan' 
+  s.dependency 'TYAlertController' 
+  s.dependency 'NBLoadableFromXibView' 
+  s.dependency 'LCCoolHUD'  
+  s.dependency 'TOWebViewController'
+  s.dependency 'FORScrollViewEmptyAssistant' 
+  s.dependency 'SwiftyJSON'
+  s.dependency 'MJRefresh'
+  s.dependency 'DKChainableAnimationKit'
 
   s.frameworks = 'UIKit'
 end

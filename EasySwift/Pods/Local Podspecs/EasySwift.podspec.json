@@ -1,6 +1,6 @@
 {
   "name": "EasySwift",
-  "version": "1.1.0",
+  "version": "1.1.1",
   "summary": "a little descript for EasySwift",
   "description": "This is the most simple way to use swift, which is a complete throughout the entire iOS development of the most convenient, the most simple, the most perfect framework to build the heart.",
   "homepage": "https://github.com/stubbornnessness",
@@ -10,7 +10,7 @@
   },
   "source": {
     "git": "https://github.com/stubbornnessness/EasySwift.git",
-    "tag": "1.1.0"
+    "tag": "1.1.1"
   },
   "platforms": {
     "ios": "8.0"
@@ -46,229 +46,222 @@
     "YXJRatingView",
     "TLCityPicker"
   ],
+  "dependencies": {
+    "HanekeSwift": [
+
+    ],
+    "Bond": [
+
+    ],
+    "Alamofire": [
+
+    ],
+    "SnapKit": [
+
+    ],
+    "Kingfisher": [
+
+    ],
+    "ObjectMapper": [
+
+    ],
+    "ReachabilitySwift": [
+
+    ],
+    "TTTAttributedLabel": [
+
+    ],
+    "UITableView+FDTemplateLayoutCell": [
+
+    ],
+    "CYLTabBarController": [
+
+    ],
+    "IQKeyboardManager": [
+
+    ],
+    "MWPhotoBrowser": [
+
+    ],
+    "UIButton-SSEdgeInsets": [
+
+    ],
+    "GCDSwift": [
+
+    ],
+    "APAddressBook/Swift": [
+
+    ],
+    "Loggerithm": [
+
+    ],
+    "Colours": [
+
+    ],
+    "RainbowNavigation": [
+
+    ],
+    "SystemServices": [
+
+    ],
+    "swiftScan": [
+
+    ],
+    "TYAlertController": [
+
+    ],
+    "NBLoadableFromXibView": [
+
+    ],
+    "LCCoolHUD": [
+
+    ],
+    "TOWebViewController": [
+
+    ],
+    "FORScrollViewEmptyAssistant": [
+
+    ],
+    "SwiftyJSON": [
+
+    ],
+    "MJRefresh": [
+
+    ],
+    "DKChainableAnimationKit": [
+
+    ]
+  },
   "frameworks": "UIKit",
   "subspecs": [
     {
       "name": "Core",
-      "public_header_files": "Pod/Core/*.h",
-      "source_files": "Pod/Core/*.h",
-      "dependencies": {
-        "HanekeSwift": [
-
-        ],
-        "Bond": [
-
-        ],
-        "Alamofire": [
-
-        ],
-        "SnapKit": [
-
-        ],
-        "Kingfisher": [
-
-        ],
-        "ObjectMapper": [
-
-        ],
-        "ReachabilitySwift": [
-
-        ],
-        "TTTAttributedLabel": [
-
-        ],
-        "UITableView+FDTemplateLayoutCell": [
-
-        ],
-        "CYLTabBarController": [
-
-        ],
-        "IQKeyboardManager": [
-
-        ],
-        "MWPhotoBrowser": [
-
-        ],
-        "UIButton-SSEdgeInsets": [
-
-        ],
-        "GCDSwift": [
-
-        ],
-        "APAddressBook/Swift": [
-
-        ],
-        "Loggerithm": [
-
-        ],
-        "Colours": [
-
-        ],
-        "RainbowNavigation": [
-
-        ],
-        "SystemServices": [
-
-        ],
-        "swiftScan": [
-
-        ],
-        "TYAlertController": [
-
-        ],
-        "NBLoadableFromXibView": [
-
-        ],
-        "LCCoolHUD": [
-
-        ],
-        "TOWebViewController": [
-
-        ],
-        "FORScrollViewEmptyAssistant": [
-
-        ],
-        "SwiftyJSON": [
-
-        ],
-        "MJRefresh": [
-
-        ],
-        "DKChainableAnimationKit": [
-
-        ]
-      }
+      "source_files": "Pod/Core/*"
     },
     {
       "name": "Extension",
       "public_header_files": "Pod/Extension/*.h",
-      "source_files": "Pod/Extension/*.h"
+      "source_files": "Pod/Extension/*"
     },
     {
       "name": "EUI",
       "public_header_files": "Pod/Lib/EUI/*.h",
-      "source_files": "Pod/Lib/EUI/*.h",
+      "source_files": "Pod/Lib/EUI/*",
       "frameworks": "JavaScriptCore"
     },
     {
       "name": "FlexboxKit",
       "public_header_files": "Pod/Lib/FlexboxKit/*.h",
-      "source_files": "Pod/Lib/FlexboxKit/*.h"
+      "source_files": "Pod/Lib/FlexboxKit/*"
     },
     {
       "name": "CoreData",
-      "public_header_files": "Pod/Lib/CoreData/*.h",
       "source_files": "Pod/Lib/CoreData/*.h"
     },
     {
       "name": "PhotoBrowser",
       "public_header_files": "Pod/Lib/PhotoBrowser/*.h",
-      "source_files": "Pod/Lib/PhotoBrowser/*.h"
+      "source_files": "Pod/Lib/PhotoBrowser/*"
     },
     {
       "name": "Pinyin",
       "public_header_files": "Pod/Lib/Pinyin/*.h",
-      "source_files": "Pod/Lib/Pinyin/*.h"
+      "source_files": "Pod/Lib/Pinyin/*"
     },
     {
       "name": "DOPDropDownMenu",
       "public_header_files": "Pod/Lib/DOPDropDownMenu/*.h",
-      "source_files": "Pod/Lib/DOPDropDownMenu/*.h"
+      "source_files": "Pod/Lib/DOPDropDownMenu/*"
     },
     {
       "name": "Gumbo",
       "public_header_files": "Pod/Lib/Gumbo/*.h",
-      "source_files": "Pod/Lib/Gumbo/*.h"
+      "source_files": "Pod/Lib/Gumbo/*"
     },
     {
       "name": "ObjectiveGumbo",
       "public_header_files": "Pod/Lib/ObjectiveGumbo/*.h",
-      "source_files": "Pod/Lib/ObjectiveGumbo/*.h"
+      "source_files": "Pod/Lib/ObjectiveGumbo/*"
     },
     {
       "name": "FLSideSlipViewController",
       "public_header_files": "Pod/Lib/FLSideSlipViewController/*.h",
-      "source_files": "Pod/Lib/FLSideSlipViewController/*.h"
+      "source_files": "Pod/Lib/FLSideSlipViewController/*"
     },
     {
       "name": "SwiftRegex",
-      "public_header_files": "Pod/Lib/SwiftRegex/*.h",
-      "source_files": "Pod/Lib/SwiftRegex/*.h"
+      "source_files": "Pod/Lib/SwiftRegex/*"
     },
     {
       "name": "URLManager",
       "public_header_files": "Pod/Lib/URLManager/*.h",
-      "source_files": "Pod/Lib/URLManager/*.h"
+      "source_files": "Pod/Lib/URLManager/*"
     },
     {
       "name": "YXJLinksButton",
-      "public_header_files": "Pod/Lib/YXJLinksButton/*.h",
-      "source_files": "Pod/Lib/YXJLinksButton/*.h"
+      "source_files": "Pod/Lib/YXJLinksButton/*"
     },
     {
       "name": "YXJImageCompressor",
       "public_header_files": "Pod/Lib/YXJImageCompressor/*.h",
-      "source_files": "Pod/Lib/YXJImageCompressor/*.h"
+      "source_files": "Pod/Lib/YXJImageCompressor/*"
     },
     {
       "name": "JKCountDownButton",
       "public_header_files": "Pod/Lib/JKCountDownButton/*.h",
-      "source_files": "Pod/Lib/JKCountDownButton/*.h"
+      "source_files": "Pod/Lib/JKCountDownButton/*"
     },
     {
       "name": "PullRefresh",
-      "public_header_files": "Pod/Lib/PullRefresh/*.h",
-      "source_files": "Pod/Lib/PullRefresh/*.h"
+      "source_files": "Pod/Lib/PullRefresh/*"
     },
     {
       "name": "YXJCycleView",
       "public_header_files": "Pod/Lib/YXJCycleView/*.h",
-      "source_files": "Pod/Lib/YXJCycleView/*.h"
+      "source_files": "Pod/Lib/YXJCycleView/*"
     },
     {
       "name": "YXJPageControl",
       "public_header_files": "Pod/Lib/YXJPageControl/*.h",
-      "source_files": "Pod/Lib/YXJPageControl/*.h"
+      "source_files": "Pod/Lib/YXJPageControl/*"
     },
     {
       "name": "YXJKxMenu",
       "public_header_files": "Pod/Lib/YXJKxMenu/*.h",
-      "source_files": "Pod/Lib/YXJKxMenu/*.h"
+      "source_files": "Pod/Lib/YXJKxMenu/*"
     },
     {
       "name": "YXJTagLabelView",
-      "public_header_files": "Pod/Lib/YXJTagLabelView/*.h",
-      "source_files": "Pod/Lib/YXJTagLabelView/*.h"
+      "source_files": "Pod/Lib/YXJTagLabelView/*"
     },
     {
       "name": "YXJSlideBar",
       "public_header_files": "Pod/Lib/YXJSlideBar/*.h",
-      "source_files": "Pod/Lib/YXJSlideBar/*.h"
+      "source_files": "Pod/Lib/YXJSlideBar/*"
     },
     {
       "name": "YXJOnePixelLine",
       "public_header_files": "Pod/Lib/YXJOnePixelLine/*.h",
-      "source_files": "Pod/Lib/YXJOnePixelLine/*.h"
+      "source_files": "Pod/Lib/YXJOnePixelLine/*"
     },
     {
       "name": "YXJSwipeTableViewCell",
       "public_header_files": "Pod/Lib/YXJSwipeTableViewCell/*.h",
-      "source_files": "Pod/Lib/YXJSwipeTableViewCell/*.h"
+      "source_files": "Pod/Lib/YXJSwipeTableViewCell/*"
     },
     {
       "name": "Watch",
-      "public_header_files": "Pod/Lib/Watch/*.h",
-      "source_files": "Pod/Lib/Watch/*.h"
+      "source_files": "Pod/Lib/Watch/*"
     },
     {
       "name": "YXJRatingView",
       "public_header_files": "Pod/Lib/YXJRatingView/*.h",
-      "source_files": "Pod/Lib/YXJRatingView/*.h"
+      "source_files": "Pod/Lib/YXJRatingView/*"
     },
     {
       "name": "TLCityPicker",
       "public_header_files": "Pod/Lib/TLCityPicker/*.h",
-      "source_files": "Pod/Lib/TLCityPicker/*.h"
+      "source_files": "Pod/Lib/TLCityPicker/*"
     }
   ]
 }
