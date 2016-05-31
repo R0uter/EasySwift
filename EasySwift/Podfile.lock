@@ -11,34 +11,35 @@ PODS:
   - DACircularProgress (2.3.1)
   - DKChainableAnimationKit (1.6.1)
   - DZNEmptyDataSet (1.5.2)
-  - EasySwift (1.0.9):
-    - EasySwift/Core (= 1.0.9)
-    - EasySwift/CoreData (= 1.0.9)
-    - EasySwift/DOPDropDownMenu (= 1.0.9)
-    - EasySwift/EUI (= 1.0.9)
-    - EasySwift/Extension (= 1.0.9)
-    - EasySwift/FlexboxKit (= 1.0.9)
-    - EasySwift/FLSideSlipViewController (= 1.0.9)
-    - EasySwift/Gumbo (= 1.0.9)
-    - EasySwift/JKCountDownButton (= 1.0.9)
-    - EasySwift/ObjectiveGumbo (= 1.0.9)
-    - EasySwift/PhotoBrowser (= 1.0.9)
-    - EasySwift/Pinyin (= 1.0.9)
-    - EasySwift/PullRefresh (= 1.0.9)
-    - EasySwift/SwiftRegex (= 1.0.9)
-    - EasySwift/URLManager (= 1.0.9)
-    - EasySwift/Watch (= 1.0.9)
-    - EasySwift/YXJCycleView (= 1.0.9)
-    - EasySwift/YXJImageCompressor (= 1.0.9)
-    - EasySwift/YXJKxMenu (= 1.0.9)
-    - EasySwift/YXJLinksButton (= 1.0.9)
-    - EasySwift/YXJOnePixelLine (= 1.0.9)
-    - EasySwift/YXJPageControl (= 1.0.9)
-    - EasySwift/YXJRatingView (= 1.0.9)
-    - EasySwift/YXJSlideBar (= 1.0.9)
-    - EasySwift/YXJSwipeTableViewCell (= 1.0.9)
-    - EasySwift/YXJTagLabelView (= 1.0.9)
-  - EasySwift/Core (1.0.9):
+  - EasySwift (1.1.0):
+    - EasySwift/Core (= 1.1.0)
+    - EasySwift/CoreData (= 1.1.0)
+    - EasySwift/DOPDropDownMenu (= 1.1.0)
+    - EasySwift/EUI (= 1.1.0)
+    - EasySwift/Extension (= 1.1.0)
+    - EasySwift/FlexboxKit (= 1.1.0)
+    - EasySwift/FLSideSlipViewController (= 1.1.0)
+    - EasySwift/Gumbo (= 1.1.0)
+    - EasySwift/JKCountDownButton (= 1.1.0)
+    - EasySwift/ObjectiveGumbo (= 1.1.0)
+    - EasySwift/PhotoBrowser (= 1.1.0)
+    - EasySwift/Pinyin (= 1.1.0)
+    - EasySwift/PullRefresh (= 1.1.0)
+    - EasySwift/SwiftRegex (= 1.1.0)
+    - EasySwift/TLCityPicker (= 1.1.0)
+    - EasySwift/URLManager (= 1.1.0)
+    - EasySwift/Watch (= 1.1.0)
+    - EasySwift/YXJCycleView (= 1.1.0)
+    - EasySwift/YXJImageCompressor (= 1.1.0)
+    - EasySwift/YXJKxMenu (= 1.1.0)
+    - EasySwift/YXJLinksButton (= 1.1.0)
+    - EasySwift/YXJOnePixelLine (= 1.1.0)
+    - EasySwift/YXJPageControl (= 1.1.0)
+    - EasySwift/YXJRatingView (= 1.1.0)
+    - EasySwift/YXJSlideBar (= 1.1.0)
+    - EasySwift/YXJSwipeTableViewCell (= 1.1.0)
+    - EasySwift/YXJTagLabelView (= 1.1.0)
+  - EasySwift/Core (1.1.0):
     - Alamofire
     - APAddressBook/Swift
     - Bond
@@ -62,37 +63,37 @@ PODS:
     - swiftScan
     - SwiftyJSON
     - SystemServices
-    - TLCityPicker
     - TOWebViewController
     - TTTAttributedLabel
     - TYAlertController
     - UIButton-SSEdgeInsets
     - UITableView+FDTemplateLayoutCell
-  - EasySwift/CoreData (1.0.9)
-  - EasySwift/DOPDropDownMenu (1.0.9)
-  - EasySwift/EUI (1.0.9)
-  - EasySwift/Extension (1.0.9)
-  - EasySwift/FlexboxKit (1.0.9)
-  - EasySwift/FLSideSlipViewController (1.0.9)
-  - EasySwift/Gumbo (1.0.9)
-  - EasySwift/JKCountDownButton (1.0.9)
-  - EasySwift/ObjectiveGumbo (1.0.9)
-  - EasySwift/PhotoBrowser (1.0.9)
-  - EasySwift/Pinyin (1.0.9)
-  - EasySwift/PullRefresh (1.0.9)
-  - EasySwift/SwiftRegex (1.0.9)
-  - EasySwift/URLManager (1.0.9)
-  - EasySwift/Watch (1.0.9)
-  - EasySwift/YXJCycleView (1.0.9)
-  - EasySwift/YXJImageCompressor (1.0.9)
-  - EasySwift/YXJKxMenu (1.0.9)
-  - EasySwift/YXJLinksButton (1.0.9)
-  - EasySwift/YXJOnePixelLine (1.0.9)
-  - EasySwift/YXJPageControl (1.0.9)
-  - EasySwift/YXJRatingView (1.0.9)
-  - EasySwift/YXJSlideBar (1.0.9)
-  - EasySwift/YXJSwipeTableViewCell (1.0.9)
-  - EasySwift/YXJTagLabelView (1.0.9)
+  - EasySwift/CoreData (1.1.0)
+  - EasySwift/DOPDropDownMenu (1.1.0)
+  - EasySwift/EUI (1.1.0)
+  - EasySwift/Extension (1.1.0)
+  - EasySwift/FlexboxKit (1.1.0)
+  - EasySwift/FLSideSlipViewController (1.1.0)
+  - EasySwift/Gumbo (1.1.0)
+  - EasySwift/JKCountDownButton (1.1.0)
+  - EasySwift/ObjectiveGumbo (1.1.0)
+  - EasySwift/PhotoBrowser (1.1.0)
+  - EasySwift/Pinyin (1.1.0)
+  - EasySwift/PullRefresh (1.1.0)
+  - EasySwift/SwiftRegex (1.1.0)
+  - EasySwift/TLCityPicker (1.1.0)
+  - EasySwift/URLManager (1.1.0)
+  - EasySwift/Watch (1.1.0)
+  - EasySwift/YXJCycleView (1.1.0)
+  - EasySwift/YXJImageCompressor (1.1.0)
+  - EasySwift/YXJKxMenu (1.1.0)
+  - EasySwift/YXJLinksButton (1.1.0)
+  - EasySwift/YXJOnePixelLine (1.1.0)
+  - EasySwift/YXJPageControl (1.1.0)
+  - EasySwift/YXJRatingView (1.1.0)
+  - EasySwift/YXJSlideBar (1.1.0)
+  - EasySwift/YXJSwipeTableViewCell (1.1.0)
+  - EasySwift/YXJTagLabelView (1.1.0)
   - FORScrollViewEmptyAssistant (0.1.2):
     - DZNEmptyDataSet (~> 1.5.2)
   - GCDSwift (0.2.0)
@@ -122,7 +123,6 @@ PODS:
   - swiftScan (1.0.8)
   - SwiftyJSON (2.3.2)
   - SystemServices (1.1.1)
-  - TLCityPicker (1.0.0)
   - TOWebViewController (2.2.4):
     - TOWebViewController/Core (= 2.2.4)
   - TOWebViewController/Core (2.2.4)
@@ -147,7 +147,7 @@ SPEC CHECKSUMS:
   DACircularProgress: 4dd437c0fc3da5161cb289e07ac449493d41db71
   DKChainableAnimationKit: e4e605d253ee153cb600efa68f8c97ed118122a7
   DZNEmptyDataSet: 741da409081a4bf707c949c964623a6ad1799772
-  EasySwift: 901a9351129b7347acf62bc11e0276a833e5af04
+  EasySwift: 1a45387800ea57341fc5dbf43f2e59d8fe691005
   FORScrollViewEmptyAssistant: 8434fcb61e4dc1c19bb4670ec99d48a3d5fea4d7
   GCDSwift: 4382f69c53deaf730adfc5d7d16901cc95e31ca5
   HanekeSwift: 08e47d3d0f2899ec58e5d257beba0de619aca9e8
@@ -169,7 +169,6 @@ SPEC CHECKSUMS:
   swiftScan: 2dc76303bc7c2dcb7bde9c539f9bd6a7520abc8e
   SwiftyJSON: 04ccea08915aa0109039157c7974cf0298da292a
   SystemServices: cc55971fb9b1a5b01ad11e6ae0f46483ca5affa5
-  TLCityPicker: a05a66d639123893b085ea19ebd4dd63d6e7b27d
   TOWebViewController: f6b234d2be45dbf81d2a71a1f9480f8f3cc6501a
   TTTAttributedLabel: 8cffe8e127e4e82ff3af1e5386d4cd0ad000b656
   TYAlertController: 849283e546e297d4c33708d81d12605901adbba7

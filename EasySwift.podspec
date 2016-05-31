@@ -9,7 +9,7 @@
 
 Pod::Spec.new do |s|
   s.name             = "EasySwift"
-  s.version          = "1.1.0"
+  s.version          = "1.1.1"
   s.summary          = "a little descript for EasySwift"
   s.description      = <<-DESC
                       This is the most simple way to use swift, which is a complete throughout the entire iOS development of the most convenient, the most simple, the most perfect framework to build the heart.
@@ -26,7 +26,7 @@ Pod::Spec.new do |s|
   s.requires_arc = true
   s.module_name = "EasySwift"
 
-  s.default_subspec = 'Core' , 'Extension' , 'EUI', 'FlexboxKit', 'CoreData', 'PhotoBrowser', 'Pinyin', 'DOPDropDownMenu', 'Gumbo', 'ObjectiveGumbo', 'FLSideSlipViewController', 'SwiftRegex', 'URLManager', 'YXJLinksButton', 'YXJImageCompressor', 'JKCountDownButton', 'PullRefresh', 'YXJCycleView', 'YXJPageControl', 'YXJKxMenu', 'YXJTagLabelView', 'YXJOnePixelLine', 'YXJSlideBar', 'YXJSwipeTableViewCell', 'Watch' , 'YXJRatingView'
+  s.default_subspec = 'Core' , 'Extension' , 'EUI', 'FlexboxKit', 'CoreData', 'PhotoBrowser', 'Pinyin', 'DOPDropDownMenu', 'Gumbo', 'ObjectiveGumbo', 'FLSideSlipViewController', 'SwiftRegex', 'URLManager', 'YXJLinksButton', 'YXJImageCompressor', 'JKCountDownButton', 'PullRefresh', 'YXJCycleView', 'YXJPageControl', 'YXJKxMenu', 'YXJTagLabelView', 'YXJOnePixelLine', 'YXJSlideBar', 'YXJSwipeTableViewCell', 'Watch' , 'YXJRatingView', 'TLCityPicker'
 
   s.subspec 'Core' do |core|
     core.public_header_files = 'Pod/Core/*.h'
@@ -57,7 +57,6 @@ Pod::Spec.new do |s|
     core.dependency 'NBLoadableFromXibView' 
     core.dependency 'LCCoolHUD'  
     core.dependency 'TOWebViewController'
-    core.dependency 'TLCityPicker'
     core.dependency 'FORScrollViewEmptyAssistant' 
     core.dependency 'SwiftyJSON'
     core.dependency 'MJRefresh'
@@ -184,11 +183,16 @@ Pod::Spec.new do |s|
   s.subspec 'Watch' do |ss|
     ss.public_header_files = 'Pod/Lib/Watch/*.h'
     ss.source_files = 'Pod/Lib/Watch/*.h'
-  end
+  end  
 
   s.subspec 'YXJRatingView' do |ss|
     ss.public_header_files = 'Pod/Lib/YXJRatingView/*.h'
     ss.source_files = 'Pod/Lib/YXJRatingView/*.h'
+  end
+
+  s.subspec 'TLCityPicker' do |ss|
+    ss.public_header_files = 'Pod/Lib/TLCityPicker/*.h'
+    ss.source_files = 'Pod/Lib/TLCityPicker/*.h'
   end
 
   s.frameworks = 'UIKit'

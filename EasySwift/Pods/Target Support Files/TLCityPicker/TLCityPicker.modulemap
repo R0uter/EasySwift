@@ -1,6 +1,0 @@
-framework module TLCityPicker {
-  umbrella header "TLCityPicker-umbrella.h"
-
-  export *
-  module * { export * }
-}
