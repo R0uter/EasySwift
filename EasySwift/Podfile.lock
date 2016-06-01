@@ -11,38 +11,36 @@ PODS:
   - DACircularProgress (2.3.1)
   - DKChainableAnimationKit (1.6.1)
   - DZNEmptyDataSet (1.5.2)
-  - EasySwift (1.1.2):
+  - EasySwift (1.1.4):
     - APAddressBook/Swift
     - Colours
     - CYLTabBarController
     - DKChainableAnimationKit
-    - EasySwift/Core (= 1.1.2)
-    - EasySwift/CoreData (= 1.1.2)
-    - EasySwift/DOPDropDownMenu (= 1.1.2)
-    - EasySwift/EUI (= 1.1.2)
-    - EasySwift/Extension (= 1.1.2)
-    - EasySwift/FlexboxKit (= 1.1.2)
-    - EasySwift/FLSideSlipViewController (= 1.1.2)
-    - EasySwift/Gumbo (= 1.1.2)
-    - EasySwift/JKCountDownButton (= 1.1.2)
-    - EasySwift/ObjectiveGumbo (= 1.1.2)
-    - EasySwift/PhotoBrowser (= 1.1.2)
-    - EasySwift/Pinyin (= 1.1.2)
-    - EasySwift/PullRefresh (= 1.1.2)
-    - EasySwift/SwiftRegex (= 1.1.2)
-    - EasySwift/TLCityPicker (= 1.1.2)
-    - EasySwift/URLManager (= 1.1.2)
-    - EasySwift/Watch (= 1.1.2)
-    - EasySwift/YXJCycleView (= 1.1.2)
-    - EasySwift/YXJImageCompressor (= 1.1.2)
-    - EasySwift/YXJKxMenu (= 1.1.2)
-    - EasySwift/YXJLinksButton (= 1.1.2)
-    - EasySwift/YXJOnePixelLine (= 1.1.2)
-    - EasySwift/YXJPageControl (= 1.1.2)
-    - EasySwift/YXJRatingView (= 1.1.2)
-    - EasySwift/YXJSlideBar (= 1.1.2)
-    - EasySwift/YXJSwipeTableViewCell (= 1.1.2)
-    - EasySwift/YXJTagLabelView (= 1.1.2)
+    - EasySwift/Core (= 1.1.4)
+    - EasySwift/CoreData (= 1.1.4)
+    - EasySwift/DOPDropDownMenu (= 1.1.4)
+    - EasySwift/FlexboxKit (= 1.1.4)
+    - EasySwift/FLSideSlipViewController (= 1.1.4)
+    - EasySwift/Gumbo (= 1.1.4)
+    - EasySwift/JKCountDownButton (= 1.1.4)
+    - EasySwift/ObjectiveGumbo (= 1.1.4)
+    - EasySwift/PhotoBrowser (= 1.1.4)
+    - EasySwift/Pinyin (= 1.1.4)
+    - EasySwift/PullRefresh (= 1.1.4)
+    - EasySwift/SwiftRegex (= 1.1.4)
+    - EasySwift/TLCityPicker (= 1.1.4)
+    - EasySwift/URLManager (= 1.1.4)
+    - EasySwift/Watch (= 1.1.4)
+    - EasySwift/YXJCycleView (= 1.1.4)
+    - EasySwift/YXJImageCompressor (= 1.1.4)
+    - EasySwift/YXJKxMenu (= 1.1.4)
+    - EasySwift/YXJLinksButton (= 1.1.4)
+    - EasySwift/YXJOnePixelLine (= 1.1.4)
+    - EasySwift/YXJPageControl (= 1.1.4)
+    - EasySwift/YXJRatingView (= 1.1.4)
+    - EasySwift/YXJSlideBar (= 1.1.4)
+    - EasySwift/YXJSwipeTableViewCell (= 1.1.4)
+    - EasySwift/YXJTagLabelView (= 1.1.4)
     - FORScrollViewEmptyAssistant
     - GCDSwift
     - IQKeyboardManager
@@ -59,14 +57,14 @@ PODS:
     - TYAlertController
     - UIButton-SSEdgeInsets
     - UITableView+FDTemplateLayoutCell
-  - EasySwift/Core (1.1.2):
+  - EasySwift/Core (1.1.4):
     - Alamofire
     - APAddressBook/Swift
     - Bond
     - Colours
     - CYLTabBarController
     - DKChainableAnimationKit
-    - EasySwift/Extension
+    - EasySwift/FlexboxKit
     - FORScrollViewEmptyAssistant
     - GCDSwift
     - HanekeSwift
@@ -89,7 +87,7 @@ PODS:
     - TYAlertController
     - UIButton-SSEdgeInsets
     - UITableView+FDTemplateLayoutCell
-  - EasySwift/CoreData (1.1.2):
+  - EasySwift/CoreData (1.1.4):
     - APAddressBook/Swift
     - Colours
     - CYLTabBarController
@@ -111,7 +109,7 @@ PODS:
     - TYAlertController
     - UIButton-SSEdgeInsets
     - UITableView+FDTemplateLayoutCell
-  - EasySwift/DOPDropDownMenu (1.1.2):
+  - EasySwift/DOPDropDownMenu (1.1.4):
     - APAddressBook/Swift
     - Colours
     - CYLTabBarController
@@ -132,75 +130,7 @@ PODS:
     - TYAlertController
     - UIButton-SSEdgeInsets
     - UITableView+FDTemplateLayoutCell
-  - EasySwift/EUI (1.1.2):
-    - APAddressBook/Swift
-    - Colours
-    - CYLTabBarController
-    - DKChainableAnimationKit
-    - EasySwift/Core
-    - EasySwift/ObjectiveGumbo
-    - FORScrollViewEmptyAssistant
-    - GCDSwift
-    - IQKeyboardManager
-    - LCCoolHUD
-    - Loggerithm
-    - MJRefresh
-    - MWPhotoBrowser
-    - NBLoadableFromXibView
-    - RainbowNavigation
-    - swiftScan
-    - SwiftyJSON
-    - SystemServices
-    - TOWebViewController
-    - TYAlertController
-    - UIButton-SSEdgeInsets
-    - UITableView+FDTemplateLayoutCell
-  - EasySwift/Extension (1.1.2):
-    - APAddressBook/Swift
-    - Colours
-    - CYLTabBarController
-    - DKChainableAnimationKit
-    - EasySwift/Pinyin
-    - EasySwift/SwiftRegex
-    - FORScrollViewEmptyAssistant
-    - GCDSwift
-    - IQKeyboardManager
-    - LCCoolHUD
-    - Loggerithm
-    - MJRefresh
-    - MWPhotoBrowser
-    - NBLoadableFromXibView
-    - RainbowNavigation
-    - swiftScan
-    - SwiftyJSON
-    - SystemServices
-    - TOWebViewController
-    - TYAlertController
-    - UIButton-SSEdgeInsets
-    - UITableView+FDTemplateLayoutCell
-  - EasySwift/FlexboxKit (1.1.2):
-    - APAddressBook/Swift
-    - Colours
-    - CYLTabBarController
-    - DKChainableAnimationKit
-    - EasySwift/Core
-    - FORScrollViewEmptyAssistant
-    - GCDSwift
-    - IQKeyboardManager
-    - LCCoolHUD
-    - Loggerithm
-    - MJRefresh
-    - MWPhotoBrowser
-    - NBLoadableFromXibView
-    - RainbowNavigation
-    - swiftScan
-    - SwiftyJSON
-    - SystemServices
-    - TOWebViewController
-    - TYAlertController
-    - UIButton-SSEdgeInsets
-    - UITableView+FDTemplateLayoutCell
-  - EasySwift/FLSideSlipViewController (1.1.2):
+  - EasySwift/FlexboxKit (1.1.4):
     - APAddressBook/Swift
     - Colours
     - CYLTabBarController
@@ -221,7 +151,7 @@ PODS:
     - TYAlertController
     - UIButton-SSEdgeInsets
     - UITableView+FDTemplateLayoutCell
-  - EasySwift/Gumbo (1.1.2):
+  - EasySwift/FLSideSlipViewController (1.1.4):
     - APAddressBook/Swift
     - Colours
     - CYLTabBarController
@@ -242,7 +172,28 @@ PODS:
     - TYAlertController
     - UIButton-SSEdgeInsets
     - UITableView+FDTemplateLayoutCell
-  - EasySwift/JKCountDownButton (1.1.2):
+  - EasySwift/Gumbo (1.1.4):
+    - APAddressBook/Swift
+    - Colours
+    - CYLTabBarController
+    - DKChainableAnimationKit
+    - FORScrollViewEmptyAssistant
+    - GCDSwift
+    - IQKeyboardManager
+    - LCCoolHUD
+    - Loggerithm
+    - MJRefresh
+    - MWPhotoBrowser
+    - NBLoadableFromXibView
+    - RainbowNavigation
+    - swiftScan
+    - SwiftyJSON
+    - SystemServices
+    - TOWebViewController
+    - TYAlertController
+    - UIButton-SSEdgeInsets
+    - UITableView+FDTemplateLayoutCell
+  - EasySwift/JKCountDownButton (1.1.4):
     - APAddressBook/Swift
     - Colours
     - CYLTabBarController
@@ -264,7 +215,7 @@ PODS:
     - TYAlertController
     - UIButton-SSEdgeInsets
     - UITableView+FDTemplateLayoutCell
-  - EasySwift/ObjectiveGumbo (1.1.2):
+  - EasySwift/ObjectiveGumbo (1.1.4):
     - APAddressBook/Swift
     - Colours
     - CYLTabBarController
@@ -286,7 +237,7 @@ PODS:
     - TYAlertController
     - UIButton-SSEdgeInsets
     - UITableView+FDTemplateLayoutCell
-  - EasySwift/PhotoBrowser (1.1.2):
+  - EasySwift/PhotoBrowser (1.1.4):
     - APAddressBook/Swift
     - Colours
     - CYLTabBarController
@@ -307,7 +258,7 @@ PODS:
     - TYAlertController
     - UIButton-SSEdgeInsets
     - UITableView+FDTemplateLayoutCell
-  - EasySwift/Pinyin (1.1.2):
+  - EasySwift/Pinyin (1.1.4):
     - APAddressBook/Swift
     - Colours
     - CYLTabBarController
@@ -328,71 +279,7 @@ PODS:
     - TYAlertController
     - UIButton-SSEdgeInsets
     - UITableView+FDTemplateLayoutCell
-  - EasySwift/PullRefresh (1.1.2):
-    - APAddressBook/Swift
-    - Colours
-    - CYLTabBarController
-    - DKChainableAnimationKit
-    - EasySwift/Core
-    - FORScrollViewEmptyAssistant
-    - GCDSwift
-    - IQKeyboardManager
-    - LCCoolHUD
-    - Loggerithm
-    - MJRefresh
-    - MWPhotoBrowser
-    - NBLoadableFromXibView
-    - RainbowNavigation
-    - swiftScan
-    - SwiftyJSON
-    - SystemServices
-    - TOWebViewController
-    - TYAlertController
-    - UIButton-SSEdgeInsets
-    - UITableView+FDTemplateLayoutCell
-  - EasySwift/SwiftRegex (1.1.2):
-    - APAddressBook/Swift
-    - Colours
-    - CYLTabBarController
-    - DKChainableAnimationKit
-    - FORScrollViewEmptyAssistant
-    - GCDSwift
-    - IQKeyboardManager
-    - LCCoolHUD
-    - Loggerithm
-    - MJRefresh
-    - MWPhotoBrowser
-    - NBLoadableFromXibView
-    - RainbowNavigation
-    - swiftScan
-    - SwiftyJSON
-    - SystemServices
-    - TOWebViewController
-    - TYAlertController
-    - UIButton-SSEdgeInsets
-    - UITableView+FDTemplateLayoutCell
-  - EasySwift/TLCityPicker (1.1.2):
-    - APAddressBook/Swift
-    - Colours
-    - CYLTabBarController
-    - DKChainableAnimationKit
-    - FORScrollViewEmptyAssistant
-    - GCDSwift
-    - IQKeyboardManager
-    - LCCoolHUD
-    - Loggerithm
-    - MJRefresh
-    - MWPhotoBrowser
-    - NBLoadableFromXibView
-    - RainbowNavigation
-    - swiftScan
-    - SwiftyJSON
-    - SystemServices
-    - TOWebViewController
-    - TYAlertController
-    - UIButton-SSEdgeInsets
-    - UITableView+FDTemplateLayoutCell
-  - EasySwift/URLManager (1.1.2):
+  - EasySwift/PullRefresh (1.1.4):
     - APAddressBook/Swift
     - Colours
     - CYLTabBarController
@@ -414,7 +301,7 @@ PODS:
     - TYAlertController
     - UIButton-SSEdgeInsets
     - UITableView+FDTemplateLayoutCell
-  - EasySwift/Watch (1.1.2):
+  - EasySwift/SwiftRegex (1.1.4):
     - APAddressBook/Swift
     - Colours
     - CYLTabBarController
@@ -435,7 +322,7 @@ PODS:
     - TYAlertController
     - UIButton-SSEdgeInsets
     - UITableView+FDTemplateLayoutCell
-  - EasySwift/YXJCycleView (1.1.2):
+  - EasySwift/TLCityPicker (1.1.4):
     - APAddressBook/Swift
     - Colours
     - CYLTabBarController
@@ -456,50 +343,7 @@ PODS:
     - TYAlertController
     - UIButton-SSEdgeInsets
     - UITableView+FDTemplateLayoutCell
-  - EasySwift/YXJImageCompressor (1.1.2):
-    - APAddressBook/Swift
-    - Colours
-    - CYLTabBarController
-    - DKChainableAnimationKit
-    - EasySwift/Core
-    - FORScrollViewEmptyAssistant
-    - GCDSwift
-    - IQKeyboardManager
-    - LCCoolHUD
-    - Loggerithm
-    - MJRefresh
-    - MWPhotoBrowser
-    - NBLoadableFromXibView
-    - RainbowNavigation
-    - swiftScan
-    - SwiftyJSON
-    - SystemServices
-    - TOWebViewController
-    - TYAlertController
-    - UIButton-SSEdgeInsets
-    - UITableView+FDTemplateLayoutCell
-  - EasySwift/YXJKxMenu (1.1.2):
-    - APAddressBook/Swift
-    - Colours
-    - CYLTabBarController
-    - DKChainableAnimationKit
-    - FORScrollViewEmptyAssistant
-    - GCDSwift
-    - IQKeyboardManager
-    - LCCoolHUD
-    - Loggerithm
-    - MJRefresh
-    - MWPhotoBrowser
-    - NBLoadableFromXibView
-    - RainbowNavigation
-    - swiftScan
-    - SwiftyJSON
-    - SystemServices
-    - TOWebViewController
-    - TYAlertController
-    - UIButton-SSEdgeInsets
-    - UITableView+FDTemplateLayoutCell
-  - EasySwift/YXJLinksButton (1.1.2):
+  - EasySwift/URLManager (1.1.4):
     - APAddressBook/Swift
     - Colours
     - CYLTabBarController
@@ -521,7 +365,7 @@ PODS:
     - TYAlertController
     - UIButton-SSEdgeInsets
     - UITableView+FDTemplateLayoutCell
-  - EasySwift/YXJOnePixelLine (1.1.2):
+  - EasySwift/Watch (1.1.4):
     - APAddressBook/Swift
     - Colours
     - CYLTabBarController
@@ -542,7 +386,51 @@ PODS:
     - TYAlertController
     - UIButton-SSEdgeInsets
     - UITableView+FDTemplateLayoutCell
-  - EasySwift/YXJPageControl (1.1.2):
+  - EasySwift/YXJCycleView (1.1.4):
+    - APAddressBook/Swift
+    - Colours
+    - CYLTabBarController
+    - DKChainableAnimationKit
+    - EasySwift/YXJPageControl
+    - FORScrollViewEmptyAssistant
+    - GCDSwift
+    - IQKeyboardManager
+    - LCCoolHUD
+    - Loggerithm
+    - MJRefresh
+    - MWPhotoBrowser
+    - NBLoadableFromXibView
+    - RainbowNavigation
+    - swiftScan
+    - SwiftyJSON
+    - SystemServices
+    - TOWebViewController
+    - TYAlertController
+    - UIButton-SSEdgeInsets
+    - UITableView+FDTemplateLayoutCell
+  - EasySwift/YXJImageCompressor (1.1.4):
+    - APAddressBook/Swift
+    - Colours
+    - CYLTabBarController
+    - DKChainableAnimationKit
+    - EasySwift/Core
+    - FORScrollViewEmptyAssistant
+    - GCDSwift
+    - IQKeyboardManager
+    - LCCoolHUD
+    - Loggerithm
+    - MJRefresh
+    - MWPhotoBrowser
+    - NBLoadableFromXibView
+    - RainbowNavigation
+    - swiftScan
+    - SwiftyJSON
+    - SystemServices
+    - TOWebViewController
+    - TYAlertController
+    - UIButton-SSEdgeInsets
+    - UITableView+FDTemplateLayoutCell
+  - EasySwift/YXJKxMenu (1.1.4):
     - APAddressBook/Swift
     - Colours
     - CYLTabBarController
@@ -563,7 +451,29 @@ PODS:
     - TYAlertController
     - UIButton-SSEdgeInsets
     - UITableView+FDTemplateLayoutCell
-  - EasySwift/YXJRatingView (1.1.2):
+  - EasySwift/YXJLinksButton (1.1.4):
+    - APAddressBook/Swift
+    - Colours
+    - CYLTabBarController
+    - DKChainableAnimationKit
+    - EasySwift/Core
+    - FORScrollViewEmptyAssistant
+    - GCDSwift
+    - IQKeyboardManager
+    - LCCoolHUD
+    - Loggerithm
+    - MJRefresh
+    - MWPhotoBrowser
+    - NBLoadableFromXibView
+    - RainbowNavigation
+    - swiftScan
+    - SwiftyJSON
+    - SystemServices
+    - TOWebViewController
+    - TYAlertController
+    - UIButton-SSEdgeInsets
+    - UITableView+FDTemplateLayoutCell
+  - EasySwift/YXJOnePixelLine (1.1.4):
     - APAddressBook/Swift
     - Colours
     - CYLTabBarController
@@ -584,7 +494,7 @@ PODS:
     - TYAlertController
     - UIButton-SSEdgeInsets
     - UITableView+FDTemplateLayoutCell
-  - EasySwift/YXJSlideBar (1.1.2):
+  - EasySwift/YXJPageControl (1.1.4):
     - APAddressBook/Swift
     - Colours
     - CYLTabBarController
@@ -605,7 +515,7 @@ PODS:
     - TYAlertController
     - UIButton-SSEdgeInsets
     - UITableView+FDTemplateLayoutCell
-  - EasySwift/YXJSwipeTableViewCell (1.1.2):
+  - EasySwift/YXJRatingView (1.1.4):
     - APAddressBook/Swift
     - Colours
     - CYLTabBarController
@@ -626,7 +536,49 @@ PODS:
     - TYAlertController
     - UIButton-SSEdgeInsets
     - UITableView+FDTemplateLayoutCell
-  - EasySwift/YXJTagLabelView (1.1.2):
+  - EasySwift/YXJSlideBar (1.1.4):
+    - APAddressBook/Swift
+    - Colours
+    - CYLTabBarController
+    - DKChainableAnimationKit
+    - FORScrollViewEmptyAssistant
+    - GCDSwift
+    - IQKeyboardManager
+    - LCCoolHUD
+    - Loggerithm
+    - MJRefresh
+    - MWPhotoBrowser
+    - NBLoadableFromXibView
+    - RainbowNavigation
+    - swiftScan
+    - SwiftyJSON
+    - SystemServices
+    - TOWebViewController
+    - TYAlertController
+    - UIButton-SSEdgeInsets
+    - UITableView+FDTemplateLayoutCell
+  - EasySwift/YXJSwipeTableViewCell (1.1.4):
+    - APAddressBook/Swift
+    - Colours
+    - CYLTabBarController
+    - DKChainableAnimationKit
+    - FORScrollViewEmptyAssistant
+    - GCDSwift
+    - IQKeyboardManager
+    - LCCoolHUD
+    - Loggerithm
+    - MJRefresh
+    - MWPhotoBrowser
+    - NBLoadableFromXibView
+    - RainbowNavigation
+    - swiftScan
+    - SwiftyJSON
+    - SystemServices
+    - TOWebViewController
+    - TYAlertController
+    - UIButton-SSEdgeInsets
+    - UITableView+FDTemplateLayoutCell
+  - EasySwift/YXJTagLabelView (1.1.4):
     - APAddressBook/Swift
     - Colours
     - CYLTabBarController
@@ -700,7 +652,7 @@ SPEC CHECKSUMS:
   DACircularProgress: 4dd437c0fc3da5161cb289e07ac449493d41db71
   DKChainableAnimationKit: e4e605d253ee153cb600efa68f8c97ed118122a7
   DZNEmptyDataSet: 741da409081a4bf707c949c964623a6ad1799772
-  EasySwift: b444084ada5c0cd510bd7a581cec3c51eaa99962
+  EasySwift: 6c1b39b3fdc94521175b3e288fb56db02afca978
   FORScrollViewEmptyAssistant: 8434fcb61e4dc1c19bb4670ec99d48a3d5fea4d7
   GCDSwift: 4382f69c53deaf730adfc5d7d16901cc95e31ca5
   HanekeSwift: 08e47d3d0f2899ec58e5d257beba0de619aca9e8

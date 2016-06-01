@@ -1,6 +1,6 @@
 {
   "name": "EasySwift",
-  "version": "1.1.2",
+  "version": "1.1.4",
   "summary": "a little descript for EasySwift",
   "description": "This is the most simple way to use swift, which is a complete throughout the entire iOS development of the most convenient, the most simple, the most perfect framework to build the heart.",
   "homepage": "https://github.com/stubbornnessness",
@@ -10,7 +10,7 @@
   },
   "source": {
     "git": "https://github.com/stubbornnessness/EasySwift.git",
-    "tag": "1.1.2"
+    "tag": "1.1.4"
   },
   "platforms": {
     "ios": "8.0"
@@ -19,8 +19,6 @@
   "module_name": "EasySwift",
   "default_subspecs": [
     "Core",
-    "Extension",
-    "EUI",
     "FlexboxKit",
     "CoreData",
     "PhotoBrowser",
@@ -137,48 +135,16 @@
         "TTTAttributedLabel": [
 
         ],
-        "EasySwift/Extension": [
+        "EasySwift/FlexboxKit": [
 
         ]
       },
       "frameworks": "UIKit"
     },
     {
-      "name": "Extension",
-      "public_header_files": "Pod/Extension/*.h",
-      "source_files": "Pod/Extension/*",
-      "dependencies": {
-        "EasySwift/SwiftRegex": [
-
-        ],
-        "EasySwift/Pinyin": [
-
-        ]
-      }
-    },
-    {
-      "name": "EUI",
-      "public_header_files": "Pod/Lib/EUI/*.h",
-      "source_files": "Pod/Lib/EUI/*",
-      "frameworks": "JavaScriptCore",
-      "dependencies": {
-        "EasySwift/Core": [
-
-        ],
-        "EasySwift/ObjectiveGumbo": [
-
-        ]
-      }
-    },
-    {
       "name": "FlexboxKit",
       "public_header_files": "Pod/Lib/FlexboxKit/*.h",
-      "source_files": "Pod/Lib/FlexboxKit/*",
-      "dependencies": {
-        "EasySwift/Core": [
-
-        ]
-      }
+      "source_files": "Pod/Lib/FlexboxKit/*"
     },
     {
       "name": "CoreData",
@@ -279,7 +245,12 @@
     {
       "name": "YXJCycleView",
       "public_header_files": "Pod/Lib/YXJCycleView/*.h",
-      "source_files": "Pod/Lib/YXJCycleView/*"
+      "source_files": "Pod/Lib/YXJCycleView/*",
+      "dependencies": {
+        "EasySwift/YXJPageControl": [
+
+        ]
+      }
     },
     {
       "name": "YXJPageControl",

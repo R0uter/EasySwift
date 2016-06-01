@@ -9,7 +9,7 @@
 
 Pod::Spec.new do |s|
   s.name             = "EasySwift"
-  s.version          = "1.1.3"
+  s.version          = "1.1.4"
   s.summary          = "a little descript for EasySwift"
   s.description      = <<-DESC
                       This is the most simple way to use swift, which is a complete throughout the entire iOS development of the most convenient, the most simple, the most perfect framework to build the heart.
@@ -26,7 +26,7 @@ Pod::Spec.new do |s|
   s.requires_arc = true
   s.module_name = "EasySwift"
 
-  s.default_subspec = 'Core' , 'Extension' , 'EUI', 'FlexboxKit', 'CoreData', 'PhotoBrowser', 'Pinyin', 'DOPDropDownMenu', 'Gumbo', 'ObjectiveGumbo', 'FLSideSlipViewController', 'SwiftRegex', 'URLManager', 'YXJLinksButton', 'YXJImageCompressor', 'JKCountDownButton', 'PullRefresh', 'YXJCycleView', 'YXJPageControl', 'YXJKxMenu', 'YXJTagLabelView', 'YXJOnePixelLine', 'YXJSlideBar', 'YXJSwipeTableViewCell', 'Watch' , 'YXJRatingView', 'TLCityPicker'
+  s.default_subspec = 'Core' , 'FlexboxKit', 'CoreData', 'PhotoBrowser', 'Pinyin', 'DOPDropDownMenu', 'Gumbo', 'ObjectiveGumbo', 'FLSideSlipViewController', 'SwiftRegex', 'URLManager', 'YXJLinksButton', 'YXJImageCompressor', 'JKCountDownButton', 'PullRefresh', 'YXJCycleView', 'YXJPageControl', 'YXJKxMenu', 'YXJTagLabelView', 'YXJOnePixelLine', 'YXJSlideBar', 'YXJSwipeTableViewCell', 'Watch' , 'YXJRatingView', 'TLCityPicker'
 
   s.subspec 'Core' do |core|
     core.source_files = 'Pod/Core/*'
@@ -39,31 +39,15 @@ Pod::Spec.new do |s|
     core.dependency 'ObjectMapper'
     core.dependency 'ReachabilitySwift'
     core.dependency 'TTTAttributedLabel'
-    core.dependency 'EasySwift/Extension'
+    core.dependency 'EasySwift/FlexboxKit'
 
     core.frameworks = 'UIKit'  
 
   end
 
-  s.subspec 'Extension' do |extension|
-    extension.public_header_files = 'Pod/Extension/*.h'
-    extension.source_files = 'Pod/Extension/*'
-    extension.dependency 'EasySwift/SwiftRegex'
-    extension.dependency 'EasySwift/Pinyin'
-  end
-
-  s.subspec 'EUI' do |ss|
-    ss.public_header_files = 'Pod/Lib/EUI/*.h'
-    ss.source_files = 'Pod/Lib/EUI/*'
-    ss.frameworks = 'JavaScriptCore'
-    ss.dependency 'EasySwift/Core'
-    ss.dependency 'EasySwift/ObjectiveGumbo'
-  end
-
   s.subspec 'FlexboxKit' do |ss|
     ss.public_header_files = 'Pod/Lib/FlexboxKit/*.h'
     ss.source_files = 'Pod/Lib/FlexboxKit/*'
-    ss.dependency 'EasySwift/Core'
   end
 
   s.subspec 'CoreData' do |ss|
@@ -137,6 +121,7 @@ Pod::Spec.new do |s|
   s.subspec 'YXJCycleView' do |ss|
     ss.public_header_files = 'Pod/Lib/YXJCycleView/*.h'
     ss.source_files = 'Pod/Lib/YXJCycleView/*'
+    ss.dependency 'EasySwift/YXJPageControl'
   end
 
   s.subspec 'YXJPageControl' do |ss|
