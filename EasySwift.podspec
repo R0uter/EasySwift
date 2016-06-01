@@ -9,7 +9,7 @@
 
 Pod::Spec.new do |s|
   s.name             = "EasySwift"
-  s.version          = "1.1.6"
+  s.version          = "1.1.7"
   s.summary          = "a little descript for EasySwift"
   s.description      = <<-DESC
                       This is the most simple way to use swift, which is a complete throughout the entire iOS development of the most convenient, the most simple, the most perfect framework to build the heart.
@@ -47,7 +47,7 @@ Pod::Spec.new do |s|
     core.dependency 'EasySwift/PullRefresh'
     core.dependency 'EasySwift/Pinyin'
 
-    core.frameworks = 'UIKit'  
+    core.frameworks = 'UIKit' , 'CoreData' , 'JavaScriptCore'
 
   end
 
@@ -121,6 +121,7 @@ Pod::Spec.new do |s|
   s.subspec 'PullRefresh' do |ss|
     ss.source_files = 'Pod/Lib/PullRefresh/*'
     ss.dependency 'Bond'
+    ss.dependency 'SnapKit'
   end
 
   s.subspec 'YXJCycleView' do |ss|
@@ -193,7 +194,7 @@ Pod::Spec.new do |s|
   s.dependency 'MJRefresh'
   s.dependency 'DKChainableAnimationKit'
 
-  s.frameworks = 'UIKit'  
+  s.frameworks = 'UIKit'
 
 end
 
