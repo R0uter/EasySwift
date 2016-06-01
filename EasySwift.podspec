@@ -9,7 +9,7 @@
 
 Pod::Spec.new do |s|
   s.name             = "EasySwift"
-  s.version          = "1.1.5"
+  s.version          = "1.1.6"
   s.summary          = "a little descript for EasySwift"
   s.description      = <<-DESC
                       This is the most simple way to use swift, which is a complete throughout the entire iOS development of the most convenient, the most simple, the most perfect framework to build the heart.
@@ -120,6 +120,7 @@ Pod::Spec.new do |s|
 
   s.subspec 'PullRefresh' do |ss|
     ss.source_files = 'Pod/Lib/PullRefresh/*'
+    ss.dependency 'Bond'
   end
 
   s.subspec 'YXJCycleView' do |ss|
