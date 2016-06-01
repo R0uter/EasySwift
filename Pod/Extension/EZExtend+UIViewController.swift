@@ -80,12 +80,12 @@ extension UIViewController {
 
     public func showBarButton(position: NAV, button: UIButton?) {
         if position == .LEFT {
-            button?.addTarget(self, action: Selector("leftButtonTouch"), forControlEvents: UIControlEvents.TouchUpInside)
+            button?.addTarget(self, action: #selector(UIViewController.leftButtonTouch), forControlEvents: UIControlEvents.TouchUpInside)
             self.navigationItem.leftBarButtonItem = nil
             self.navigationItem.leftBarButtonItem = UIBarButtonItem(customView: button!)
             self.navigationController?.interactivePopGestureRecognizer?.delegate = nil
         } else if position == .RIGHT {
-            button?.addTarget(self, action: Selector("rightButtonTouch"), forControlEvents: UIControlEvents.TouchUpInside)
+            button?.addTarget(self, action: #selector(UIViewController.rightButtonTouch), forControlEvents: UIControlEvents.TouchUpInside)
             self.navigationItem.rightBarButtonItem = nil
             self.navigationItem.rightBarButtonItem = UIBarButtonItem(customView: button!)
         }

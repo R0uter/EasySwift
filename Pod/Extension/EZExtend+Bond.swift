@@ -18,7 +18,7 @@ import Kingfisher
         self.view = view
         self.sink = sink
         super.init()
-        view.addTapGesture(number, target: self, action: Selector("tapHandle:"))
+        view.addTapGesture(number, target: self, action: #selector(TapGestureDynamicHelper.tapHandle(_:)))
     }
 
     func tapHandle(gesture: UITapGestureRecognizer) {
@@ -33,7 +33,7 @@ import Kingfisher
         self.view = view
         self.sink = sink
         super.init()
-        view.addPanGesture(self, action: Selector("panHandle:"))
+        view.addPanGesture(self, action: #selector(PanGestureDynamicHelper.panHandle(_:)))
     }
     func panHandle(gestureRecognizer: UIPanGestureRecognizer) {
         sink(gestureRecognizer)
@@ -50,10 +50,10 @@ import Kingfisher
         self.number = number
         self.sink = sink
         super.init()
-        view.addSwipeGesture(UISwipeGestureRecognizerDirection.Right, numberOfTouches: number, target: self, action: Selector("swipeRightHandle:"))
-        view.addSwipeGesture(UISwipeGestureRecognizerDirection.Up, numberOfTouches: number, target: self, action: Selector("swipeUpHandle:"))
-        view.addSwipeGesture(UISwipeGestureRecognizerDirection.Down, numberOfTouches: number, target: self, action: Selector("swipeDownHandle:"))
-        view.addSwipeGesture(UISwipeGestureRecognizerDirection.Left, numberOfTouches: number, target: self, action: Selector("swipeLeftHandle:"))
+        view.addSwipeGesture(UISwipeGestureRecognizerDirection.Right, numberOfTouches: number, target: self, action: #selector(SwipeGestureDynamicHelper.swipeRightHandle(_:)))
+        view.addSwipeGesture(UISwipeGestureRecognizerDirection.Up, numberOfTouches: number, target: self, action: #selector(SwipeGestureDynamicHelper.swipeUpHandle(_:)))
+        view.addSwipeGesture(UISwipeGestureRecognizerDirection.Down, numberOfTouches: number, target: self, action: #selector(SwipeGestureDynamicHelper.swipeDownHandle(_:)))
+        view.addSwipeGesture(UISwipeGestureRecognizerDirection.Left, numberOfTouches: number, target: self, action: #selector(SwipeGestureDynamicHelper.swipeLeftHandle(_:)))
     }
 
     func swipeRightHandle(gestureRecognizer: UISwipeGestureRecognizer) {

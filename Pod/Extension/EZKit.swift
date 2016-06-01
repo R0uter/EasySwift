@@ -128,7 +128,7 @@ public class BlockButton: UIButton {
     
     var actionBlock: ((sender: BlockButton) -> ())? {
         didSet {
-            self.addTarget(self, action: "action:", forControlEvents: UIControlEvents.TouchUpInside)
+            self.addTarget(self, action: #selector(BlockButton.action(_:)), forControlEvents: UIControlEvents.TouchUpInside)
         }
     }
     
@@ -225,7 +225,7 @@ extension NSObject{
 public func isEmpty<C : NSObject>(x: C) -> Bool {
     if x.isKindOfClass(NSNull) {
         return true
-    }else if x.respondsToSelector(Selector("length")) && NSData().self.length == 0 {
+    }else if x.respondsToSelector(#selector(_NSStringCoreType.length)) && NSData().self.length == 0 {
         return true
     }else if x.respondsToSelector(Selector("count")) && NSArray().self.count == 0 {
         return true

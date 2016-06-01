@@ -9,7 +9,7 @@
 
 Pod::Spec.new do |s|
   s.name             = "EasySwift"
-  s.version          = "1.1.2"
+  s.version          = "1.1.3"
   s.summary          = "a little descript for EasySwift"
   s.description      = <<-DESC
                       This is the most simple way to use swift, which is a complete throughout the entire iOS development of the most convenient, the most simple, the most perfect framework to build the heart.
@@ -30,26 +30,45 @@ Pod::Spec.new do |s|
 
   s.subspec 'Core' do |core|
     core.source_files = 'Pod/Core/*'
+
+    core.dependency 'HanekeSwift'
+    core.dependency 'Bond'
+    core.dependency 'Alamofire'
+    core.dependency 'SnapKit'
+    core.dependency 'Kingfisher'
+    core.dependency 'ObjectMapper'
+    core.dependency 'ReachabilitySwift'
+    core.dependency 'TTTAttributedLabel'
+    core.dependency 'EasySwift/Extension'
+
+    core.frameworks = 'UIKit'  
+
   end
 
   s.subspec 'Extension' do |extension|
     extension.public_header_files = 'Pod/Extension/*.h'
     extension.source_files = 'Pod/Extension/*'
+    extension.dependency 'EasySwift/SwiftRegex'
+    extension.dependency 'EasySwift/Pinyin'
   end
 
   s.subspec 'EUI' do |ss|
     ss.public_header_files = 'Pod/Lib/EUI/*.h'
     ss.source_files = 'Pod/Lib/EUI/*'
     ss.frameworks = 'JavaScriptCore'
+    ss.dependency 'EasySwift/Core'
+    ss.dependency 'EasySwift/ObjectiveGumbo'
   end
 
   s.subspec 'FlexboxKit' do |ss|
     ss.public_header_files = 'Pod/Lib/FlexboxKit/*.h'
     ss.source_files = 'Pod/Lib/FlexboxKit/*'
+    ss.dependency 'EasySwift/Core'
   end
 
   s.subspec 'CoreData' do |ss|
-    ss.source_files = 'Pod/Lib/CoreData/*.h'
+    ss.source_files = 'Pod/Lib/CoreData/*'
+    ss.dependency 'EasySwift/Core'
   end
 
   s.subspec 'PhotoBrowser' do |ss|
@@ -75,6 +94,7 @@ Pod::Spec.new do |s|
   s.subspec 'ObjectiveGumbo' do |ss|
     ss.public_header_files = 'Pod/Lib/ObjectiveGumbo/*.h'
     ss.source_files = 'Pod/Lib/ObjectiveGumbo/*'
+    ss.dependency 'EasySwift/Gumbo'
   end
 
   s.subspec 'FLSideSlipViewController' do |ss|
@@ -89,24 +109,29 @@ Pod::Spec.new do |s|
   s.subspec 'URLManager' do |ss|
     ss.public_header_files = 'Pod/Lib/URLManager/*.h'
     ss.source_files = 'Pod/Lib/URLManager/*'
+    ss.dependency 'EasySwift/Core'
   end
 
   s.subspec 'YXJLinksButton' do |ss|
     ss.source_files = 'Pod/Lib/YXJLinksButton/*'
+    ss.dependency 'EasySwift/Core'
   end
 
   s.subspec 'YXJImageCompressor' do |ss|
     ss.public_header_files = 'Pod/Lib/YXJImageCompressor/*.h'
     ss.source_files = 'Pod/Lib/YXJImageCompressor/*'
+    ss.dependency 'EasySwift/Core'
   end
 
   s.subspec 'JKCountDownButton' do |ss|
     ss.public_header_files = 'Pod/Lib/JKCountDownButton/*.h'
     ss.source_files = 'Pod/Lib/JKCountDownButton/*'
+    ss.dependency 'EasySwift/Core'
   end
 
   s.subspec 'PullRefresh' do |ss|
     ss.source_files = 'Pod/Lib/PullRefresh/*'
+    ss.dependency 'EasySwift/Core'
   end
 
   s.subspec 'YXJCycleView' do |ss|
@@ -157,15 +182,6 @@ Pod::Spec.new do |s|
     ss.source_files = 'Pod/Lib/TLCityPicker/*'
   end
 
-  s.dependency 'HanekeSwift'
-  s.dependency 'Bond'
-  s.dependency 'Alamofire'
-  s.dependency 'SnapKit'
-  s.dependency 'Kingfisher'
-  s.dependency 'ObjectMapper'
-  s.dependency 'ReachabilitySwift'
-  s.dependency 'TTTAttributedLabel'
-
   s.dependency 'UITableView+FDTemplateLayoutCell'
   s.dependency 'CYLTabBarController'
   s.dependency 'IQKeyboardManager'
@@ -187,6 +203,5 @@ Pod::Spec.new do |s|
   s.dependency 'MJRefresh'
   s.dependency 'DKChainableAnimationKit'
 
-  s.frameworks = 'UIKit'
 end
 

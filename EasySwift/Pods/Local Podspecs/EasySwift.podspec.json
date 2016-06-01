@@ -1,6 +1,6 @@
 {
   "name": "EasySwift",
-  "version": "1.1.1",
+  "version": "1.1.2",
   "summary": "a little descript for EasySwift",
   "description": "This is the most simple way to use swift, which is a complete throughout the entire iOS development of the most convenient, the most simple, the most perfect framework to build the heart.",
   "homepage": "https://github.com/stubbornnessness",
@@ -10,7 +10,7 @@
   },
   "source": {
     "git": "https://github.com/stubbornnessness/EasySwift.git",
-    "tag": "1.1.1"
+    "tag": "1.1.2"
   },
   "platforms": {
     "ios": "8.0"
@@ -47,30 +47,6 @@
     "TLCityPicker"
   ],
   "dependencies": {
-    "HanekeSwift": [
-
-    ],
-    "Bond": [
-
-    ],
-    "Alamofire": [
-
-    ],
-    "SnapKit": [
-
-    ],
-    "Kingfisher": [
-
-    ],
-    "ObjectMapper": [
-
-    ],
-    "ReachabilitySwift": [
-
-    ],
-    "TTTAttributedLabel": [
-
-    ],
     "UITableView+FDTemplateLayoutCell": [
 
     ],
@@ -132,31 +108,86 @@
 
     ]
   },
-  "frameworks": "UIKit",
   "subspecs": [
     {
       "name": "Core",
-      "source_files": "Pod/Core/*"
+      "source_files": "Pod/Core/*",
+      "dependencies": {
+        "HanekeSwift": [
+
+        ],
+        "Bond": [
+
+        ],
+        "Alamofire": [
+
+        ],
+        "SnapKit": [
+
+        ],
+        "Kingfisher": [
+
+        ],
+        "ObjectMapper": [
+
+        ],
+        "ReachabilitySwift": [
+
+        ],
+        "TTTAttributedLabel": [
+
+        ],
+        "EasySwift/Extension": [
+
+        ]
+      },
+      "frameworks": "UIKit"
     },
     {
       "name": "Extension",
       "public_header_files": "Pod/Extension/*.h",
-      "source_files": "Pod/Extension/*"
+      "source_files": "Pod/Extension/*",
+      "dependencies": {
+        "EasySwift/SwiftRegex": [
+
+        ],
+        "EasySwift/Pinyin": [
+
+        ]
+      }
     },
     {
       "name": "EUI",
       "public_header_files": "Pod/Lib/EUI/*.h",
       "source_files": "Pod/Lib/EUI/*",
-      "frameworks": "JavaScriptCore"
+      "frameworks": "JavaScriptCore",
+      "dependencies": {
+        "EasySwift/Core": [
+
+        ],
+        "EasySwift/ObjectiveGumbo": [
+
+        ]
+      }
     },
     {
       "name": "FlexboxKit",
       "public_header_files": "Pod/Lib/FlexboxKit/*.h",
-      "source_files": "Pod/Lib/FlexboxKit/*"
+      "source_files": "Pod/Lib/FlexboxKit/*",
+      "dependencies": {
+        "EasySwift/Core": [
+
+        ]
+      }
     },
     {
       "name": "CoreData",
-      "source_files": "Pod/Lib/CoreData/*.h"
+      "source_files": "Pod/Lib/CoreData/*",
+      "dependencies": {
+        "EasySwift/Core": [
+
+        ]
+      }
     },
     {
       "name": "PhotoBrowser",
@@ -181,7 +212,12 @@
     {
       "name": "ObjectiveGumbo",
       "public_header_files": "Pod/Lib/ObjectiveGumbo/*.h",
-      "source_files": "Pod/Lib/ObjectiveGumbo/*"
+      "source_files": "Pod/Lib/ObjectiveGumbo/*",
+      "dependencies": {
+        "EasySwift/Gumbo": [
+
+        ]
+      }
     },
     {
       "name": "FLSideSlipViewController",
@@ -195,25 +231,50 @@
     {
       "name": "URLManager",
       "public_header_files": "Pod/Lib/URLManager/*.h",
-      "source_files": "Pod/Lib/URLManager/*"
+      "source_files": "Pod/Lib/URLManager/*",
+      "dependencies": {
+        "EasySwift/Core": [
+
+        ]
+      }
     },
     {
       "name": "YXJLinksButton",
-      "source_files": "Pod/Lib/YXJLinksButton/*"
+      "source_files": "Pod/Lib/YXJLinksButton/*",
+      "dependencies": {
+        "EasySwift/Core": [
+
+        ]
+      }
     },
     {
       "name": "YXJImageCompressor",
       "public_header_files": "Pod/Lib/YXJImageCompressor/*.h",
-      "source_files": "Pod/Lib/YXJImageCompressor/*"
+      "source_files": "Pod/Lib/YXJImageCompressor/*",
+      "dependencies": {
+        "EasySwift/Core": [
+
+        ]
+      }
     },
     {
       "name": "JKCountDownButton",
       "public_header_files": "Pod/Lib/JKCountDownButton/*.h",
-      "source_files": "Pod/Lib/JKCountDownButton/*"
+      "source_files": "Pod/Lib/JKCountDownButton/*",
+      "dependencies": {
+        "EasySwift/Core": [
+
+        ]
+      }
     },
     {
       "name": "PullRefresh",
-      "source_files": "Pod/Lib/PullRefresh/*"
+      "source_files": "Pod/Lib/PullRefresh/*",
+      "dependencies": {
+        "EasySwift/Core": [
+
+        ]
+      }
     },
     {
       "name": "YXJCycleView",
