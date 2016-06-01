@@ -9,7 +9,7 @@
 
 Pod::Spec.new do |s|
   s.name             = "EasySwift"
-  s.version          = "1.1.7"
+  s.version          = "1.1.8"
   s.summary          = "a little descript for EasySwift"
   s.description      = <<-DESC
                       This is the most simple way to use swift, which is a complete throughout the entire iOS development of the most convenient, the most simple, the most perfect framework to build the heart.
@@ -26,7 +26,7 @@ Pod::Spec.new do |s|
   s.requires_arc = true
   s.module_name = "EasySwift"
 
-  s.default_subspec = 'Core' , 'FlexboxKit', 'CoreData', 'PhotoBrowser', 'Pinyin', 'DOPDropDownMenu', 'Gumbo', 'ObjectiveGumbo', 'FLSideSlipViewController', 'SwiftRegex', 'URLManager', 'YXJLinksButton', 'YXJImageCompressor', 'JKCountDownButton', 'PullRefresh', 'YXJCycleView', 'YXJPageControl', 'YXJKxMenu', 'YXJTagLabelView', 'YXJOnePixelLine', 'YXJSlideBar', 'YXJSwipeTableViewCell', 'Watch' , 'YXJRatingView', 'TLCityPicker'
+  s.default_subspec = 'Core' , 'FlexboxKit', 'CoreData', 'PhotoBrowser', 'Pinyin', 'DOPDropDownMenu', 'Gumbo', 'ObjectiveGumbo', 'FLSideSlipViewController', 'SwiftRegex', 'URLManager', 'YXJLinksButton', 'YXJImageCompressor', 'JKCountDownButton', 'YXJCycleView', 'YXJPageControl', 'YXJKxMenu', 'YXJTagLabelView', 'YXJOnePixelLine', 'YXJSlideBar', 'YXJSwipeTableViewCell', 'Watch' , 'YXJRatingView', 'TLCityPicker'
 
   s.subspec 'Core' do |core|
     core.source_files = 'Pod/Core/*'
@@ -44,7 +44,6 @@ Pod::Spec.new do |s|
     core.dependency 'EasySwift/URLManager'
     core.dependency 'EasySwift/SwiftRegex'
     core.dependency 'EasySwift/Watch'
-    core.dependency 'EasySwift/PullRefresh'
     core.dependency 'EasySwift/Pinyin'
 
     core.frameworks = 'UIKit' , 'CoreData' , 'JavaScriptCore'
@@ -116,12 +115,6 @@ Pod::Spec.new do |s|
     ss.public_header_files = 'Pod/Lib/JKCountDownButton/*.h'
     ss.source_files = 'Pod/Lib/JKCountDownButton/*'
     ss.dependency 'EasySwift/Core'
-  end
-
-  s.subspec 'PullRefresh' do |ss|
-    ss.source_files = 'Pod/Lib/PullRefresh/*'
-    ss.dependency 'Bond'
-    ss.dependency 'SnapKit'
   end
 
   s.subspec 'YXJCycleView' do |ss|
