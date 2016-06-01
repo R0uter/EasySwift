@@ -9,7 +9,7 @@
 
 Pod::Spec.new do |s|
   s.name             = "EasySwift"
-  s.version          = "1.1.4"
+  s.version          = "1.1.5"
   s.summary          = "a little descript for EasySwift"
   s.description      = <<-DESC
                       This is the most simple way to use swift, which is a complete throughout the entire iOS development of the most convenient, the most simple, the most perfect framework to build the heart.
@@ -40,6 +40,12 @@ Pod::Spec.new do |s|
     core.dependency 'ReachabilitySwift'
     core.dependency 'TTTAttributedLabel'
     core.dependency 'EasySwift/FlexboxKit'
+    core.dependency 'EasySwift/ObjectiveGumbo'
+    core.dependency 'EasySwift/URLManager'
+    core.dependency 'EasySwift/SwiftRegex'
+    core.dependency 'EasySwift/Watch'
+    core.dependency 'EasySwift/PullRefresh'
+    core.dependency 'EasySwift/Pinyin'
 
     core.frameworks = 'UIKit'  
 
@@ -93,7 +99,6 @@ Pod::Spec.new do |s|
   s.subspec 'URLManager' do |ss|
     ss.public_header_files = 'Pod/Lib/URLManager/*.h'
     ss.source_files = 'Pod/Lib/URLManager/*'
-    ss.dependency 'EasySwift/Core'
   end
 
   s.subspec 'YXJLinksButton' do |ss|
@@ -115,7 +120,6 @@ Pod::Spec.new do |s|
 
   s.subspec 'PullRefresh' do |ss|
     ss.source_files = 'Pod/Lib/PullRefresh/*'
-    ss.dependency 'EasySwift/Core'
   end
 
   s.subspec 'YXJCycleView' do |ss|
@@ -187,6 +191,8 @@ Pod::Spec.new do |s|
   s.dependency 'SwiftyJSON'
   s.dependency 'MJRefresh'
   s.dependency 'DKChainableAnimationKit'
+
+  s.frameworks = 'UIKit'  
 
 end
 
