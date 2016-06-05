@@ -1,6 +1,6 @@
 {
   "name": "EasySwift",
-  "version": "1.1.4",
+  "version": "1.2.0",
   "summary": "a little descript for EasySwift",
   "description": "This is the most simple way to use swift, which is a complete throughout the entire iOS development of the most convenient, the most simple, the most perfect framework to build the heart.",
   "homepage": "https://github.com/stubbornnessness",
@@ -10,7 +10,7 @@
   },
   "source": {
     "git": "https://github.com/stubbornnessness/EasySwift.git",
-    "tag": "1.1.4"
+    "tag": "1.2.0"
   },
   "platforms": {
     "ios": "8.0"
@@ -32,7 +32,6 @@
     "YXJLinksButton",
     "YXJImageCompressor",
     "JKCountDownButton",
-    "PullRefresh",
     "YXJCycleView",
     "YXJPageControl",
     "YXJKxMenu",
@@ -41,8 +40,8 @@
     "YXJSlideBar",
     "YXJSwipeTableViewCell",
     "Watch",
-    "YXJRatingView",
-    "TLCityPicker"
+    "TLCityPicker",
+    "SearchBar"
   ],
   "dependencies": {
     "UITableView+FDTemplateLayoutCell": [
@@ -104,8 +103,15 @@
     ],
     "DKChainableAnimationKit": [
 
+    ],
+    "AXBadgeView-Swift": [
+
+    ],
+    "HCSStarRatingView": [
+
     ]
   },
+  "frameworks": "UIKit",
   "subspecs": [
     {
       "name": "Core",
@@ -137,9 +143,28 @@
         ],
         "EasySwift/FlexboxKit": [
 
+        ],
+        "EasySwift/ObjectiveGumbo": [
+
+        ],
+        "EasySwift/URLManager": [
+
+        ],
+        "EasySwift/SwiftRegex": [
+
+        ],
+        "EasySwift/Watch": [
+
+        ],
+        "EasySwift/Pinyin": [
+
         ]
       },
-      "frameworks": "UIKit"
+      "frameworks": [
+        "UIKit",
+        "CoreData",
+        "JavaScriptCore"
+      ]
     },
     {
       "name": "FlexboxKit",
@@ -197,12 +222,7 @@
     {
       "name": "URLManager",
       "public_header_files": "Pod/Lib/URLManager/*.h",
-      "source_files": "Pod/Lib/URLManager/*",
-      "dependencies": {
-        "EasySwift/Core": [
-
-        ]
-      }
+      "source_files": "Pod/Lib/URLManager/*"
     },
     {
       "name": "YXJLinksButton",
@@ -227,15 +247,6 @@
       "name": "JKCountDownButton",
       "public_header_files": "Pod/Lib/JKCountDownButton/*.h",
       "source_files": "Pod/Lib/JKCountDownButton/*",
-      "dependencies": {
-        "EasySwift/Core": [
-
-        ]
-      }
-    },
-    {
-      "name": "PullRefresh",
-      "source_files": "Pod/Lib/PullRefresh/*",
       "dependencies": {
         "EasySwift/Core": [
 
@@ -286,14 +297,14 @@
       "source_files": "Pod/Lib/Watch/*"
     },
     {
-      "name": "YXJRatingView",
-      "public_header_files": "Pod/Lib/YXJRatingView/*.h",
-      "source_files": "Pod/Lib/YXJRatingView/*"
-    },
-    {
       "name": "TLCityPicker",
       "public_header_files": "Pod/Lib/TLCityPicker/*.h",
       "source_files": "Pod/Lib/TLCityPicker/*"
+    },
+    {
+      "name": "SearchBar",
+      "public_header_files": "Pod/Lib/SearchBar/*.h",
+      "source_files": "Pod/Lib/SearchBar/*"
     }
   ]
 }

@@ -9,7 +9,7 @@
 
 Pod::Spec.new do |s|
   s.name             = "EasySwift"
-  s.version          = "1.1.9"
+  s.version          = "1.2.0"
   s.summary          = "a little descript for EasySwift"
   s.description      = <<-DESC
                       This is the most simple way to use swift, which is a complete throughout the entire iOS development of the most convenient, the most simple, the most perfect framework to build the heart.
@@ -26,7 +26,7 @@ Pod::Spec.new do |s|
   s.requires_arc = true
   s.module_name = "EasySwift"
 
-  s.default_subspec = 'Core' , 'FlexboxKit', 'CoreData', 'PhotoBrowser', 'Pinyin', 'DOPDropDownMenu', 'Gumbo', 'ObjectiveGumbo', 'FLSideSlipViewController', 'SwiftRegex', 'URLManager', 'YXJLinksButton', 'YXJImageCompressor', 'JKCountDownButton', 'YXJCycleView', 'YXJPageControl', 'YXJKxMenu', 'YXJTagLabelView', 'YXJOnePixelLine', 'YXJSlideBar', 'YXJSwipeTableViewCell', 'Watch' , 'YXJRatingView', 'TLCityPicker' , 'SearchBar'
+  s.default_subspec = 'Core' , 'FlexboxKit', 'CoreData', 'PhotoBrowser', 'Pinyin', 'DOPDropDownMenu', 'Gumbo', 'ObjectiveGumbo', 'FLSideSlipViewController', 'SwiftRegex', 'URLManager', 'YXJLinksButton', 'YXJImageCompressor', 'JKCountDownButton', 'YXJCycleView', 'YXJPageControl', 'YXJKxMenu', 'YXJTagLabelView', 'YXJOnePixelLine', 'YXJSlideBar', 'YXJSwipeTableViewCell', 'Watch' , 'TLCityPicker' , 'SearchBar'
 
   s.subspec 'Core' do |core|
     core.source_files = 'Pod/Core/*'
@@ -156,12 +156,6 @@ Pod::Spec.new do |s|
     ss.source_files = 'Pod/Lib/Watch/*'
   end  
 
-  s.subspec 'YXJRatingView' do |ss|
-    ss.public_header_files = 'Pod/Lib/YXJRatingView/*.h'
-    ss.source_files = 'Pod/Lib/YXJRatingView/*.{h,m}'
-    ss.resource_bundles = 'Pod/Lib/YXJRatingView/*.bundle'
-  end 
-
   s.subspec 'TLCityPicker' do |ss|
     ss.public_header_files = 'Pod/Lib/TLCityPicker/*.h'
     ss.source_files = 'Pod/Lib/TLCityPicker/*'
@@ -192,7 +186,8 @@ Pod::Spec.new do |s|
   s.dependency 'SwiftyJSON'
   s.dependency 'MJRefresh'
   s.dependency 'DKChainableAnimationKit'  
-  s.dependency 'AXPopoverView' 
+  s.dependency 'AXBadgeView-Swift' 
+  s.dependency 'HCSStarRatingView'
 
   s.frameworks = 'UIKit'
 

@@ -1,9 +1,9 @@
 
 platform :ios, '8.0'
 
-target 'EasySwift' do
+target 'EasySwiftTest' do
     
-    xcodeproj 'EasySwift.xcodeproj'
+    xcodeproj 'EasySwiftTest.xcodeproj'
     
     use_frameworks!
     

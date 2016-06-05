@@ -7,69 +7,71 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		889FAA22E1263065521C00C7 /* Pods_EasySwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9F3C6AA1344A6D1B75371353 /* Pods_EasySwift.framework */; };
-		DEFC8A511CC376760028FDF1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEFC8A501CC376760028FDF1 /* AppDelegate.swift */; };
-		DEFC8A531CC376760028FDF1 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEFC8A521CC376760028FDF1 /* ViewController.swift */; };
-		DEFC8A561CC376760028FDF1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DEFC8A541CC376760028FDF1 /* Main.storyboard */; };
-		DEFC8A581CC376760028FDF1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DEFC8A571CC376760028FDF1 /* Assets.xcassets */; };
-		DEFC8A5B1CC376760028FDF1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DEFC8A591CC376760028FDF1 /* LaunchScreen.storyboard */; };
-		DEFC8A661CC376760028FDF1 /* EasySwiftTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEFC8A651CC376760028FDF1 /* EasySwiftTests.swift */; };
-		DEFC8A711CC376770028FDF1 /* EasySwiftUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEFC8A701CC376770028FDF1 /* EasySwiftUITests.swift */; };
+		513C0FCF4B6C6EB515C399E8 /* Pods_EasySwiftTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BAC1C3F2BADBD039026F7F81 /* Pods_EasySwiftTest.framework */; };
+		DE306B8A1D0459B500EF05C6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE306B891D0459B500EF05C6 /* AppDelegate.swift */; };
+		DE306B8C1D0459B500EF05C6 /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE306B8B1D0459B500EF05C6 /* FirstViewController.swift */; };
+		DE306B8E1D0459B500EF05C6 /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE306B8D1D0459B500EF05C6 /* SecondViewController.swift */; };
+		DE306B911D0459B500EF05C6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DE306B8F1D0459B500EF05C6 /* Main.storyboard */; };
+		DE306B931D0459B500EF05C6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DE306B921D0459B500EF05C6 /* Assets.xcassets */; };
+		DE306B961D0459B500EF05C6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DE306B941D0459B500EF05C6 /* LaunchScreen.storyboard */; };
+		DE306BA11D0459B500EF05C6 /* EasySwiftTestTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE306BA01D0459B500EF05C6 /* EasySwiftTestTests.swift */; };
+		DE306BAC1D0459B500EF05C6 /* EasySwiftTestUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE306BAB1D0459B500EF05C6 /* EasySwiftTestUITests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		DEFC8A621CC376760028FDF1 /* PBXContainerItemProxy */ = {
+		DE306B9D1D0459B500EF05C6 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = DEFC8A451CC376760028FDF1 /* Project object */;
+			containerPortal = DE306B7E1D0459B500EF05C6 /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = DEFC8A4C1CC376760028FDF1;
-			remoteInfo = EasySwift;
+			remoteGlobalIDString = DE306B851D0459B500EF05C6;
+			remoteInfo = EasySwiftTest;
 		};
-		DEFC8A6D1CC376770028FDF1 /* PBXContainerItemProxy */ = {
+		DE306BA81D0459B500EF05C6 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = DEFC8A451CC376760028FDF1 /* Project object */;
+			containerPortal = DE306B7E1D0459B500EF05C6 /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = DEFC8A4C1CC376760028FDF1;
-			remoteInfo = EasySwift;
+			remoteGlobalIDString = DE306B851D0459B500EF05C6;
+			remoteInfo = EasySwiftTest;
 		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		6A3349EC7C786FC8857EB819 /* Pods-EasySwift.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EasySwift.release.xcconfig"; path = "Pods/Target Support Files/Pods-EasySwift/Pods-EasySwift.release.xcconfig"; sourceTree = "<group>"; };
-		9F3C6AA1344A6D1B75371353 /* Pods_EasySwift.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_EasySwift.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		C2D36EC115308A36D0EA64B1 /* Pods-EasySwift.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EasySwift.debug.xcconfig"; path = "Pods/Target Support Files/Pods-EasySwift/Pods-EasySwift.debug.xcconfig"; sourceTree = "<group>"; };
-		DEFC8A4D1CC376760028FDF1 /* EasySwiftTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EasySwiftTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		DEFC8A501CC376760028FDF1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		DEFC8A521CC376760028FDF1 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		DEFC8A551CC376760028FDF1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		DEFC8A571CC376760028FDF1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		DEFC8A5A1CC376760028FDF1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		DEFC8A5C1CC376760028FDF1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		DEFC8A611CC376760028FDF1 /* EasySwiftTest.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = EasySwiftTest.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		DEFC8A651CC376760028FDF1 /* EasySwiftTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EasySwiftTests.swift; sourceTree = "<group>"; };
-		DEFC8A671CC376760028FDF1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		DEFC8A6C1CC376770028FDF1 /* EasySwiftTest.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = EasySwiftTest.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		DEFC8A701CC376770028FDF1 /* EasySwiftUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EasySwiftUITests.swift; sourceTree = "<group>"; };
-		DEFC8A721CC376770028FDF1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5642A4E2262E0446F2901C8A /* Pods-EasySwiftTest.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EasySwiftTest.release.xcconfig"; path = "Pods/Target Support Files/Pods-EasySwiftTest/Pods-EasySwiftTest.release.xcconfig"; sourceTree = "<group>"; };
+		BAC1C3F2BADBD039026F7F81 /* Pods_EasySwiftTest.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_EasySwiftTest.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D6D64D8A91DEC5CDFD118CBB /* Pods-EasySwiftTest.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EasySwiftTest.debug.xcconfig"; path = "Pods/Target Support Files/Pods-EasySwiftTest/Pods-EasySwiftTest.debug.xcconfig"; sourceTree = "<group>"; };
+		DE306B861D0459B500EF05C6 /* EasySwiftTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EasySwiftTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		DE306B891D0459B500EF05C6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		DE306B8B1D0459B500EF05C6 /* FirstViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstViewController.swift; sourceTree = "<group>"; };
+		DE306B8D1D0459B500EF05C6 /* SecondViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondViewController.swift; sourceTree = "<group>"; };
+		DE306B901D0459B500EF05C6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		DE306B921D0459B500EF05C6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		DE306B951D0459B500EF05C6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		DE306B971D0459B500EF05C6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DE306B9C1D0459B500EF05C6 /* EasySwiftTestTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = EasySwiftTestTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		DE306BA01D0459B500EF05C6 /* EasySwiftTestTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EasySwiftTestTests.swift; sourceTree = "<group>"; };
+		DE306BA21D0459B500EF05C6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DE306BA71D0459B500EF05C6 /* EasySwiftTestUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = EasySwiftTestUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		DE306BAB1D0459B500EF05C6 /* EasySwiftTestUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EasySwiftTestUITests.swift; sourceTree = "<group>"; };
+		DE306BAD1D0459B500EF05C6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		DEFC8A4A1CC376760028FDF1 /* Frameworks */ = {
+		DE306B831D0459B500EF05C6 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				889FAA22E1263065521C00C7 /* Pods_EasySwift.framework in Frameworks */,
+				513C0FCF4B6C6EB515C399E8 /* Pods_EasySwiftTest.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		DEFC8A5E1CC376760028FDF1 /* Frameworks */ = {
+		DE306B991D0459B500EF05C6 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		DEFC8A691CC376770028FDF1 /* Frameworks */ = {
+		DE306BA41D0459B500EF05C6 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -79,159 +81,160 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		D179064198258DA0C2DACB36 /* Pods */ = {
+		07A06ABD23BF202A35CB414E /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				C2D36EC115308A36D0EA64B1 /* Pods-EasySwift.debug.xcconfig */,
-				6A3349EC7C786FC8857EB819 /* Pods-EasySwift.release.xcconfig */,
+				D6D64D8A91DEC5CDFD118CBB /* Pods-EasySwiftTest.debug.xcconfig */,
+				5642A4E2262E0446F2901C8A /* Pods-EasySwiftTest.release.xcconfig */,
 			);
 			name = Pods;
 			sourceTree = "<group>";
 		};
-		DEFC8A441CC376760028FDF1 = {
+		9CB523B5F3056C11CD0DE327 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				DEFC8A4F1CC376760028FDF1 /* EasySwift */,
-				DEFC8A641CC376760028FDF1 /* EasySwiftTests */,
-				DEFC8A6F1CC376770028FDF1 /* EasySwiftUITests */,
-				DEFC8A4E1CC376760028FDF1 /* Products */,
-				D179064198258DA0C2DACB36 /* Pods */,
-				F76E5FA3608B00E02BA46B89 /* Frameworks */,
+				BAC1C3F2BADBD039026F7F81 /* Pods_EasySwiftTest.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		DE306B7D1D0459B500EF05C6 = {
+			isa = PBXGroup;
+			children = (
+				DE306B881D0459B500EF05C6 /* EasySwiftTest */,
+				DE306B9F1D0459B500EF05C6 /* EasySwiftTestTests */,
+				DE306BAA1D0459B500EF05C6 /* EasySwiftTestUITests */,
+				DE306B871D0459B500EF05C6 /* Products */,
+				07A06ABD23BF202A35CB414E /* Pods */,
+				9CB523B5F3056C11CD0DE327 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
-		DEFC8A4E1CC376760028FDF1 /* Products */ = {
+		DE306B871D0459B500EF05C6 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				DEFC8A4D1CC376760028FDF1 /* EasySwiftTest.app */,
-				DEFC8A611CC376760028FDF1 /* EasySwiftTest.xctest */,
-				DEFC8A6C1CC376770028FDF1 /* EasySwiftTest.xctest */,
+				DE306B861D0459B500EF05C6 /* EasySwiftTest.app */,
+				DE306B9C1D0459B500EF05C6 /* EasySwiftTestTests.xctest */,
+				DE306BA71D0459B500EF05C6 /* EasySwiftTestUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		DEFC8A4F1CC376760028FDF1 /* EasySwift */ = {
+		DE306B881D0459B500EF05C6 /* EasySwiftTest */ = {
 			isa = PBXGroup;
 			children = (
-				DEFC8A501CC376760028FDF1 /* AppDelegate.swift */,
-				DEFC8A521CC376760028FDF1 /* ViewController.swift */,
-				DEFC8A541CC376760028FDF1 /* Main.storyboard */,
-				DEFC8A571CC376760028FDF1 /* Assets.xcassets */,
-				DEFC8A591CC376760028FDF1 /* LaunchScreen.storyboard */,
-				DEFC8A5C1CC376760028FDF1 /* Info.plist */,
+				DE306B891D0459B500EF05C6 /* AppDelegate.swift */,
+				DE306B8B1D0459B500EF05C6 /* FirstViewController.swift */,
+				DE306B8D1D0459B500EF05C6 /* SecondViewController.swift */,
+				DE306B8F1D0459B500EF05C6 /* Main.storyboard */,
+				DE306B921D0459B500EF05C6 /* Assets.xcassets */,
+				DE306B941D0459B500EF05C6 /* LaunchScreen.storyboard */,
+				DE306B971D0459B500EF05C6 /* Info.plist */,
 			);
-			path = EasySwift;
+			path = EasySwiftTest;
 			sourceTree = "<group>";
 		};
-		DEFC8A641CC376760028FDF1 /* EasySwiftTests */ = {
+		DE306B9F1D0459B500EF05C6 /* EasySwiftTestTests */ = {
 			isa = PBXGroup;
 			children = (
-				DEFC8A651CC376760028FDF1 /* EasySwiftTests.swift */,
-				DEFC8A671CC376760028FDF1 /* Info.plist */,
+				DE306BA01D0459B500EF05C6 /* EasySwiftTestTests.swift */,
+				DE306BA21D0459B500EF05C6 /* Info.plist */,
 			);
-			path = EasySwiftTests;
+			path = EasySwiftTestTests;
 			sourceTree = "<group>";
 		};
-		DEFC8A6F1CC376770028FDF1 /* EasySwiftUITests */ = {
+		DE306BAA1D0459B500EF05C6 /* EasySwiftTestUITests */ = {
 			isa = PBXGroup;
 			children = (
-				DEFC8A701CC376770028FDF1 /* EasySwiftUITests.swift */,
-				DEFC8A721CC376770028FDF1 /* Info.plist */,
+				DE306BAB1D0459B500EF05C6 /* EasySwiftTestUITests.swift */,
+				DE306BAD1D0459B500EF05C6 /* Info.plist */,
 			);
-			path = EasySwiftUITests;
-			sourceTree = "<group>";
-		};
-		F76E5FA3608B00E02BA46B89 /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				9F3C6AA1344A6D1B75371353 /* Pods_EasySwift.framework */,
-			);
-			name = Frameworks;
+			path = EasySwiftTestUITests;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		DEFC8A4C1CC376760028FDF1 /* EasySwiftTest */ = {
+		DE306B851D0459B500EF05C6 /* EasySwiftTest */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = DEFC8A751CC376770028FDF1 /* Build configuration list for PBXNativeTarget "EasySwiftTest" */;
+			buildConfigurationList = DE306BB01D0459B500EF05C6 /* Build configuration list for PBXNativeTarget "EasySwiftTest" */;
 			buildPhases = (
-				477BAFBDBE5E80566C2B8BD3 /* 📦 Check Pods Manifest.lock */,
-				DEFC8A491CC376760028FDF1 /* Sources */,
-				DEFC8A4A1CC376760028FDF1 /* Frameworks */,
-				DEFC8A4B1CC376760028FDF1 /* Resources */,
-				C844B9097166AE3169B48421 /* 📦 Embed Pods Frameworks */,
-				392BDA0A7CCACB9BC74F26CF /* 📦 Copy Pods Resources */,
+				85389C966349B91023210B1D /* [CP] Check Pods Manifest.lock */,
+				DE306B821D0459B500EF05C6 /* Sources */,
+				DE306B831D0459B500EF05C6 /* Frameworks */,
+				DE306B841D0459B500EF05C6 /* Resources */,
+				3463B549B59C3FEAE904E847 /* [CP] Embed Pods Frameworks */,
+				08D076F4C9AD71B8F5EBF1D6 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
 			name = EasySwiftTest;
-			productName = EasySwift;
-			productReference = DEFC8A4D1CC376760028FDF1 /* EasySwiftTest.app */;
+			productName = EasySwiftTest;
+			productReference = DE306B861D0459B500EF05C6 /* EasySwiftTest.app */;
 			productType = "com.apple.product-type.application";
 		};
-		DEFC8A601CC376760028FDF1 /* EasySwiftTestTests */ = {
+		DE306B9B1D0459B500EF05C6 /* EasySwiftTestTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = DEFC8A781CC376770028FDF1 /* Build configuration list for PBXNativeTarget "EasySwiftTestTests" */;
+			buildConfigurationList = DE306BB31D0459B500EF05C6 /* Build configuration list for PBXNativeTarget "EasySwiftTestTests" */;
 			buildPhases = (
-				DEFC8A5D1CC376760028FDF1 /* Sources */,
-				DEFC8A5E1CC376760028FDF1 /* Frameworks */,
-				DEFC8A5F1CC376760028FDF1 /* Resources */,
+				DE306B981D0459B500EF05C6 /* Sources */,
+				DE306B991D0459B500EF05C6 /* Frameworks */,
+				DE306B9A1D0459B500EF05C6 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				DEFC8A631CC376760028FDF1 /* PBXTargetDependency */,
+				DE306B9E1D0459B500EF05C6 /* PBXTargetDependency */,
 			);
 			name = EasySwiftTestTests;
-			productName = EasySwiftTests;
-			productReference = DEFC8A611CC376760028FDF1 /* EasySwiftTest.xctest */;
+			productName = EasySwiftTestTests;
+			productReference = DE306B9C1D0459B500EF05C6 /* EasySwiftTestTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
-		DEFC8A6B1CC376770028FDF1 /* EasySwiftTestUITests */ = {
+		DE306BA61D0459B500EF05C6 /* EasySwiftTestUITests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = DEFC8A7B1CC376770028FDF1 /* Build configuration list for PBXNativeTarget "EasySwiftTestUITests" */;
+			buildConfigurationList = DE306BB61D0459B500EF05C6 /* Build configuration list for PBXNativeTarget "EasySwiftTestUITests" */;
 			buildPhases = (
-				DEFC8A681CC376770028FDF1 /* Sources */,
-				DEFC8A691CC376770028FDF1 /* Frameworks */,
-				DEFC8A6A1CC376770028FDF1 /* Resources */,
+				DE306BA31D0459B500EF05C6 /* Sources */,
+				DE306BA41D0459B500EF05C6 /* Frameworks */,
+				DE306BA51D0459B500EF05C6 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				DEFC8A6E1CC376770028FDF1 /* PBXTargetDependency */,
+				DE306BA91D0459B500EF05C6 /* PBXTargetDependency */,
 			);
 			name = EasySwiftTestUITests;
-			productName = EasySwiftUITests;
-			productReference = DEFC8A6C1CC376770028FDF1 /* EasySwiftTest.xctest */;
+			productName = EasySwiftTestUITests;
+			productReference = DE306BA71D0459B500EF05C6 /* EasySwiftTestUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		DEFC8A451CC376760028FDF1 /* Project object */ = {
+		DE306B7E1D0459B500EF05C6 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 0730;
 				LastUpgradeCheck = 0730;
 				ORGANIZATIONNAME = "袁晓钧";
 				TargetAttributes = {
-					DEFC8A4C1CC376760028FDF1 = {
-						CreatedOnToolsVersion = 7.3;
+					DE306B851D0459B500EF05C6 = {
+						CreatedOnToolsVersion = 7.3.1;
 					};
-					DEFC8A601CC376760028FDF1 = {
-						CreatedOnToolsVersion = 7.3;
-						TestTargetID = DEFC8A4C1CC376760028FDF1;
+					DE306B9B1D0459B500EF05C6 = {
+						CreatedOnToolsVersion = 7.3.1;
+						TestTargetID = DE306B851D0459B500EF05C6;
 					};
-					DEFC8A6B1CC376770028FDF1 = {
-						CreatedOnToolsVersion = 7.3;
-						TestTargetID = DEFC8A4C1CC376760028FDF1;
+					DE306BA61D0459B500EF05C6 = {
+						CreatedOnToolsVersion = 7.3.1;
+						TestTargetID = DE306B851D0459B500EF05C6;
 					};
 				};
 			};
-			buildConfigurationList = DEFC8A481CC376760028FDF1 /* Build configuration list for PBXProject "EasySwiftTest" */;
+			buildConfigurationList = DE306B811D0459B500EF05C6 /* Build configuration list for PBXProject "EasySwiftTest" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -239,37 +242,37 @@
 				en,
 				Base,
 			);
-			mainGroup = DEFC8A441CC376760028FDF1;
-			productRefGroup = DEFC8A4E1CC376760028FDF1 /* Products */;
+			mainGroup = DE306B7D1D0459B500EF05C6;
+			productRefGroup = DE306B871D0459B500EF05C6 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				DEFC8A4C1CC376760028FDF1 /* EasySwiftTest */,
-				DEFC8A601CC376760028FDF1 /* EasySwiftTestTests */,
-				DEFC8A6B1CC376770028FDF1 /* EasySwiftTestUITests */,
+				DE306B851D0459B500EF05C6 /* EasySwiftTest */,
+				DE306B9B1D0459B500EF05C6 /* EasySwiftTestTests */,
+				DE306BA61D0459B500EF05C6 /* EasySwiftTestUITests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		DEFC8A4B1CC376760028FDF1 /* Resources */ = {
+		DE306B841D0459B500EF05C6 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DEFC8A5B1CC376760028FDF1 /* LaunchScreen.storyboard in Resources */,
-				DEFC8A581CC376760028FDF1 /* Assets.xcassets in Resources */,
-				DEFC8A561CC376760028FDF1 /* Main.storyboard in Resources */,
+				DE306B961D0459B500EF05C6 /* LaunchScreen.storyboard in Resources */,
+				DE306B931D0459B500EF05C6 /* Assets.xcassets in Resources */,
+				DE306B911D0459B500EF05C6 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		DEFC8A5F1CC376760028FDF1 /* Resources */ = {
+		DE306B9A1D0459B500EF05C6 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		DEFC8A6A1CC376770028FDF1 /* Resources */ = {
+		DE306BA51D0459B500EF05C6 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -279,29 +282,44 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		392BDA0A7CCACB9BC74F26CF /* 📦 Copy Pods Resources */ = {
+		08D076F4C9AD71B8F5EBF1D6 /* [CP] Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
 			);
-			name = "📦 Copy Pods Resources";
+			name = "[CP] Copy Pods Resources";
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-EasySwift/Pods-EasySwift-resources.sh\"\n";
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-EasySwiftTest/Pods-EasySwiftTest-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		477BAFBDBE5E80566C2B8BD3 /* 📦 Check Pods Manifest.lock */ = {
+		3463B549B59C3FEAE904E847 /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
 			);
-			name = "📦 Check Pods Manifest.lock";
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-EasySwiftTest/Pods-EasySwiftTest-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		85389C966349B91023210B1D /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -309,77 +327,63 @@
 			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
 			showEnvVarsInLog = 0;
 		};
-		C844B9097166AE3169B48421 /* 📦 Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "📦 Embed Pods Frameworks";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-EasySwift/Pods-EasySwift-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		DEFC8A491CC376760028FDF1 /* Sources */ = {
+		DE306B821D0459B500EF05C6 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DEFC8A531CC376760028FDF1 /* ViewController.swift in Sources */,
-				DEFC8A511CC376760028FDF1 /* AppDelegate.swift in Sources */,
+				DE306B8E1D0459B500EF05C6 /* SecondViewController.swift in Sources */,
+				DE306B8A1D0459B500EF05C6 /* AppDelegate.swift in Sources */,
+				DE306B8C1D0459B500EF05C6 /* FirstViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		DEFC8A5D1CC376760028FDF1 /* Sources */ = {
+		DE306B981D0459B500EF05C6 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DEFC8A661CC376760028FDF1 /* EasySwiftTests.swift in Sources */,
+				DE306BA11D0459B500EF05C6 /* EasySwiftTestTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		DEFC8A681CC376770028FDF1 /* Sources */ = {
+		DE306BA31D0459B500EF05C6 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DEFC8A711CC376770028FDF1 /* EasySwiftUITests.swift in Sources */,
+				DE306BAC1D0459B500EF05C6 /* EasySwiftTestUITests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		DEFC8A631CC376760028FDF1 /* PBXTargetDependency */ = {
+		DE306B9E1D0459B500EF05C6 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = DEFC8A4C1CC376760028FDF1 /* EasySwiftTest */;
-			targetProxy = DEFC8A621CC376760028FDF1 /* PBXContainerItemProxy */;
+			target = DE306B851D0459B500EF05C6 /* EasySwiftTest */;
+			targetProxy = DE306B9D1D0459B500EF05C6 /* PBXContainerItemProxy */;
 		};
-		DEFC8A6E1CC376770028FDF1 /* PBXTargetDependency */ = {
+		DE306BA91D0459B500EF05C6 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = DEFC8A4C1CC376760028FDF1 /* EasySwiftTest */;
-			targetProxy = DEFC8A6D1CC376770028FDF1 /* PBXContainerItemProxy */;
+			target = DE306B851D0459B500EF05C6 /* EasySwiftTest */;
+			targetProxy = DE306BA81D0459B500EF05C6 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		DEFC8A541CC376760028FDF1 /* Main.storyboard */ = {
+		DE306B8F1D0459B500EF05C6 /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				DEFC8A551CC376760028FDF1 /* Base */,
+				DE306B901D0459B500EF05C6 /* Base */,
 			);
 			name = Main.storyboard;
 			sourceTree = "<group>";
 		};
-		DEFC8A591CC376760028FDF1 /* LaunchScreen.storyboard */ = {
+		DE306B941D0459B500EF05C6 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				DEFC8A5A1CC376760028FDF1 /* Base */,
+				DE306B951D0459B500EF05C6 /* Base */,
 			);
 			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
@@ -387,7 +391,7 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
-		DEFC8A731CC376770028FDF1 /* Debug */ = {
+		DE306BAE1D0459B500EF05C6 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -432,7 +436,7 @@
 			};
 			name = Debug;
 		};
-		DEFC8A741CC376770028FDF1 /* Release */ = {
+		DE306BAF1D0459B500EF05C6 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -470,118 +474,118 @@
 			};
 			name = Release;
 		};
-		DEFC8A761CC376770028FDF1 /* Debug */ = {
+		DE306BB11D0459B500EF05C6 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = C2D36EC115308A36D0EA64B1 /* Pods-EasySwift.debug.xcconfig */;
+			baseConfigurationReference = D6D64D8A91DEC5CDFD118CBB /* Pods-EasySwiftTest.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				INFOPLIST_FILE = EasySwift/Info.plist;
+				INFOPLIST_FILE = EasySwiftTest/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.YXJ.EasySwiftTest;
-				PRODUCT_NAME = EasySwiftTest;
+				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
 		};
-		DEFC8A771CC376770028FDF1 /* Release */ = {
+		DE306BB21D0459B500EF05C6 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 6A3349EC7C786FC8857EB819 /* Pods-EasySwift.release.xcconfig */;
+			baseConfigurationReference = 5642A4E2262E0446F2901C8A /* Pods-EasySwiftTest.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				INFOPLIST_FILE = EasySwift/Info.plist;
+				INFOPLIST_FILE = EasySwiftTest/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.YXJ.EasySwiftTest;
-				PRODUCT_NAME = EasySwiftTest;
+				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;
 		};
-		DEFC8A791CC376770028FDF1 /* Debug */ = {
+		DE306BB41D0459B500EF05C6 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
-				INFOPLIST_FILE = EasySwiftTests/Info.plist;
+				INFOPLIST_FILE = EasySwiftTestTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.YXJ.EasySwiftTests;
-				PRODUCT_NAME = EasySwiftTest;
+				PRODUCT_BUNDLE_IDENTIFIER = com.YXJ.EasySwiftTestTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/EasySwiftTest.app/EasySwiftTest";
 			};
 			name = Debug;
 		};
-		DEFC8A7A1CC376770028FDF1 /* Release */ = {
+		DE306BB51D0459B500EF05C6 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
-				INFOPLIST_FILE = EasySwiftTests/Info.plist;
+				INFOPLIST_FILE = EasySwiftTestTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.YXJ.EasySwiftTests;
-				PRODUCT_NAME = EasySwiftTest;
+				PRODUCT_BUNDLE_IDENTIFIER = com.YXJ.EasySwiftTestTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/EasySwiftTest.app/EasySwiftTest";
 			};
 			name = Release;
 		};
-		DEFC8A7C1CC376770028FDF1 /* Debug */ = {
+		DE306BB71D0459B500EF05C6 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				INFOPLIST_FILE = EasySwiftUITests/Info.plist;
+				INFOPLIST_FILE = EasySwiftTestUITests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.YXJ.EasySwiftUITests;
-				PRODUCT_NAME = EasySwiftTest;
-				TEST_TARGET_NAME = EasySwift;
+				PRODUCT_BUNDLE_IDENTIFIER = com.YXJ.EasySwiftTestUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = EasySwiftTest;
 			};
 			name = Debug;
 		};
-		DEFC8A7D1CC376770028FDF1 /* Release */ = {
+		DE306BB81D0459B500EF05C6 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				INFOPLIST_FILE = EasySwiftUITests/Info.plist;
+				INFOPLIST_FILE = EasySwiftTestUITests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.YXJ.EasySwiftUITests;
-				PRODUCT_NAME = EasySwiftTest;
-				TEST_TARGET_NAME = EasySwift;
+				PRODUCT_BUNDLE_IDENTIFIER = com.YXJ.EasySwiftTestUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = EasySwiftTest;
 			};
 			name = Release;
 		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		DEFC8A481CC376760028FDF1 /* Build configuration list for PBXProject "EasySwiftTest" */ = {
+		DE306B811D0459B500EF05C6 /* Build configuration list for PBXProject "EasySwiftTest" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				DEFC8A731CC376770028FDF1 /* Debug */,
-				DEFC8A741CC376770028FDF1 /* Release */,
+				DE306BAE1D0459B500EF05C6 /* Debug */,
+				DE306BAF1D0459B500EF05C6 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		DEFC8A751CC376770028FDF1 /* Build configuration list for PBXNativeTarget "EasySwiftTest" */ = {
+		DE306BB01D0459B500EF05C6 /* Build configuration list for PBXNativeTarget "EasySwiftTest" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				DEFC8A761CC376770028FDF1 /* Debug */,
-				DEFC8A771CC376770028FDF1 /* Release */,
+				DE306BB11D0459B500EF05C6 /* Debug */,
+				DE306BB21D0459B500EF05C6 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		DEFC8A781CC376770028FDF1 /* Build configuration list for PBXNativeTarget "EasySwiftTestTests" */ = {
+		DE306BB31D0459B500EF05C6 /* Build configuration list for PBXNativeTarget "EasySwiftTestTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				DEFC8A791CC376770028FDF1 /* Debug */,
-				DEFC8A7A1CC376770028FDF1 /* Release */,
+				DE306BB41D0459B500EF05C6 /* Debug */,
+				DE306BB51D0459B500EF05C6 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		DEFC8A7B1CC376770028FDF1 /* Build configuration list for PBXNativeTarget "EasySwiftTestUITests" */ = {
+		DE306BB61D0459B500EF05C6 /* Build configuration list for PBXNativeTarget "EasySwiftTestUITests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				DEFC8A7C1CC376770028FDF1 /* Debug */,
-				DEFC8A7D1CC376770028FDF1 /* Release */,
+				DE306BB71D0459B500EF05C6 /* Debug */,
+				DE306BB81D0459B500EF05C6 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
-	rootObject = DEFC8A451CC376760028FDF1 /* Project object */;
+	rootObject = DE306B7E1D0459B500EF05C6 /* Project object */;
 }
