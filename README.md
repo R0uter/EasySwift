@@ -28,6 +28,14 @@ Add the following to your Podfile:
 	pod 'EasySwift'
 	
 ## Version
+**V1.1.9** ---- 2016-6-5
+
+* 修正EZSystemInfo.swift访问不到属性的问题
+* 新增EZSystemInfo.swift获取系统信息的方法
+* 新增AXPopoverView
+* 新增UISearchBar+YXJ
+* 优化YXJRatingView
+
 **V1.0.6** ---- 2016-5-31
 
 * 增加依赖库SwiftyJSON

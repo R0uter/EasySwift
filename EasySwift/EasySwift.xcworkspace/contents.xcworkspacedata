@@ -2,7 +2,7 @@
 <Workspace
    version = "1.0">
    <FileRef
-      location = "group:EasySwift.xcodeproj">
+      location = "group:/Users/yxj/Desktop/EasySwift/EasySwift/EasySwiftTest.xcodeproj">
    </FileRef>
    <FileRef
       location = "group:Pods/Pods.xcodeproj">

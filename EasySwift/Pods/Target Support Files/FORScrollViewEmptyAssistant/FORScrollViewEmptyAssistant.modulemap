@@ -1,6 +1,0 @@
-framework module FORScrollViewEmptyAssistant {
-  umbrella header "FORScrollViewEmptyAssistant-umbrella.h"
-
-  export *
-  module * { export * }
-}
