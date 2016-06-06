@@ -28,6 +28,11 @@ Add the following to your Podfile:
 	pod 'EasySwift'
 	
 ## Version
+**V1.2.1** ---- 2016-6-7
+
+* 新增ZLPhotoBrowser
+
+
 **V1.2.0** ---- 2016-6-6
 
 * 新增HCSStarRatingView

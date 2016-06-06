@@ -120,6 +120,7 @@ if [[ "$CONFIGURATION" == "Debug" ]]; then
   install_framework "$BUILT_PRODUCTS_DIR/TYAlertController/TYAlertController.framework"
   install_framework "$BUILT_PRODUCTS_DIR/UIButton-SSEdgeInsets/UIButton_SSEdgeInsets.framework"
   install_framework "$BUILT_PRODUCTS_DIR/UITableView+FDTemplateLayoutCell/UITableView_FDTemplateLayoutCell.framework"
+  install_framework "$BUILT_PRODUCTS_DIR/ZLPhotoBrowser/ZLPhotoBrowser.framework"
   install_framework "$BUILT_PRODUCTS_DIR/swiftScan/swiftScan.framework"
 fi
 if [[ "$CONFIGURATION" == "Release" ]]; then
@@ -159,5 +160,6 @@ if [[ "$CONFIGURATION" == "Release" ]]; then
   install_framework "$BUILT_PRODUCTS_DIR/TYAlertController/TYAlertController.framework"
   install_framework "$BUILT_PRODUCTS_DIR/UIButton-SSEdgeInsets/UIButton_SSEdgeInsets.framework"
   install_framework "$BUILT_PRODUCTS_DIR/UITableView+FDTemplateLayoutCell/UITableView_FDTemplateLayoutCell.framework"
+  install_framework "$BUILT_PRODUCTS_DIR/ZLPhotoBrowser/ZLPhotoBrowser.framework"
   install_framework "$BUILT_PRODUCTS_DIR/swiftScan/swiftScan.framework"
 fi

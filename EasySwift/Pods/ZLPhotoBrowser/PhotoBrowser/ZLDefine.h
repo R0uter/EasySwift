@@ -13,6 +13,9 @@
 
 #define kRGB(r, g, b)   [UIColor colorWithRed:r/255.0 green:g/255.0 blue:b/255.0 alpha:1]
 
+#define weakify(var)   __weak typeof(var) weakSelf = var
+#define strongify(var) __strong typeof(var) strongSelf = var
+
 #define kZLPhotoBrowserBundle [NSBundle bundleForClass:[self class]]
 
 // 图片路径
@@ -21,13 +24,36 @@
 
 #define kViewWidth      [[UIScreen mainScreen] bounds].size.width
 //如果项目中设置了导航条为不透明，即[UINavigationBar appearance].translucent=NO，那么这里的kViewHeight需要-64
-#define kViewHeight     [[UIScreen mainScreen] bounds].size.height
+#define kViewHeight     [[UIScreen mainScreen] bounds].size.height - 64
 
 ////////ZLPhotoActionSheet
-#define kBaseViewHeight 297
+#define kBaseViewHeight 300
 
 ////////ZLShowBigImgViewController
 #define kItemMargin 30
+
+///////ZLBigImageCell 不建议设置太大，太大的话会导致图片加载过慢
+#define kMaxImageWidth 500
+
+static inline void SetViewWidth (UIView *view, CGFloat width) {
+    CGRect frame = view.frame;
+    frame.size.width = width;
+    view.frame = frame;
+}
+
+static inline CGFloat GetViewWidth (UIView *view) {
+    return view.frame.size.width;
+}
+
+static inline void SetViewHeight (UIView *view, CGFloat height) {
+    CGRect frame = view.frame;
+    frame.size.height = height;
+    view.frame = frame;
+}
+
+static inline CGFloat GetViewHeight (UIView *view) {
+    return view.frame.size.height;
+}
 
 static inline CABasicAnimation * GetPositionAnimation (id fromValue, id toValue, CFTimeInterval duration, NSString *keyPath) {
     CABasicAnimation *animation = [CABasicAnimation animationWithKeyPath:keyPath];

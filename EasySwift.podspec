@@ -9,7 +9,7 @@
 
 Pod::Spec.new do |s|
   s.name             = "EasySwift"
-  s.version          = "1.2.0"
+  s.version          = "1.2.1"
   s.summary          = "a little descript for EasySwift"
   s.description      = <<-DESC
                       This is the most simple way to use swift, which is a complete throughout the entire iOS development of the most convenient, the most simple, the most perfect framework to build the heart.
@@ -26,7 +26,7 @@ Pod::Spec.new do |s|
   s.requires_arc = true
   s.module_name = "EasySwift"
 
-  s.default_subspec = 'Core' , 'FlexboxKit', 'CoreData', 'PhotoBrowser', 'Pinyin', 'DOPDropDownMenu', 'Gumbo', 'ObjectiveGumbo', 'FLSideSlipViewController', 'SwiftRegex', 'URLManager', 'YXJLinksButton', 'YXJImageCompressor', 'JKCountDownButton', 'YXJCycleView', 'YXJPageControl', 'YXJKxMenu', 'YXJTagLabelView', 'YXJOnePixelLine', 'YXJSlideBar', 'YXJSwipeTableViewCell', 'Watch' , 'TLCityPicker' , 'SearchBar'
+  s.default_subspec = 'Core' , 'FlexboxKit', 'CoreData', 'Pinyin', 'DOPDropDownMenu', 'Gumbo', 'ObjectiveGumbo', 'FLSideSlipViewController', 'SwiftRegex', 'URLManager', 'YXJLinksButton', 'YXJImageCompressor', 'JKCountDownButton', 'YXJCycleView', 'YXJPageControl', 'YXJKxMenu', 'YXJTagLabelView', 'YXJOnePixelLine', 'YXJSlideBar', 'YXJSwipeTableViewCell', 'Watch' , 'TLCityPicker' , 'SearchBar'
 
   s.subspec 'Core' do |core|
     core.source_files = 'Pod/Core/*'
@@ -58,11 +58,6 @@ Pod::Spec.new do |s|
   s.subspec 'CoreData' do |ss|
     ss.source_files = 'Pod/Lib/CoreData/*'
     ss.dependency 'EasySwift/Core'
-  end
-
-  s.subspec 'PhotoBrowser' do |ss|
-    ss.public_header_files = 'Pod/Lib/PhotoBrowser/*.h'
-    ss.source_files = 'Pod/Lib/PhotoBrowser/*'
   end
 
   s.subspec 'Pinyin' do |ss|
@@ -186,8 +181,9 @@ Pod::Spec.new do |s|
   s.dependency 'SwiftyJSON'
   s.dependency 'MJRefresh'
   s.dependency 'DKChainableAnimationKit'  
-  s.dependency 'AXBadgeView-Swift' 
+  s.dependency 'AXBadgeView-Swift'  
   s.dependency 'HCSStarRatingView'
+  s.dependency 'ZLPhotoBrowser'
 
   s.frameworks = 'UIKit'
 

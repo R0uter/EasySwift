@@ -1,6 +1,6 @@
 {
   "name": "EasySwift",
-  "version": "1.2.0",
+  "version": "1.2.1",
   "summary": "a little descript for EasySwift",
   "description": "This is the most simple way to use swift, which is a complete throughout the entire iOS development of the most convenient, the most simple, the most perfect framework to build the heart.",
   "homepage": "https://github.com/stubbornnessness",
@@ -10,7 +10,7 @@
   },
   "source": {
     "git": "https://github.com/stubbornnessness/EasySwift.git",
-    "tag": "1.2.0"
+    "tag": "1.2.1"
   },
   "platforms": {
     "ios": "8.0"
@@ -21,7 +21,6 @@
     "Core",
     "FlexboxKit",
     "CoreData",
-    "PhotoBrowser",
     "Pinyin",
     "DOPDropDownMenu",
     "Gumbo",
@@ -109,6 +108,9 @@
     ],
     "HCSStarRatingView": [
 
+    ],
+    "ZLPhotoBrowser": [
+
     ]
   },
   "frameworks": "UIKit",
@@ -179,11 +181,6 @@
 
         ]
       }
-    },
-    {
-      "name": "PhotoBrowser",
-      "public_header_files": "Pod/Lib/PhotoBrowser/*.h",
-      "source_files": "Pod/Lib/PhotoBrowser/*"
     },
     {
       "name": "Pinyin",
