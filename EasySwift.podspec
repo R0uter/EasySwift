@@ -9,7 +9,7 @@
 
 Pod::Spec.new do |s|
   s.name             = "EasySwift"
-  s.version          = "1.2.1"
+  s.version          = "1.2.2"
   s.summary          = "a little descript for EasySwift"
   s.description      = <<-DESC
                       This is the most simple way to use swift, which is a complete throughout the entire iOS development of the most convenient, the most simple, the most perfect framework to build the heart.
@@ -179,7 +179,7 @@ Pod::Spec.new do |s|
   s.dependency 'TOWebViewController'
   s.dependency 'FORScrollViewEmptyAssistant' 
   s.dependency 'SwiftyJSON'
-  s.dependency 'MJRefresh'
+  s.dependency 'MJRefresh' , '3.1.0'
   s.dependency 'DKChainableAnimationKit'  
   s.dependency 'AXBadgeView-Swift'  
   s.dependency 'HCSStarRatingView'
