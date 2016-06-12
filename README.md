@@ -28,7 +28,7 @@ Add the following to your Podfile:
 	pod 'EasySwift'
 	
 ## Version
-**V1.2.2** ---- 2016-6-12
+**V1.2.3** ---- 2016-6-12
 
 * 由于3.1.1的MJRefresh在Swift中使用存在严重bug，故指定MJRefresh版本为3.1.0
 

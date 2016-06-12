@@ -89,6 +89,10 @@ static void *const CYLTabBarContext = (void*)&CYLTabBarContext;
 #pragma mark -
 #pragma mark - Private Methods
 
++ (BOOL)automaticallyNotifiesObserversForKey:(NSString *)key {
+    return NO;
+}
+
 // KVO监听执行
 - (void)observeValueForKeyPath:(NSString *)keyPath ofObject:(id)object change:(NSDictionary *)change context:(void *)context {
     if(context != CYLTabBarContext) {
@@ -119,10 +123,6 @@ static void *const CYLTabBarContext = (void*)&CYLTabBarContext;
         _swappableImageViewDefaultOffset = swappableImageViewDefaultOffset;
         [self didChangeValueForKey:@"swappableImageViewDefaultOffset"];
     }
-}
-
-+ (BOOL)automaticallyNotifiesObserversForKey:(NSString *)key {
-    return NO;
 }
 
 - (CGFloat)multiplerInCenterY {
@@ -195,12 +195,11 @@ static void *const CYLTabBarContext = (void*)&CYLTabBarContext;
     __block CGFloat swappableImageViewDefaultOffset = 0.f;
     CGFloat tabBarHeight = self.frame.size.height;
     [tabBarButton.subviews enumerateObjectsUsingBlock:^(__kindof UIView * _Nonnull obj, NSUInteger idx, BOOL * _Nonnull stop) {
-        if ([[obj class] isSubclassOfClass:[UILabel class]]) {
+        if ([obj isKindOfClass:NSClassFromString(@"UITabBarButtonLabel")]) {
             shouldCustomizeImageView = NO;
         }
         swappableImageViewHeight = obj.frame.size.height;
-        BOOL isNotSelectionIndicatorView = swappableImageViewHeight < (tabBarHeight - 5);
-        BOOL isSwappableImageView = ([[obj class] isSubclassOfClass:[UIImageView class]]) && isNotSelectionIndicatorView;
+        BOOL isSwappableImageView = [obj isKindOfClass:NSClassFromString(@"UITabBarSwappableImageView")];
         if (isSwappableImageView) {
             swappableImageViewDefaultOffset = (tabBarHeight - swappableImageViewHeight) * 0.5 * 0.5;
         }
