@@ -9,7 +9,7 @@
 
 Pod::Spec.new do |s|
   s.name             = "EasySwift"
-  s.version          = "1.2.3"
+  s.version          = "1.2.4"
   s.summary          = "a little descript for EasySwift"
   s.description      = <<-DESC
                       This is the most simple way to use swift, which is a complete throughout the entire iOS development of the most convenient, the most simple, the most perfect framework to build the heart.
@@ -26,7 +26,7 @@ Pod::Spec.new do |s|
   s.requires_arc = true
   s.module_name = "EasySwift"
 
-  s.default_subspec = 'Core' , 'FlexboxKit', 'CoreData', 'Pinyin', 'DOPDropDownMenu', 'Gumbo', 'ObjectiveGumbo', 'FLSideSlipViewController', 'SwiftRegex', 'URLManager', 'YXJLinksButton', 'YXJImageCompressor', 'JKCountDownButton', 'YXJCycleView', 'YXJPageControl', 'YXJKxMenu', 'YXJTagLabelView', 'YXJOnePixelLine', 'YXJSlideBar', 'YXJSwipeTableViewCell', 'Watch' , 'TLCityPicker' , 'SearchBar'
+  s.default_subspec = 'Core' , 'FlexboxKit', 'CoreData', 'Pinyin', 'Gumbo', 'ObjectiveGumbo', 'FLSideSlipViewController', 'SwiftRegex', 'URLManager', 'YXJLinksButton', 'YXJImageCompressor', 'JKCountDownButton', 'YXJCycleView', 'YXJPageControl', 'YXJKxMenu', 'YXJTagLabelView', 'YXJOnePixelLine', 'YXJSlideBar', 'YXJSwipeTableViewCell', 'Watch' , 'TLCityPicker' , 'SearchBar'
 
   s.subspec 'Core' do |core|
     core.source_files = 'Pod/Core/*'
@@ -63,11 +63,6 @@ Pod::Spec.new do |s|
   s.subspec 'Pinyin' do |ss|
     ss.public_header_files = 'Pod/Lib/Pinyin/*.h'
     ss.source_files = 'Pod/Lib/Pinyin/*'
-  end
-
-  s.subspec 'DOPDropDownMenu' do |ss|
-    ss.public_header_files = 'Pod/Lib/DOPDropDownMenu/*.h'
-    ss.source_files = 'Pod/Lib/DOPDropDownMenu/*'
   end
 
   s.subspec 'Gumbo' do |ss|
@@ -183,7 +178,10 @@ Pod::Spec.new do |s|
   s.dependency 'DKChainableAnimationKit'  
   s.dependency 'AXBadgeView-Swift'  
   s.dependency 'HCSStarRatingView'
-  s.dependency 'ZLPhotoBrowser'
+  s.dependency 'ZLPhotoBrowser' 
+  s.dependency 'SwiftString'
+  s.dependency 'EasyEmoji'
+  s.dependency 'EasyDropDownMenu'
 
   s.frameworks = 'UIKit'
 

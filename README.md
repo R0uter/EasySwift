@@ -28,6 +28,13 @@ Add the following to your Podfile:
 	pod 'EasySwift'
 	
 ## Version
+**V1.2.4** ---- 2016-6-19
+
+* 删除DropDownMenu
+* 增加依赖EasyDropDownMenu
+* 增加依赖库SwiftString
+* 增加依赖库EasyEmoji
+
 **V1.2.3** ---- 2016-6-12
 
 * 由于3.1.1的MJRefresh在Swift中使用存在严重bug，故指定MJRefresh版本为3.1.0

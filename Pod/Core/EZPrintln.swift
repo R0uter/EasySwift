@@ -29,9 +29,13 @@ public func EZPrintln<T>(object: T, _ file: String = #file, _ function: String =
 
 public func NSLogD(msg: AnyObject) {
     #if DEBUG
-        let logs = "***********DEBUG:\(msg)**************"
-        print("--------------------------------------------")
-        print(logs)
-        print("--------------------------------------------")
+        if let msg = msg {
+            let logs = "***********DEBUG:\(msg)**************"
+            print("--------------------------------------------")
+            print(logs)
+            print("--------------------------------------------")
+        } else {
+            print("***********DEBUG:空(null)**************")
+        }
     #endif
 }
