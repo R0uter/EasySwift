@@ -174,6 +174,7 @@ Pod::Spec.new do |s|
   s.dependency 'EasyEmoji'
   s.dependency 'EasyDropDownMenu'
   s.dependency 'EasySearchBar'
+  s.dependency 'YXJTagView'
 
   s.frameworks = 'UIKit'
 
