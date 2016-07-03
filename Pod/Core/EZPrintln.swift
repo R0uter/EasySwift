@@ -1,41 +1,18 @@
 //
 //  EZPrintln.swift
-//  medical
+//  EasySwift
 //
-//  Created by zhuchao on 15/4/28.
-//  Copyright (c) 2015年 zhuchao. All rights reserved.
+//  Created by YXJ on 16/7/3.
+//  Copyright (c) 2016年 YXJ. All rights reserved.
 //
 
 import Foundation
 
-var EZ_DEBUG_MODE = true
-/**
- Writes the textual representation of `object` and a newline character into the standard output.
- The textual representation is obtained from the `object` using its protocol conformances,
- in the following order of preference: `Streamable`, `Printable`, `DebugPrintable`.
- This functional also augments the original function with the filename, function name, and line number of the object that is being logged.
- - parameter object:   A textual representation of the object.
- - parameter file:     Defaults to the name of the file that called magic(). Do not override this default.
- - parameter function: Defaults to the name of the function within the file in which magic() was called. Do not override this default.
- - parameter line:     Defaults to the line number within the file in which magic() was called. Do not override this default.
- */
-public func EZPrintln<T>(object: T, _ file: String = #file, _ function: String = #function, _ line: Int = #line)
-{
-    if EZ_DEBUG_MODE {
-        let filename = NSURL(fileURLWithPath: file).lastPathComponent?.URLString
-        print("\(filename).\(function)[\(line)]: \(object)\n", terminator: "")
-    }
-}
+public var DEBUG = true
 
-public func NSLogD(msg: AnyObject) {
-    #if DEBUG
-        if let msg = msg {
-            let logs = "***********DEBUG:\(msg)**************"
-            print("--------------------------------------------")
-            print(logs)
-            print("--------------------------------------------")
-        } else {
-            print("***********DEBUG:空(null)**************")
-        }
-    #endif
+public func EZPrintln<T>(message: T, fileName: String = __FILE__, methodName: String = __FUNCTION__, lineNumber: Int = __LINE__) {
+    if DEBUG {
+        let file: String = (fileName as NSString).pathComponents.last!.stringByReplacingOccurrencesOfString("swift", withString: "")
+        print("\(file)\(methodName)[\(lineNumber)]:\(message)")
+    }
 }

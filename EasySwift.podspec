@@ -9,7 +9,7 @@
 
 Pod::Spec.new do |s|
   s.name             = "EasySwift"
-  s.version          = "1.2.4"
+  s.version          = "1.2.5"
   s.summary          = "a little descript for EasySwift"
   s.description      = <<-DESC
                       This is the most simple way to use swift, which is a complete throughout the entire iOS development of the most convenient, the most simple, the most perfect framework to build the heart.
@@ -26,7 +26,7 @@ Pod::Spec.new do |s|
   s.requires_arc = true
   s.module_name = "EasySwift"
 
-  s.default_subspec = 'Core' , 'FlexboxKit', 'CoreData', 'Pinyin', 'Gumbo', 'ObjectiveGumbo', 'FLSideSlipViewController', 'SwiftRegex', 'URLManager', 'YXJLinksButton', 'YXJImageCompressor', 'JKCountDownButton', 'YXJCycleView', 'YXJPageControl', 'YXJKxMenu', 'YXJTagLabelView', 'YXJOnePixelLine', 'YXJSlideBar', 'YXJSwipeTableViewCell', 'Watch' , 'TLCityPicker' , 'SearchBar'
+  s.default_subspec = 'Core' , 'FlexboxKit', 'CoreData', 'Pinyin', 'Gumbo', 'ObjectiveGumbo', 'FLSideSlipViewController', 'SwiftRegex', 'URLManager', 'YXJLinksButton', 'YXJImageCompressor', 'JKCountDownButton', 'YXJCycleView', 'YXJPageControl', 'YXJKxMenu', 'YXJOnePixelLine', 'YXJSlideBar', 'YXJSwipeTableViewCell', 'Watch' , 'TLCityPicker'
 
   s.subspec 'Core' do |core|
     core.source_files = 'Pod/Core/*'
@@ -123,10 +123,6 @@ Pod::Spec.new do |s|
     ss.source_files = 'Pod/Lib/YXJKxMenu/*'
   end
 
-  s.subspec 'YXJTagLabelView' do |ss|
-    ss.source_files = 'Pod/Lib/YXJTagLabelView/*'
-  end
-
   s.subspec 'YXJSlideBar' do |ss|
     ss.public_header_files = 'Pod/Lib/YXJSlideBar/*.h'
     ss.source_files = 'Pod/Lib/YXJSlideBar/*'
@@ -149,11 +145,6 @@ Pod::Spec.new do |s|
   s.subspec 'TLCityPicker' do |ss|
     ss.public_header_files = 'Pod/Lib/TLCityPicker/*.h'
     ss.source_files = 'Pod/Lib/TLCityPicker/*'
-  end
-
-  s.subspec 'SearchBar' do |ss|
-    ss.public_header_files = 'Pod/Lib/SearchBar/*.h'
-    ss.source_files = 'Pod/Lib/SearchBar/*'
   end
 
   s.dependency 'UITableView+FDTemplateLayoutCell'
@@ -182,6 +173,7 @@ Pod::Spec.new do |s|
   s.dependency 'SwiftString'
   s.dependency 'EasyEmoji'
   s.dependency 'EasyDropDownMenu'
+  s.dependency 'EasySearchBar'
 
   s.frameworks = 'UIKit'
 

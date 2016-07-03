@@ -28,6 +28,12 @@ Add the following to your Podfile:
 	pod 'EasySwift'
 	
 ## Version
+**V1.2.5** ---- 2016-7-3
+
+* 删除SearchBar,增加依赖EasySearchBar
+* 删除YXJTagLabelView,增加依赖YXJTagView
+
+
 **V1.2.4** ---- 2016-6-19
 
 * 删除DropDownMenu
