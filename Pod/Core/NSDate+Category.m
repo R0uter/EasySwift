@@ -18,6 +18,25 @@
 
 @implementation NSDate (Category)
 
+/**
+ *  NSString转NSDate
+ *
+ *  @param dateString   时间字符串
+ *  @param formatString 时间格式字符串
+ *
+ *  @return NSDate
+ */
++ (NSDate *)dateFromString:(NSString *)dateString formatString:(NSString *)formatString{
+    NSDateFormatter *dateFormatter = [[NSDateFormatter alloc] init];
+    if (formatString == nil || [formatString isEqualToString:@""]) {
+        [dateFormatter setDateFormat: @"yyyy-MM-dd"];//yyyy-MM-dd HH:mm:ss
+    }else{
+        [dateFormatter setDateFormat: formatString];
+    }
+    return [dateFormatter dateFromString:dateString];
+}
+
+
 /*距离当前的时间间隔描述*/
 - (NSString *)timeIntervalDescription
 {

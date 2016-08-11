@@ -8,6 +8,11 @@
 
 import UIKit
 
+//#define IS_SCREEN_35_INCH ([UIScreen mainScreen].bounds.size.height == 480) ? YES : NO
+//#define IS_SCREEN_4_INCH ([UIScreen mainScreen].bounds.size.height == 568) ? YES : NO
+//#define IS_SCREEN_47_INCH ([UIScreen mainScreen].bounds.size.height == 667) ? YES : NO
+//#define IS_SCREEN_55_INCH ([UIScreen mainScreen].bounds.size.height == 736) ? YES : NO
+
 extension String {
 
     // MARK:获取字符串的长度

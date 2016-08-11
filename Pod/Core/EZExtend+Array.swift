@@ -10,7 +10,7 @@ import UIKit
 
 extension Array {
 
-    func stringAtIndex(index: Int, other: String) -> String {
+    public func stringAtIndex(index: Int, other: String) -> String {
         if self.count >= index + 1 {
             return (self[index] as! String).trim
         } else {
@@ -18,11 +18,26 @@ extension Array {
         }
     }
 
-    func floatAtIndex(index: Int, other: CGFloat) -> CGFloat {
+    public func floatAtIndex(index: Int, other: CGFloat) -> CGFloat {
         if self.count >= index + 1 {
             return (self[index] as! String).trim.floatValue
         } else {
             return other
+        }
+    }
+
+    public mutating func removeElement<U: Equatable>(object: U) {
+        var index: Int?
+        for (idx, objectToCompare) in enumerate() {
+            if let to = objectToCompare as? U {
+                if object == to {
+                    index = idx
+                }
+            }
+        }
+
+        if (index != nil) {
+            self.removeAtIndex(index!)
         }
     }
 }

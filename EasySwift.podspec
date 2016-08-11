@@ -9,8 +9,8 @@
 
 Pod::Spec.new do |s|
   s.name             = "EasySwift"
-  s.version          = "1.2.5"
-  s.summary          = "a little descript for EasySwift"
+  s.version          = "1.2.6"
+  s.summary          = "打造最好的swift开源项目"
   s.description      = <<-DESC
                       This is the most simple way to use swift, which is a complete throughout the entire iOS development of the most convenient, the most simple, the most perfect framework to build the heart.
                        DESC
@@ -26,7 +26,7 @@ Pod::Spec.new do |s|
   s.requires_arc = true
   s.module_name = "EasySwift"
 
-  s.default_subspec = 'Core' , 'FlexboxKit', 'CoreData', 'Pinyin', 'Gumbo', 'ObjectiveGumbo', 'FLSideSlipViewController', 'SwiftRegex', 'URLManager', 'YXJLinksButton', 'YXJImageCompressor', 'JKCountDownButton', 'YXJCycleView', 'YXJPageControl', 'YXJKxMenu', 'YXJOnePixelLine', 'YXJSlideBar', 'YXJSwipeTableViewCell', 'Watch' , 'TLCityPicker'
+  s.default_subspec = 'Core' , 'FlexboxKit', 'CoreData', 'Pinyin', 'Gumbo', 'ObjectiveGumbo', 'FLSideSlipViewController', 'SwiftRegex', 'URLManager', 'Watch' , 'TLCityPicker'
 
   s.subspec 'Core' do |core|
     core.source_files = 'Pod/Core/*'
@@ -90,54 +90,6 @@ Pod::Spec.new do |s|
     ss.source_files = 'Pod/Lib/URLManager/*'
   end
 
-  s.subspec 'YXJLinksButton' do |ss|
-    ss.source_files = 'Pod/Lib/YXJLinksButton/*'
-    ss.dependency 'EasySwift/Core'
-  end
-
-  s.subspec 'YXJImageCompressor' do |ss|
-    ss.public_header_files = 'Pod/Lib/YXJImageCompressor/*.h'
-    ss.source_files = 'Pod/Lib/YXJImageCompressor/*'
-    ss.dependency 'EasySwift/Core'
-  end
-
-  s.subspec 'JKCountDownButton' do |ss|
-    ss.public_header_files = 'Pod/Lib/JKCountDownButton/*.h'
-    ss.source_files = 'Pod/Lib/JKCountDownButton/*'
-    ss.dependency 'EasySwift/Core'
-  end
-
-  s.subspec 'YXJCycleView' do |ss|
-    ss.public_header_files = 'Pod/Lib/YXJCycleView/*.h'
-    ss.source_files = 'Pod/Lib/YXJCycleView/*'
-    ss.dependency 'EasySwift/YXJPageControl'
-  end
-
-  s.subspec 'YXJPageControl' do |ss|
-    ss.public_header_files = 'Pod/Lib/YXJPageControl/*.h'
-    ss.source_files = 'Pod/Lib/YXJPageControl/*'
-  end
-
-  s.subspec 'YXJKxMenu' do |ss|
-    ss.public_header_files = 'Pod/Lib/YXJKxMenu/*.h'
-    ss.source_files = 'Pod/Lib/YXJKxMenu/*'
-  end
-
-  s.subspec 'YXJSlideBar' do |ss|
-    ss.public_header_files = 'Pod/Lib/YXJSlideBar/*.h'
-    ss.source_files = 'Pod/Lib/YXJSlideBar/*'
-  end
-
-  s.subspec 'YXJOnePixelLine' do |ss|
-    ss.public_header_files = 'Pod/Lib/YXJOnePixelLine/*.h'
-    ss.source_files = 'Pod/Lib/YXJOnePixelLine/*'
-  end
-
-  s.subspec 'YXJSwipeTableViewCell' do |ss|
-    ss.public_header_files = 'Pod/Lib/YXJSwipeTableViewCell/*.h'
-    ss.source_files = 'Pod/Lib/YXJSwipeTableViewCell/*'
-  end  
-
   s.subspec 'Watch' do |ss|
     ss.source_files = 'Pod/Lib/Watch/*'
   end  
@@ -160,7 +112,6 @@ Pod::Spec.new do |s|
   s.dependency 'SystemServices'
   s.dependency 'swiftScan' 
   s.dependency 'TYAlertController' 
-  s.dependency 'NBLoadableFromXibView' 
   s.dependency 'LCCoolHUD'  
   s.dependency 'TOWebViewController'
   s.dependency 'FORScrollViewEmptyAssistant' 
@@ -168,13 +119,25 @@ Pod::Spec.new do |s|
   s.dependency 'MJRefresh' , '3.1.0'
   s.dependency 'DKChainableAnimationKit'  
   s.dependency 'AXBadgeView-Swift'  
-  s.dependency 'HCSStarRatingView'
+  s.dependency 'HCSStarRatingView'#评分框架      
   s.dependency 'ZLPhotoBrowser' 
   s.dependency 'SwiftString'
+
   s.dependency 'EasyEmoji'
   s.dependency 'EasyDropDownMenu'
   s.dependency 'EasySearchBar'
+  s.dependency 'EasyCountDownButton'
+  s.dependency 'YXJXibView'
   s.dependency 'YXJTagView'
+  s.dependency 'YXJKxMenu'
+  s.dependency 'YXJLinksButton' 
+  s.dependency 'YXJCycleView'
+  s.dependency 'YXJPageController'
+  s.dependency 'YXJOnePixeLine'
+  s.dependency 'YXJSlideBar'
+  s.dependency 'YXJSwipeTableViewCell'
+  s.dependency 'YXJImageCompressor'
+  s.dependency 'YXJPullScale'
 
   s.frameworks = 'UIKit'
 

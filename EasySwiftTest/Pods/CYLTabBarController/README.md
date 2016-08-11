@@ -2,8 +2,9 @@
 
 
 <p align="center">
-![enter image description here](https://img.shields.io/badge/pod-v1.5.0-brightgreen.svg)
-![enter image description here](https://img.shields.io/badge/Swift-compatible-orange.svg)   ![enter image description here](https://img.shields.io/badge/platform-iOS%207.0%2B-ff69b5618733984.svg) 
+![enter image description here](https://img.shields.io/badge/pod-v1.5.6-brightgreen.svg)
+![enter image description here](https://img.shields.io/badge/Swift-compatible-orange.svg)   ![enter image description here](https://img.shields.io/badge/platform-iOS%207.0%2B-ff69b5297537064.svg) 
+<a href="https://github.com/ChenYilong/CYLTabBarController/blob/master/LICENSE"><img src="https://img.shields.io/badge/license-MIT-green.svg?style=flat"></a>
 </a>
 
 <p align="center">[![https://twitter.com/stevechen1010](https://img.shields.io/twitter/url/http/shields.io.svg?style=social&maxAge=2592000)](https://twitter.com/stevechen1010)[![bitHound](http://i67.tinypic.com/wbulbr.jpg)](http://weibo.com/luohanchenyilong)
@@ -51,7 +52,7 @@
 
 
 
-（学习交流群：561873398）
+（学习交流群：529753706）
 
 
 
@@ -209,11 +210,11 @@ pod update
 
  1. 实现  `CYLPlusButtonSubclassing`  协议 
 
- 2. 子类将自身类型进行注册，一般可在 `application` 的 `applicationDelegate` 方法里面调用 `[YourClass registerSubClass]` 或者在子类的 `+load` 方法中调用：
+ 2. 子类将自身类型进行注册，一般可在 `application` 的 `applicationDelegate` 方法里面调用 `[YourClass registerPlusButton]` 或者在子类的 `+load` 方法中调用：
 
  ```Objective-C
  +(void)load {
-    [super registerSubclass];
+    [super registerPlusButton];
 }
  ```
 
@@ -221,7 +222,7 @@ pod update
 
  ```Objective-C
 + (NSUInteger)indexOfPlusButtonInTabBar;
-+ (CGFloat)multiplerInCenterY;
++ (CGFloat)multiplierOfTabBarHeight:(CGFloat)tabBarHeight;
 + (UIViewController *)plusChildViewController;
  ```
 
@@ -241,11 +242,29 @@ Airbnb-app效果：
 ![enter image description here](http://a63.tinypic.com/2mgk02v.gif)
 
  ```Objective-C
- + (CGFloat)multiplerInCenterY;
++ (CGFloat)multiplierOfTabBarHeight:(CGFloat)tabBarHeight;
  ```
 
 该方法是为了调整自定义按钮中心点Y轴方向的位置，建议在按钮超出了 `tabbar` 的边界时实现该方法。返回值是自定义按钮中心点Y轴方向的坐标除以 `tabbar` 的高度，如果不实现，会自动进行比对，预设一个较为合适的位置，如果实现了该方法，预设的逻辑将失效。
 
+内部实现时，会使用该返回值来设置 PlusButton 的 centerY 坐标，公式如下：
+              
+`PlusButtonCenterY = multiplierOfTabBarHeight * taBarHeight + constantOfPlusButtonCenterYOffset;`
+
+也就是说：如果 constantOfPlusButtonCenterYOffset 为0，同时 multiplierOfTabBarHeight 的值是0.5，表示 PlusButton 居中，小于0.5表示 PlusButton 偏上，大于0.5则表示偏下。
+
+
+ ```Objective-C
++ (CGFloat)constantOfPlusButtonCenterYOffsetForTabBarHeight:(CGFloat)tabBarHeight;
+ ```
+
+参考 `+multiplierOfTabBarHeight:` 中的公式：
+
+`PlusButtonCenterY = multiplierOfTabBarHeight * taBarHeight + constantOfPlusButtonCenterYOffset;`
+
+也就是说： constantOfPlusButtonCenterYOffset 大于0会向下偏移，小于0会向上偏移。
+
+注意：实现了该方法，但没有实现 `+multiplierOfTabBarHeight:` 方法，在这种情况下，会在预设逻辑的基础上进行偏移。
 
 详见Demo中的 `CYLPlusButtonSubclass` 类的实现。
 
@@ -446,7 +465,7 @@ Airbnb-app效果：
 
 但是想达到Airbnb-app的效果只有这个接口是不行的，还需要自定义下 `TabBar` 的高度，你需要设置 `CYLTabBarController` 的 `tabBarHeight` 属性。你可以在Demo的 `CYLTabBarControllerConfig.m` 中的 `-customizeTabBarAppearance:` 方法中设置。
 
-注：“仅显示图标，并使图标垂直居中”这里所指的“图标”，其所属的类是私有类： `UITabBarSwappableImageView`，所以 `CYLTabBarController` 在相关的接口命名时会包含 `SwappableImageView` 字样。
+注：“仅显示图标，并使图标垂直居中”这里所指的“图标”，其所属的类是私有类： `UITabBarSwappableImageView`，所以 `CYLTabBarController` 在相关的接口命名时会包含 `SwappableImageView` 字样。另外，使用该特性需要 `pod update` 到 1.5.5以上的版本。
 
 #### 在 Swift 项目中使用 CYLTabBarController
 
@@ -477,6 +496,11 @@ Apple 规定：
 另外注意，Apple检测的是 `UITabBarItem` 及其子类，所以放置“加号按钮”，这是 `UIButton` 不在“5个”里面。
 
 最多只能添加5个 `TabBarItem` ，也就是说加上“加号按钮”，一共最多在一个 `TabBar` 上放置6个控件。否则第6个及之后出现 `TabBarItem` 会被自动屏蔽掉。而且就Apple的审核机制来说，超过5个也会被直接拒绝上架。
+
+Q：我把 demo 两侧的 item 各去掉一个后，按钮的响应区域就变成下图的样子了：
+ ![wechat_1445851872](https://cloud.githubusercontent.com/assets/12152553/10725491/62600172-7c07-11e5-9e0a-0ec7d795d1e3.jpeg)
+  		  
+ A：v1.5.5 版本已经修复了该问题，现在不会出现类似的问题了：点击按钮区域却不响应，响应区域有偏移。
 
 Q： 如何实现添加选中背景色的功能 ，像下面这样：
 <img width="409" alt="screen shot 2015-10-28 at 9 21 56 am" src="https://cloud.githubusercontent.com/assets/7238866/10777333/5d7811c8-7d55-11e5-88be-8cb11bbeaf90.png">
@@ -518,7 +542,7 @@ A：在 v1.0.7 版本中已经修复了该 bug，但是也需要注意：
 
  ```
 
- Q :  当使用这个方法时 `-[UIViewController cyl_jumpToOtherTabBarControllerItem:(Class)ClassType performSelector:arguments:returnValue:]` 会出现如下的黑边问题。
+ Q :  当使用这个方法时 `-[UIViewController cyl_popSelectTabBarChildViewControllerAtIndex:]` 系列方法时，会出现如下的黑边问题。
 
 ![enter image description here](http://i63.tinypic.com/bg766g.jpg)
 
@@ -531,7 +555,6 @@ A： 这个是 iOS 系统的BUG，经测试iOS9.3已经修复了，如果在更�
  ```
 Q:我现在已经做好了一个比较简单的中间凸起的 icon 但是超过了49这个高度的位置是不能效应的  我想请问你的demo哪个功能是可以使我超出的范围也可以响应的呢?
 
-
 A: 这个是自动做的，但是 `CYLTabBarController` 只能保证的是：只要是 `UIButton` 的 frame 区域内就能响应。
 
 请把 button 的背景颜色设置为显眼的颜色，比如红色，比如像下面的plus按钮，红色部分是能接收点击事件的，但是超出了红色按钮的，黄色的图片区域，依然是无法响应点击事件的。
@@ -540,8 +563,6 @@ A: 这个是自动做的，但是 `CYLTabBarController` 只能保证的是：只
 
 这是因为，在响应链上，`UIControl` 能响应点击事件， `UIImage` 无法响应。
 
-
- 
 
 
 （更多iOS开发干货，欢迎关注  [微博@iOS程序犭袁](http://weibo.com/luohanchenyilong/) ）

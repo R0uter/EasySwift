@@ -16,10 +16,8 @@
 		DE306B961D0459B500EF05C6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DE306B941D0459B500EF05C6 /* LaunchScreen.storyboard */; };
 		DE306BA11D0459B500EF05C6 /* EasySwiftTestTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE306BA01D0459B500EF05C6 /* EasySwiftTestTests.swift */; };
 		DE306BAC1D0459B500EF05C6 /* EasySwiftTestUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE306BAB1D0459B500EF05C6 /* EasySwiftTestUITests.swift */; };
-		DE582A841D15A72F009FEB45 /* EasyDropDownView-Demo.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE582A831D15A72F009FEB45 /* EasyDropDownView-Demo.swift */; };
 		DE582A8B1D15AB92009FEB45 /* EasySwift.podspec in Resources */ = {isa = PBXBuildFile; fileRef = DE582A891D15AB92009FEB45 /* EasySwift.podspec */; };
 		DE582A8C1D15AB92009FEB45 /* README.md in Sources */ = {isa = PBXBuildFile; fileRef = DE582A8A1D15AB92009FEB45 /* README.md */; };
-		DECCB83E1D05ECA60043047F /* Common.m in Sources */ = {isa = PBXBuildFile; fileRef = DECCB83D1D05ECA60043047F /* Common.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -57,12 +55,9 @@
 		DE306BA71D0459B500EF05C6 /* EasySwiftTestUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = EasySwiftTestUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		DE306BAB1D0459B500EF05C6 /* EasySwiftTestUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EasySwiftTestUITests.swift; sourceTree = "<group>"; };
 		DE306BAD1D0459B500EF05C6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		DE582A831D15A72F009FEB45 /* EasyDropDownView-Demo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "EasyDropDownView-Demo.swift"; sourceTree = "<group>"; };
 		DE582A891D15AB92009FEB45 /* EasySwift.podspec */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = EasySwift.podspec; path = ../../EasySwift.podspec; sourceTree = "<group>"; };
 		DE582A8A1D15AB92009FEB45 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../../README.md; sourceTree = "<group>"; };
 		DECCB83B1D05ECA60043047F /* EasySwiftTest-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "EasySwiftTest-Bridging-Header.h"; sourceTree = "<group>"; };
-		DECCB83C1D05ECA60043047F /* Common.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Common.h; sourceTree = "<group>"; };
-		DECCB83D1D05ECA60043047F /* Common.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Common.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -138,9 +133,6 @@
 				DE306B891D0459B500EF05C6 /* AppDelegate.swift */,
 				DE306B8B1D0459B500EF05C6 /* FirstViewController.swift */,
 				DE306B8D1D0459B500EF05C6 /* SecondViewController.swift */,
-				DE582A831D15A72F009FEB45 /* EasyDropDownView-Demo.swift */,
-				DECCB83C1D05ECA60043047F /* Common.h */,
-				DECCB83D1D05ECA60043047F /* Common.m */,
 				DE306B8F1D0459B500EF05C6 /* Main.storyboard */,
 				DE306B921D0459B500EF05C6 /* Assets.xcassets */,
 				DE306B941D0459B500EF05C6 /* LaunchScreen.storyboard */,
@@ -352,8 +344,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				DE582A8C1D15AB92009FEB45 /* README.md in Sources */,
-				DECCB83E1D05ECA60043047F /* Common.m in Sources */,
-				DE582A841D15A72F009FEB45 /* EasyDropDownView-Demo.swift in Sources */,
 				DE306B8E1D0459B500EF05C6 /* SecondViewController.swift in Sources */,
 				DE306B8A1D0459B500EF05C6 /* AppDelegate.swift in Sources */,
 				DE306B8C1D0459B500EF05C6 /* FirstViewController.swift in Sources */,

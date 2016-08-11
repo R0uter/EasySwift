@@ -17,6 +17,7 @@ static void *const CYLTabBarContext = (void*)&CYLTabBarContext;
 /** 发布按钮 */
 @property (nonatomic, strong) UIButton<CYLPlusButtonSubclassing> *plusButton;
 @property (nonatomic, assign) CGFloat tabBarItemWidth;
+@property (nonatomic, copy) NSArray *tabBarButtonArray;
 
 @end
 
@@ -52,22 +53,36 @@ static void *const CYLTabBarContext = (void*)&CYLTabBarContext;
     return self;
 }
 
+/**
+ *  lazy load tabBarButtonArray
+ *
+ *  @return NSArray
+ */
+- (NSArray *)tabBarButtonArray {
+    if (_tabBarButtonArray == nil) {
+        NSArray *tabBarButtonArray = [[NSArray alloc] init];
+        _tabBarButtonArray = tabBarButtonArray;
+    }
+    return _tabBarButtonArray;
+}
+
 - (void)layoutSubviews {
     [super layoutSubviews];
-    CGFloat barWidth = self.bounds.size.width;
-    CGFloat barHeight = self.bounds.size.height;
-    CYLTabBarItemWidth = (barWidth - CYLPlusButtonWidth) / CYLTabbarItemsCount;
+    CGFloat taBarWidth = self.bounds.size.width;
+    CGFloat taBarHeight = self.bounds.size.height;
+    CYLTabBarItemWidth = (taBarWidth - CYLPlusButtonWidth) / CYLTabbarItemsCount;
     self.tabBarItemWidth = CYLTabBarItemWidth;
+    NSArray *sortedSubviews = [self sortedSubviews];
+    self.tabBarButtonArray = [self tabBarButtonFromTabBarSubviews:sortedSubviews];
+    [self setupSwappableImageViewDefaultOffset:self.tabBarButtonArray[0]];
     if (!CYLExternPlusButton) {
         return;
     }
-    CGFloat multiplerInCenterY = [self multiplerInCenterY];
-    self.plusButton.center = CGPointMake(barWidth * 0.5, barHeight * multiplerInCenterY);
+    CGFloat multiplierOfTabBarHeight = [self multiplierOfTabBarHeight:taBarHeight];
+    CGFloat constantOfPlusButtonCenterYOffset = [self constantOfPlusButtonCenterYOffsetForTabBarHeight:taBarHeight];
+    self.plusButton.center = CGPointMake(taBarWidth * 0.5, taBarHeight * multiplierOfTabBarHeight + constantOfPlusButtonCenterYOffset);
     NSUInteger plusButtonIndex = [self plusButtonIndex];
-    NSArray *sortedSubviews = [self sortedSubviews];
-    NSArray *tabBarButtonArray = [self tabBarButtonFromTabBarSubviews:sortedSubviews];
-    [self setupSwappableImageViewDefaultOffset:tabBarButtonArray[0]];
-    [tabBarButtonArray enumerateObjectsUsingBlock:^(UIView * _Nonnull childView, NSUInteger buttonIndex, BOOL * _Nonnull stop) {
+    [self.tabBarButtonArray enumerateObjectsUsingBlock:^(UIView * _Nonnull childView, NSUInteger buttonIndex, BOOL * _Nonnull stop) {
         //调整UITabBarItem的位置
         CGFloat childViewX;
         if (buttonIndex >= plusButtonIndex) {
@@ -125,22 +140,39 @@ static void *const CYLTabBarContext = (void*)&CYLTabBarContext;
     }
 }
 
-- (CGFloat)multiplerInCenterY {
-    CGFloat multiplerInCenterY;
-    if ([[self.plusButton class] respondsToSelector:@selector(multiplerInCenterY)]) {
-        multiplerInCenterY = [[self.plusButton class] multiplerInCenterY];
-    } else {
+- (CGFloat)multiplierOfTabBarHeight:(CGFloat)taBarHeight {
+    CGFloat multiplierOfTabBarHeight;
+    if ([[self.plusButton class] respondsToSelector:@selector(multiplierOfTabBarHeight:)]) {
+        multiplierOfTabBarHeight = [[self.plusButton class] multiplierOfTabBarHeight:taBarHeight];
+    }
+    
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Wdeprecated-declarations"
+    else if ([[self.plusButton class] respondsToSelector:@selector(multiplerInCenterY)]) {
+        multiplierOfTabBarHeight = [[self.plusButton class] multiplerInCenterY];
+    }
+#pragma clang diagnostic pop
+    
+    else {
         CGSize sizeOfPlusButton = self.plusButton.frame.size;
         CGFloat heightDifference = sizeOfPlusButton.height - self.bounds.size.height;
         if (heightDifference < 0) {
-            multiplerInCenterY = 0.5;
+            multiplierOfTabBarHeight = 0.5;
         } else {
             CGPoint center = CGPointMake(self.bounds.size.height * 0.5, self.bounds.size.height * 0.5);
             center.y = center.y - heightDifference * 0.5;
-            multiplerInCenterY = center.y / self.bounds.size.height;
+            multiplierOfTabBarHeight = center.y / self.bounds.size.height;
         }
     }
-    return multiplerInCenterY;
+    return multiplierOfTabBarHeight;
+}
+
+- (CGFloat)constantOfPlusButtonCenterYOffsetForTabBarHeight:(CGFloat)taBarHeight {
+    CGFloat constantOfPlusButtonCenterYOffset = 0.f;
+    if ([[self.plusButton class] respondsToSelector:@selector(constantOfPlusButtonCenterYOffsetForTabBarHeight:)]) {
+        constantOfPlusButtonCenterYOffset = [[self.plusButton class] constantOfPlusButtonCenterYOffsetForTabBarHeight:taBarHeight];
+    }
+    return constantOfPlusButtonCenterYOffset;
 }
 
 - (NSUInteger)plusButtonIndex {
@@ -216,18 +248,32 @@ static void *const CYLTabBarContext = (void*)&CYLTabBarContext;
  *  Capturing touches on a subview outside the frame of its superview.
  */
 - (UIView *)hitTest:(CGPoint)point withEvent:(UIEvent *)event {
-    if (self.clipsToBounds || self.hidden || (self.alpha == 0.f)) {
+    BOOL canNotResponseEvent = self.hidden || (self.alpha <= 0.01f) || (self.userInteractionEnabled == NO);
+    if (canNotResponseEvent) {
         return nil;
     }
-    UIView *result = [super hitTest:point withEvent:event];
-    if (result) {
-        return result;
+    if (!CYLExternPlusButton && ![self pointInside:point withEvent:event]) {
+        return nil;
     }
-    for (UIView *subview in self.subviews.reverseObjectEnumerator) {
-        CGPoint subPoint = [subview convertPoint:point fromView:self];
-        result = [subview hitTest:subPoint withEvent:event];
-        if (result) {
-            return result;
+    if (CYLExternPlusButton) {
+        CGRect plusButtonFrame = self.plusButton.frame;
+        BOOL isInPlusButtonFrame = CGRectContainsPoint(plusButtonFrame, point);
+        if (!isInPlusButtonFrame && (point.y < 0) ) {
+            return nil;
+        }
+        if (isInPlusButtonFrame) {
+            return CYLExternPlusButton;
+        }
+    }
+    NSArray *tabBarButtons = self.tabBarButtonArray;
+    if (self.tabBarButtonArray.count == 0) {
+        tabBarButtons = [self tabBarButtonFromTabBarSubviews:self.subviews];
+    }
+    for (NSUInteger index = 0; index < tabBarButtons.count; index++) {
+        UIView *selectedTabBarButton = tabBarButtons[index];
+        CGRect selectedTabBarButtonFrame = selectedTabBarButton.frame;
+        if (CGRectContainsPoint(selectedTabBarButtonFrame, point)) {
+            return selectedTabBarButton;
         }
     }
     return nil;

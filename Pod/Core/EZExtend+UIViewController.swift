@@ -7,7 +7,8 @@
 //
 
 import UIKit
-// MARK: - UIViewController
+
+let ns = NSBundle.mainBundle().infoDictionary!["CFBundleExecutable"] as! String
 
 extension UIViewController {
 
@@ -102,4 +103,140 @@ extension UIViewController {
     public func setTitleView(titleView: UIView) {
         self.navigationItem.titleView = titleView
     }
+
+    public class func ClassFromString(vcName: String) -> AnyClass {
+        return NSClassFromString(ns + "." + vcName)!
+        // return NSClassFromString(vcName)!
+    }
+
+    public func pushWithSelfStoryBoard_Swift(VCName: String) {
+        pushWithOtherStoryBoard_Swift(VCName, storyBoardName: "")
+    }
+
+    public func pushWithOtherStoryBoard_Swift(VCName: String, storyBoardName: String) {
+        let viewControllers = self.navigationController!.viewControllers
+        var vc: UIViewController?
+
+        for controllers in viewControllers {
+            if controllers.isKindOfClass(UIViewController.ClassFromString(VCName)) {
+                vc = controllers
+            }
+        }
+
+        if (vc != nil) {
+            self.navigationController?.popToViewController(vc!, animated: true)
+        } else {
+            var story: UIStoryboard?
+            if (storyBoardName != "") {
+                story = UIStoryboard(name: storyBoardName, bundle: nil)
+            } else {
+                story = self.storyboard
+            }
+            let controller: UIViewController = (story?.instantiateViewControllerWithIdentifier(VCName))!
+            self.navigationController?.pushViewController(controller, animated: true)
+        }
+    }
+    public func getVCFormSelfStoryBoard_Swift(VCName: String) -> UIViewController {
+        return getVCFormOtherStoryBoard_Swift(VCName, storyBoardName: "")
+    }
+    public func getVCFormOtherStoryBoard_Swift(VCName: String, storyBoardName: String) -> UIViewController {
+        let viewControllers: Array = self.navigationController!.viewControllers
+        var tempVC: UIViewController?
+        for controllers in viewControllers {
+            if controllers.isKindOfClass(UIViewController.ClassFromString(VCName)) {
+                tempVC = controllers
+            }
+        }
+        if (tempVC != nil) {
+            return tempVC!
+        } else {
+            var story: UIStoryboard?
+            if (storyBoardName != "") {
+                story = UIStoryboard(name: storyBoardName, bundle: nil)
+            } else {
+                story = self.storyboard
+            }
+            let controller: UIViewController = (story?.instantiateViewControllerWithIdentifier(VCName))!
+            return controller
+        }
+    }
+    public func pushVC_Swift(vc: UIViewController) {
+        let viewControllers: Array = self.navigationController!.viewControllers
+        var tempVC: UIViewController?
+        for controllers in viewControllers {
+            if (controllers == vc) {
+                tempVC = controllers
+            }
+        }
+        if (tempVC != nil) {
+            self.navigationController?.popToViewController(vc, animated: true)
+        } else {
+            self.navigationController?.pushViewController(vc, animated: true)
+        }
+    }
+
+    /**
+     //     获取今天时间戳,默认时间戳格式为"yyyy-MM-dd"
+     //     - returns: 今天0点开始的时间戳到24点结束的时间戳
+     //     */
+    // public func todayTimesStamp(format: String = "yyyy-MM-dd") -> (startTS: Int, endTS: Int) {
+    // let todayDate = NSDate()
+    // let todayStr = todayDate.formatTo(format)
+    //
+    // let todaySimpleDate = NSDate().dateFromString(todayStr)
+    //
+    // return (Int(todaySimpleDate.timeIntervalSince1970), Int(todaySimpleDate.dateByAddingDays(1).timeIntervalSince1970))
+    // }
+    //
+    // /**
+    // 获取明天时间戳,默认时间戳格式为"yyyy-MM-dd"
+    // - returns: 明天0点开始的时间戳到24点结束的时间戳
+    // */
+    // public func tomorrowTimesStamp(format: String = "yyyy-MM-dd") -> (startTS: Int, endTS: Int) {
+    // let todayDate = NSDate()
+    // let todayStr = todayDate.formatTo(format)
+    //
+    // let todaySimpleDate = NSDate().dateFromString(todayStr)
+    //
+    // return (Int(todaySimpleDate.dateByAddingDays(1).timeIntervalSince1970), Int(todaySimpleDate.dateByAddingDays(2).timeIntervalSince1970))
+    // }
+    //
+    // /**
+    // 获取周末时间戳,默认时间戳格式为"yyyy-MM-dd"
+    // - returns: 本周周六0点开始的时间戳，周日到24点结束的时间戳
+    // */
+    // public func currentWeeksTimesStamp(format: String = "yyyy-MM-dd") -> (satTS: Int, sunTS: Int) {
+    // let todayDate = NSDate()
+    // let todayStr = todayDate.formatTo(format)
+    //
+    // let todaySimpleDate = NSDate().dateFromString(todayStr)
+    //
+    // // 星期六的时间戳(不含毫秒)
+    // var satTS = 0
+    // // 星期天的时间戳(不含毫秒)
+    // var sunTS = 0
+    //
+    // // 判断是否是星期天
+    // if todaySimpleDate.weekday == 1 {
+    // satTS = Int(todaySimpleDate.dateByAddingDays(-1).timeIntervalSince1970)
+    // sunTS = satTS + Int(D_DAY * 2)
+    // } else {
+    // satTS = Int(todaySimpleDate.dateByAddingDays(7 - todaySimpleDate.weekday).timeIntervalSince1970)
+    // sunTS = satTS + Int(D_DAY * 2)
+    // }
+    //
+    // return (satTS, sunTS)
+    // }
+    //
+    // /// 在tabbarVC中获取当前选中的tabbar的当前UINavigationController
+    // public var getCurrentNavVCInTabBar: BaseNavVC {
+    // let selectIndex = homeNav!.cyl_tabBarController.selectedIndex
+    // weak var tempVC = (homeNav!.cyl_tabBarController?.viewControllers![selectIndex] as! BaseNavVC)
+    // return tempVC!
+    // }
+    //
+    // /// 在tabbarVC中获取当前选中的tabbar的当前VC
+    // public var getCurrentVCInTabBar: UIViewController {
+    // return getCurrentNavVCInTabBar.viewControllers.last!
+    // }
 }

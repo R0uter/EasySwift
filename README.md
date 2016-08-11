@@ -5,6 +5,9 @@ This is the most simple way to use swift, which is a complete throughout the ent
 为了更好的完善此框架，希望更多对此框架有兴趣的朋友一起加入进来打造最好用最全面扩展最好的swift框架。
 EasySwift官方QQ群：<mark>**542916901**</mark>
 
+##Mark
+先更新Github上的项目，所以最新的项目一定在[Github](https://github.com/stubbornnessness)上。
+
 ## Features
 * MVVM : Model-View-ViewModel inspired by Functional Reactive Programming
 * HTML To Native : Transform HTML&CSS to Native Control.
@@ -28,6 +31,25 @@ Add the following to your Podfile:
 	pod 'EasySwift'
 	
 ## Version
+**V1.2.6** ---- 2016-8-11
+
+* 增加EasyEmoji
+* 增加EasyDropDownMenu
+* 增加EasySearchBar
+* 增加EasyCountDownButton
+* 增加YXJXibView
+* 增加YXJTagView
+* 增加YXJKxMenu
+* 增加YXJLinksButton
+* 增加YXJCycleView
+* 增加YXJPageController
+* 增加YXJOnePixeLine
+* 增加YXJSwipeTableViewCell
+* 增加YXJSlideBar
+* 增加YXJImageCompressor
+* 增加YXJPullScale
+
+
 **V1.2.5** ---- 2016-7-3
 
 * 删除SearchBar,增加依赖EasySearchBar
@@ -88,6 +110,7 @@ Add the following to your Podfile:
 * 优化工程结构，不至于看起来太乱
 	
 ## Example
+依赖框架请到依赖框架的Github主页查看用法,本框架的核心类的用法近期贴出来
 
 ## License
 EasySwift is licensed under the Apache License, Version 2.0 License. For more information, please see the LICENSE file.
